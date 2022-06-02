@@ -31,7 +31,7 @@ RSpec.describe "Recipe Search Page" do
 
     it 'On the Recipes::Search index page I see a drop down field for selecting a category' do
       visit '/recipes/search'
-      
+
       within(".category_drop_down") do
         select 'Beef', from: 'category'
       end 
@@ -43,6 +43,24 @@ RSpec.describe "Recipe Search Page" do
           click_button "Search"
       end 
       expect(current_path).to eq('/recipes')
+    end 
+
+    it 'On the Recipes::Search index page I see a drop down field for selecting an area' do
+      visit '/recipes/search'
+
+      within(".area_drop_down") do
+        select 'Chinese', from: 'area'
+      end 
+      within(".area_drop_down") do
+        select 'Irish', from: 'area'
+      end 
+      within(".area_drop_down") do
+        select 'Vietnamese', from: 'area'
+          click_button "Search"
+      end 
+      expect(current_path).to eq('/recipes')
+
+
     end 
 
   end 
