@@ -2,17 +2,17 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/your-app-name
+    working_directory: ~/fast_food
     docker:
-      - image: circleci/ruby:2.4.1
+      - image: circleci/ruby:2.7.4
         environment:
           PGHOST: localhost
-          PGUSER: your-app-name
+          PGUSER: fast_food
           RAILS_ENV: test
       - image: postgres:9.5
         environment:
-          POSTGRES_USER: your-app-name
-          POSTGRES_DB: your-app-name_test
+          POSTGRES_USER: fast_food
+          POSTGRES_DB: fast_food_test
           POSTGRES_PASSWORD: ""
     steps:
       - checkout
@@ -20,15 +20,15 @@ jobs:
       # Restore Cached Dependencies
       - type: cache-restore
         name: Restore bundle cache
-        key: your-app-name-{{ checksum "Gemfile.lock" }}
+        key: fast_food-{{ checksum "Gemfile.lock" }}
 
       # Bundle install dependencies
-      - run: bundle install --path vendor/bundle
+      - run: bundle
 
       # Cache Dependencies
       - type: cache-save
         name: Store bundle cache
-        key: your-app-name-{{ checksum "Gemfile.lock" }}
+        key: fast_food-{{ checksum "Gemfile.lock" }}
         paths:
           - vendor/bundle
 
