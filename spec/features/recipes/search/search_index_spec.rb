@@ -47,7 +47,7 @@ RSpec.describe "Recipe Search Page" do
 
     it 'On the Recipes::Search index page I see a drop down field for selecting an area' do
       visit '/recipes/search'
-
+      
       within(".area_drop_down") do
         select 'Chinese', from: 'area'
       end 
