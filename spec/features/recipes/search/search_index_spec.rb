@@ -10,10 +10,11 @@ RSpec.describe "Recipe Search Page" do
       expect(page).to have_content("Search for a Recipe")
       within("#recipes_search_name") do
         fill_in "Search for Recipe by Name", with: 'Chili dogs'
-        find(".search_by_name").click
-
-        
+        within("#click_button") do
+          click_button
+        end 
       end 
+      expect(current_path).to eq('/recipes')
     end 
 
   end 
