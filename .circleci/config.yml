@@ -30,7 +30,7 @@ jobs:
         name: Store bundle cache
         key: fast_food-{{ checksum "Gemfile.lock" }}
         paths:
-          - vendor/bundle
+          - vendor/bundle-install
 
       # Wait for DB
       - run: dockerize -wait tcp://localhost:5432 -timeout 1m
