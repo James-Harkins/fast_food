@@ -31,35 +31,19 @@ RSpec.describe "Recipe Search Page" do
 
     it 'On the Recipes::Search index page I see a drop down field for selecting a category' do
       visit '/recipes/search'
-      save_and_open_page
-      within("#recipes_select_category") do
-        select 'Beef', from: 'Category'
+      
+      within(".category_drop_down") do
+        select 'Beef', from: 'category'
       end 
-      within("#recipes_select_category") do
-        select 'Vegan', from: 'Category'
+      within(".category_drop_down") do
+        select 'Vegan', from: 'category'
       end 
-      within("#recipes_select_category") do
-        select 'Side', from: 'Category'
-          within("#click_button") do
-            click_button
-        end 
+      within(".category_drop_down") do
+        select 'Side', from: 'category'
+          click_button "Search"
       end 
       expect(current_path).to eq('/recipes')
     end 
 
   end 
 end 
-# Beef
-# Breakfast
-# Chicken
-# Dessert
-# Goat
-# Lamb
-# Miscellaneous
-# Pasta
-# Pork
-# Seafood
-# Side
-# Starter
-# Vegan
-# Vegetarian

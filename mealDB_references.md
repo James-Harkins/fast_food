@@ -34,7 +34,6 @@ Meal Categores
     <a href="#recipes">Side</a>
     <a href="#recipes">Starter</a>
     <a href="#recipes">Vegan</a>
-    <a href="#recipes">Side</a>
     <a href="#recipes">Vegetarian</a>
   </div>
 </div> %>
