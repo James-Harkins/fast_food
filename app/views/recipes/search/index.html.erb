@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-form.search_by_name input[type=text]{
+form.search_bar input[type=text]{
   padding: 10px;
   font-size: 17px;
   border: 1px solid grey;
@@ -8,7 +8,7 @@ form.search_by_name input[type=text]{
   width: 45%;
   backgroud: #f1f1f1;
 }
-form.search_by_name button {
+form.search_bar button {
   float: center;
   width: 10%;
   padding: 10px;
@@ -31,15 +31,31 @@ form.search_by_name button {
 
 <div id="recipes_search_name">
 
-<!-- The form -->
-<form class="search_by_name" action="/recipes">
-  <div id="click_button">
-  <input type="text" placeholder="Search for Recipe by Name" name="search">
-    <button type="submit" placeholder="Search"><i class="fa fa-search"></i></button>
-  </div>
-</form>
-
+  <form class="search_bar" action="/recipes">
+    <div id="click_button">
+    <input type="text" placeholder="Search for Recipe by Name" name="search">
+      <button type="submit" placeholder="Search"><i class="fa fa-search"></i></button>
+    </div>
+  </form>
 </div>
+
+<br>
+
+<div id="recipes_search_ingredient">
+
+  <form class="search_bar" action="/recipes">
+    <div id="click_button">
+    <input type="text" placeholder="Search for Recipe by Single Ingredient" name="search">
+      <button type="submit" placeholder="Search"><i class="fa fa-search"></i></button>
+    </div>
+  </form>
+</div>
+
+
+
+
+
+
 
 
 </center>

@@ -21,7 +21,7 @@ RSpec.describe "Recipe Search Page" do
       visit '/recipes/search'
 
       within("#recipes_search_ingredient") do
-        fill_in "Search for Recipe by Name", with: 'Gabagool'
+        fill_in "Search for Recipe by Single Ingredient", with: 'Gabagool'
           within("#click_button") do
           click_button
         end 
