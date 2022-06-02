@@ -58,9 +58,9 @@ form.search_bar button {
 <div id="recipes_select_categories">
 
   <div class="category_drop_down">
-    <form id="category_drop_down" action="/recipes">
+    <form method="get" id="category_drop_down" action="/recipes">
 
-      <select id="category">  
+      <select id="category" name="category">  
         <option value="Category">Select a Category</option>
         <option value="Beef">Beef</option>
         <option value="Breakfast">Breakfast</option>
@@ -72,7 +72,7 @@ form.search_bar button {
         <option value="Pasta">Pasta</option>
         <option value="Pork">Pork</option>
         <option value="Seafood">Seafood</option>
-        <option value="Side">Side</option>
+        <option value="Side" name="Side">Side</option>
         <option value="Starter">Starter</option>
         <option value="Vegan">Vegan</option>
         <option value="Vegetarian">Vegetarian</option>
@@ -89,7 +89,7 @@ form.search_bar button {
   <div class="area_drop_down">
     <form id="area_drop_down" action="/recipes">
 
-      <select id="area">  
+      <select id="area" name="area">  
         <option value="area">Select a Category</option>
         <option value="American">American</option>
         <option value="British">British</option>
