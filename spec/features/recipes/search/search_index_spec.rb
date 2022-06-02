@@ -6,11 +6,13 @@ RSpec.describe "Recipe Search Page" do
     
     it 'On the Recipes::Search index page I see a serach field for searching a meal by name' do
       visit '/recipes/search'
-      
+      save_and_open_page
       expect(page).to have_content("Search for a Recipe")
       within("#recipes_search_name") do
-        fill_in "search for recipe by name", with: 'Chili dogs'
-        click_button "Search"
+        fill_in "Search for Recipe by Name", with: 'Chili dogs'
+        find(".search_by_name").click
+
+        
       end 
     end 
 

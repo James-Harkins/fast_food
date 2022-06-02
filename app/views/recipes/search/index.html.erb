@@ -1,3 +1,43 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+form.search_by_name input[type=text]{
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: center;
+  width: 45%;
+  backgroud: #f1f1f1;
+}
+form.search_by_name button {
+  float: center;
+  width: 10%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+</style>
+
+<!-- Load icon library -->
+
+<center>
 <h1>Search for a Recipe</h1>
+</center>
+
+<center>
+
+<div id="recipes_search_name">
+
+<!-- The form -->
+<form class="search_by_name" action="/recipes">
+  <input type="text" placeholder="Search for Recipe by Name" name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+</div>
 
 
+</center>
