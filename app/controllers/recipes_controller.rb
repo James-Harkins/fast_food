@@ -6,6 +6,8 @@ class RecipesController < ApplicationController
       flash[:error] = "Please Enter a Search Parameter"
       redirect_to "/recipes/search"
     end 
+
+  
   end
   
   
