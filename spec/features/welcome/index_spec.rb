@@ -14,7 +14,7 @@ describe "landing page" do
 
         click_button "Register"
 
-        expect(current_path).to eq("/users/new")
+        expect(current_path).to eq("/register")
       end
 
       it "i see a button to browse recipes, which redirects me to the recipes::search page" do
