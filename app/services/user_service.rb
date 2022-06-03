@@ -13,4 +13,11 @@ class UserService
       c.params[:email] = user_data[:email]
     end
   end
+
+  def self.find_by_email(email)
+    response = conn.get("/api/v1/user") do |c|
+      c.params = {email: email}
+    end
+    JSON.parse(response.body, symbolize_names: true)
+  end
 end
