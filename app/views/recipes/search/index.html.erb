@@ -1,0 +1,138 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+form.search_bar input[type=text]{
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: center;
+  width: 45%;
+  backgroud: #f1f1f1;
+}
+form.search_bar button {
+  float: center;
+  width: 10%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+/*drop down styles */
+
+</style>
+
+<!-- Load icon library -->
+
+<center>
+<h1>Search for a Recipe</h1>
+</center>
+
+<center>
+
+<div id="recipes_search_name">
+
+  <form class="search_bar" action="/recipes">
+    <div id="click_button">
+    <input type="text" placeholder="Search for Recipe by Name" name="name">
+      <button type="submit" placeholder="Search"><i class="fa fa-search"></i></button>
+    </div>
+  </form>
+</div>
+
+<br>
+
+<div id="recipes_search_ingredient">
+
+  <form class="search_bar" action="/recipes">
+    <div id="click_button">
+    <input type="text" placeholder="Search for Recipe by Single Ingredient" name="ingredient">
+      <button type="submit" placeholder="Search"><i class="fa fa-search"></i></button>
+    </div>
+  </form>
+</div>
+
+<br>
+<div id="recipes_select_categories">
+
+  <div class="category_drop_down">
+    <form method="get" id="category_drop_down" action="/recipes">
+
+      <select id="category" name="category">  
+        <option value="Category">Select a Category</option>
+        <option value="Beef">Beef</option>
+        <option value="Breakfast">Breakfast</option>
+        <option value="Chicken">Chicken</option>
+        <option value="Dessert">Dessert</option>
+        <option value="Goat">Goat</option>
+        <option value="Lamb">Lamb</option>
+        <option value="Miscellaneous">Miscellaneous</option>
+        <option value="Pasta">Pasta</option>
+        <option value="Pork">Pork</option>
+        <option value="Seafood">Seafood</option>
+        <option value="Side" name="Side">Side</option>
+        <option value="Starter">Starter</option>
+        <option value="Vegan">Vegan</option>
+        <option value="Vegetarian">Vegetarian</option>
+      </select>
+
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</div>
+
+<br>
+<div id="recipes_select_area">
+
+  <div class="area_drop_down">
+    <form id="area_drop_down" action="/recipes">
+
+      <select id="area" name="area">  
+        <option value="area">Select an Area</option>
+        <option value="American">American</option>
+        <option value="British">British</option>
+        <option value="Canadian">Canadian</option>
+        <option value="Chinese">Chinese</option>
+        <option value="Croatian">Croatian</option>
+        <option value="Dutch">Dutch</option>
+        <option value="Egyptian">Egyptian</option>
+        <option value="French">French</option>
+        <option value="Greek">Greek</option>
+        <option value="Indian">Indian</option>
+        <option value="Irish">Irish</option>
+        <option value="Italian">Italian</option>
+        <option value="Jamaican">Jamaican</option>
+        <option value="Japanese">Japanese</option>
+        <option value="Kenyan">Kenyan</option>
+        <option value="Malaysian">Malaysian</option>
+        <option value="Mexican">Mexican</option>
+        <option value="Moroccan">Moroccan</option>
+        <option value="Polish">Polish</option>
+        <option value="Portuguese">Portuguese</option>
+        <option value="Russian">Russian</option>
+        <option value="Spanish">Spanish</option>
+        <option value="Thai">Thai</option>
+        <option value="Tunisian">Tunisian</option>
+        <option value="Turkish">Turkish</option>
+        <option value="Unknown">Unknown</option>
+        <option value="Vietnamese">Vietnamese</option>
+      </select>
+
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</center>

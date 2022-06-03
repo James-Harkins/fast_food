@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get "/", to: "welcome#index"
+  
   get "/register", to: "users#new"
+  
   post "/login", to: "sessions#create"
-  get "/recipes/search", to: "recipes/search#index"
+  
+  get '/recipes', to: 'recipes#index'
+  
+  get '/recipes/search', to: 'recipes/search#index'
 end
