@@ -9,11 +9,6 @@ jobs:
           PGHOST: localhost
           PGUSER: fast_food
           RAILS_ENV: test
-      - image: postgres:9.5
-        environment:
-          POSTGRES_USER: fast_food
-          POSTGRES_DB: fast_food_test
-          POSTGRES_PASSWORD: ""
     steps:
       - checkout
 
