@@ -7,19 +7,21 @@ class RecipesController < ApplicationController
       
     elsif params[:name]
       @query = params[:name]
-      conn = Faraday.new(url: "http://localhost:5000") do |f|
-        f.adapter Faraday.default_adapter
-      end
-      response = conn.get("/api/v1/recipes/search") do |c|
-        c.params[:query] = @query
-      end
-      @recipes
-      results = JSON.parse(response.body, symbolize_names: true)[:data]
-      @recipes = []
-      results.each do |result|
+      @recipes = RecipeFacade.find_recipe_by_name(@query)
+      # binding.pry
+      # conn = Faraday.new(url: "http://localhost:5000") do |f|
+      #   f.adapter Faraday.default_adapter
+      # end
+      # response = conn.get("/api/v1/recipes/search") do |c|
+      #   c.params[:query] = @query
+      # end
+      # @recipes
+      # results = JSON.parse(response.body, symbolize_names: true)[:data]
+      # @recipes = []
+      # results.each do |result|
      
-        @recipes << Recipe.new(result)
-      end 
+      #   @recipes << Recipe.new(result)
+      # end 
     
 
     end 
