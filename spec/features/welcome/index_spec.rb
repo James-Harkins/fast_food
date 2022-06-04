@@ -35,11 +35,13 @@ describe "landing page" do
 
   # describe "as a logged-in user" do
   #   describe "when i visit the root path" do
+  #     before do
+  #       Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:google]
+  #     end
   #     it "i do not see a button to become a user or a button to log in" do
   #       visit "/"
   #
-  #       expect(page).not_to have_button("Register")
-  #       expect(page).not_to have_button("Log In")
+  #       expect(page).not_to have_button("Log In With Google")
   #     end
   #
   #     it "i see a button to log out, which redirects me back to the root path and i see it as a visitor" do
@@ -48,16 +50,23 @@ describe "landing page" do
   #       click_button "Log Out"
   #
   #       expect(current_path).to eq("/")
-  #       expect(page).to have_button("Register")
-  #       expect(page).to have_button("Log In")
+  #       expect(page).to have_button("Log In With Google")
   #     end
   #
-  #     it "i see a button to return to my dashboard page" do
+  #     it "i see a button called 'dashboard' that returns me to my dashboard page" do
   #       visit "/"
   #
-  #       click_button "My Dashboard"
+  #       click_button "Dashboard"
   #
   #       expect(current_path).to eq("/dashboard")
+  #     end
+  #
+  #     it "i see a button called 'home' that returns me to the landing page" do
+  #       visit "/"
+  #
+  #       click_button "Home"
+  #
+  #       expect(current_path).to eq("/")
   #     end
   #   end
   # end
