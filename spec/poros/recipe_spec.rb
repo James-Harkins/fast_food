@@ -28,8 +28,6 @@ RSpec.describe Recipe do
     expect(recipe).to be_a Recipe
     expect(recipe.id).to eq("1")
     expect(recipe.name).to eq("Beef Wellington")
-    expect(recipe.category).to eq('Beef')
-    expect(recipe.area).to eq("British")
     expect(recipe.image).to eq("[image url]")
     expect(recipe.ingredients).to be_a Hash
     expect(recipe.instructions).to eq(data[:attributes][:instructions])

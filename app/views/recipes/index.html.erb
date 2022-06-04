@@ -5,32 +5,16 @@
 </center>
 
 
-<center>
+<% if @recipes %>
+  <center>
+  <% @recipes.each do |recipe| %>
+    <div id="recipe_id-<%= recipe.id %>">
+      <ul><%= recipe.name %></ul>
 
-<% if @recipes.count == 0 %>
-
-<h2>No Match Was Found For: <%= @query %></h2>
-  
-
-</center>
+    </div>
+  <% end %>
+  </center>
 <% else %>
 
-<center>
-
-<% @recipes.each do |recipe| %>
-  <div id="recipe_id-<%= recipe.id %>">
-  <ul><%= recipe.name %></ul>
-
-  </div>
-
-
 <% end %>
 
-
-
-
-
-</center>
-
-
-<% end %>

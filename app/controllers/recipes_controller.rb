@@ -7,7 +7,7 @@ class RecipesController < ApplicationController
       
     elsif params[:name]
       @query = params[:name]
-      @recipes = RecipesFacade.find_recipe_by_name(@query)
+      @recipes = RecipesFacade.find_recipes_by_name(@query)
     end 
 
 
