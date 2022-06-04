@@ -4,13 +4,13 @@ RSpec.describe "Recipe Results Index Page" do
 
   describe "As a Visitor - Sad Path" do
     #sad path
-    it 'If I visit /recipes without having searched for a recipe first, I am redirected to /recipes/search' do
+    it 'If I visit /recipes without having searched for a recipe first, I am redirected to /recipes/search', :vcr do
       visit '/recipes'
       
       expect(page).to have_content("Please Enter a Search Parameter")
     end
 
-    it 'Returns a notice that no recipes were found for bad search by name' do
+    it 'Returns a notice that no recipes were found for bad search by name', :vcr do
       visit '/recipes/search'
 
       within("#recipes_search_ingredient") do
@@ -22,9 +22,9 @@ RSpec.describe "Recipe Results Index Page" do
 
       expect(page).to have_content("No Match Was Found For: chili dogs")
     end 
-  end 
   
-    it 'Returns a notice that no recipes were found for bad search by ingredient' do
+  
+    it 'Returns a notice that no recipes were found for bad search by ingredient', :vcr do
       visit '/recipes/search'
 
       within("#recipes_search_ingredient") do
@@ -40,11 +40,11 @@ RSpec.describe "Recipe Results Index Page" do
   
   describe "As a Visitor - Happy Path" do
     
-    it 'returns results for a search by an ingredient' do
+    it 'returns results for a search by recipe name', :vcr do
       visit '/recipes/search'
-
-      within("#recipes_search_ingredient") do
-      within("#recipes_search_name") do
+      # save_and_open_page
+     
+      within "#recipes_search_name" do
         fill_in "Search for Recipe by Name", with: 'chicken'
         within("#click_button") do
           click_button
@@ -73,11 +73,11 @@ RSpec.describe "Recipe Results Index Page" do
       end
     end
 
-    it 'Has results for searching by an ingredient' do
+    it 'Has results for searching by an ingredient', :vcr do
       within("#recipes_search_ingredient") do
-      fill_in "Search for Recipe by Single Ingredient", with: 'rice'
+        fill_in "Search for Recipe by Single Ingredient", with: 'rice'
         within("#click_button") do
-        click_button
+          click_button
         end 
       end 
       within "#recipe_id-52997" do
@@ -97,7 +97,7 @@ RSpec.describe "Recipe Results Index Page" do
       end
     end 
 
-    it 'Has results for selecting a recipe category' do
+    it 'Has results for selecting a recipe category', :vcr do
       visit '/recipes/search'
 
       within(".category_drop_down") do
@@ -122,7 +122,7 @@ RSpec.describe "Recipe Results Index Page" do
       end
     end 
 
-    it 'Has results for selecting an area' do
+    it 'Has results for selecting an area', :vcr do
       visit '/recipes/search'
 
       within(".area_drop_down") do
@@ -147,7 +147,7 @@ RSpec.describe "Recipe Results Index Page" do
       end
     end 
 
-
+    
 
   end 
 end 

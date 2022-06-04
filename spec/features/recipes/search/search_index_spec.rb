@@ -19,7 +19,7 @@ RSpec.describe "Recipe Search Page" do
 
     it 'On the Recipes::Search index page I see a serach field for searching a meal by an ingredient' do
       visit '/recipes/search'
-
+      # save_and_open_page
       within("#recipes_search_ingredient") do
         fill_in "Search for Recipe by Single Ingredient", with: 'Gabagool'
           within("#click_button") do
