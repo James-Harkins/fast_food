@@ -4,6 +4,17 @@
 <h2>Search Results For: <%= @query %></h2>
 </center>
 
+
+<center>
+
+<% if @recipes.count == 0 %>
+
+<h2>No Match Was Found For: <%= @query %></h2>
+  
+
+</center>
+<% else %>
+
 <center>
 
 <% @recipes.each do |recipe| %>
@@ -19,9 +30,7 @@
 
 
 
-
-
-
-
-
 </center>
+
+
+<% end %>
