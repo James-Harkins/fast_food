@@ -26,7 +26,7 @@ RSpec.describe Recipe do
           }
     recipe = Recipe.new(data)
     expect(recipe).to be_a Recipe
-    expect(recipe.id).to eq(1)
+    expect(recipe.id).to eq("1")
     expect(recipe.name).to eq("Beef Wellington")
     expect(recipe.category).to eq('Beef')
     expect(recipe.area).to eq("British")
