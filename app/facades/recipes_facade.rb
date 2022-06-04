@@ -1,4 +1,4 @@
-class RecipeFacade
+class RecipesFacade
 
   def self.find_recipe_by_name(name)
     results = RecipesService.recipe_by_name(name)
