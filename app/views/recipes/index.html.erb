@@ -1,5 +1,27 @@
 <center>
 
-<h1>Recipe Results Index Page
+<h1>Recipe Results Index Page</h1>
+<h2>Search Results For: <%= @query %></h2>
+</center>
+
+<center>
+
+<% @recipes.each do |recipe| %>
+  <div id="recipe_id-<%= recipe.id %>">
+  <ul><%= recipe.name %></ul>
+
+  </div>
+
+
+<% end %>
+
+
+
+
+
+
+
+
+
 
 </center>

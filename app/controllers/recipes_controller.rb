@@ -6,20 +6,21 @@ class RecipesController < ApplicationController
       redirect_to "/recipes/search"
       
     elsif params[:name]
-      query = params[:name]
+      @query = params[:name]
       conn = Faraday.new(url: "http://localhost:5000") do |f|
         f.adapter Faraday.default_adapter
       end
       response = conn.get("/api/v1/recipes/search") do |c|
-        c.params[:query] = query
+        c.params[:query] = @query
       end
-      results = JSON.parse(response.body, symbolize_names: true) 
+      @recipes
+      results = JSON.parse(response.body, symbolize_names: true)[:data]
       @recipes = []
       results.each do |result|
+     
         @recipes << Recipe.new(result)
       end 
-      @recipes
-      binding.pry
+    
 
     end 
 

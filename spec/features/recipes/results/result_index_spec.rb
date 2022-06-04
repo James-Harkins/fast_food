@@ -42,14 +42,14 @@ RSpec.describe "Recipe Results Index Page" do
     
     it 'returns results for a search by recipe name', :vcr do
       visit '/recipes/search'
-      # save_and_open_page
-     
+      
       within "#recipes_search_name" do
         fill_in "Search for Recipe by Name", with: 'chicken'
         within("#click_button") do
           click_button
         end 
       end 
+      
       expect(page).to have_content("Search Results For: chicken")
 
       within "#recipe_id-52795" do
