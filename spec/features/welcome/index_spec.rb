@@ -9,14 +9,6 @@ describe "landing page" do
         expect(page).to have_content("FAST FOOD")
       end
 
-      it "i see a button to become a user" do
-        visit "/"
-
-        click_button "Register"
-
-        expect(current_path).to eq("/register")
-      end
-
       it "i see a button to browse recipes, which redirects me to the recipes::search page" do
         visit "/"
 
@@ -25,12 +17,14 @@ describe "landing page" do
         expect(current_path).to eq("/recipes/search")
       end
 
-      it "i see a button to login, which redirects me to the login page" do
+      it "i see a button to login, which redirects me to the login page", :vcr do
+        Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:google]
+
         visit "/"
 
-        click_button "Log In"
+        click_button "Log In With Google"
 
-        expect(current_path).to eq("/login")
+        expect(current_path).to eq("/dashboard")
       end
 
       # it "i see a button to view a random recipe, which redirects me to some random recipe show page" do
