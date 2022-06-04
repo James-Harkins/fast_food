@@ -44,8 +44,9 @@ RSpec.describe "Recipe Results Index Page" do
       visit '/recipes/search'
 
       within("#recipes_search_ingredient") do
-        fill_in "Search for Recipe by Single Ingredient", with: 'chicken'
-          within("#click_button") do
+      within("#recipes_search_name") do
+        fill_in "Search for Recipe by Name", with: 'chicken'
+        within("#click_button") do
           click_button
         end 
       end 
@@ -71,6 +72,30 @@ RSpec.describe "Recipe Results Index Page" do
         expect(page).to have_content("Jerk chicken with rice & peas")
       end
     end
+
+    it 'Has results for searching by an ingredient' do
+      within("#recipes_search_ingredient") do
+      fill_in "Search for Recipe by Single Ingredient", with: 'rice'
+        within("#click_button") do
+        click_button
+        end 
+      end 
+      within "#recipe_id-52997" do
+        expect(page).to have_content("Beef Banh Mi Bowls with Sriracha Mayo, Carrot & Pickled Cucumber")
+      end
+
+      within "#recipe_id-53054" do
+        expect(page).to have_content("Seri muka kuih")
+      end
+
+      within "#recipe_id-53008" do
+        expect(page).to have_content("Stuffed Lamb Tomatoes")
+      end
+
+      within "#recipe_id-53027" do
+        expect(page).to have_content("Koshari")
+      end
+    end 
 
     it 'Has results for selecting a recipe category' do
       visit '/recipes/search'
