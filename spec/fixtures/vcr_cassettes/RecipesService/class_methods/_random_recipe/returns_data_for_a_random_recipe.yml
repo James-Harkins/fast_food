@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/recipes/random_meal
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"7ef81b576bd5f7f9a5e83e3e9d364a5e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2333f4ad-0002-4c4e-af63-7d4d1a787287
+      X-Runtime:
+      - '0.258217'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjoiNTMwMjIiLCJ0eXBlIjoicmVjaXBlIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiUG9sc2tpZSBOYWxlxZtuaWtpIChQb2xpc2ggUGFuY2FrZXMpIiwiaW5ncmVkaWVudHMiOnsiRmxvdXIiOiIxIGN1cCAiLCJFZ2dzIjoiMiIsIk1pbGsiOiIxIGN1cCAiLCJXYXRlciI6IjMvNCBjdXAgIiwiU2FsdCI6IlBpbmNoIiwiU3VnYXIiOiIxIHRzcCAiLCJCdXR0ZXIiOiIzIHRicyIsIiI6IiAifSwiaW1hZ2UiOiJodHRwczovL3d3dy50aGVtZWFsZGIuY29tL2ltYWdlcy9tZWRpYS9tZWFscy81OGJreW8xNTkzMzUwMDE3LmpwZyIsImluc3RydWN0aW9ucyI6IkFkZCBmbG91ciwgZWdncywgbWlsaywgd2F0ZXIsIGFuZCBzYWx0IGluIGEgbGFyZ2UgYm93bCB0aGVuIG1peCB3aXRoIGEgaGFuZCBtaXhlciB1bnRpbCB5b3UgaGF2ZSBhIHNtb290aCwgbHVtcC1mcmVlIGJhdHRlci5cclxuQXQgdGhpcyBwb2ludCwgbWl4IGluIHRoZSBidXR0ZXIgb3IgdGhlIHZlZ2V0YWJsZSBvaWwuIEFsdGVybmF0aXZlbHksIHlvdSBjYW4gdXNlIHRoZW0gdG8gZ3JlYXNlIHRoZSBwYW4gYmVmb3JlIGZyeWluZyBlYWNoIHBhbmNha2UuXHJcbkhlYXQgYSBub24tc3RpY2sgcGFuIG92ZXIgbWVkaXVtIGhlYXQsIHRoZW4gcG91ciBpbiB0aGUgYmF0dGVyLCBzd2lybGluZyB0aGUgcGFuIHRvIGhlbHAgaXQgc3ByZWFkLlxyXG5XaGVuIHRoZSBwYW5jYWtlIHN0YXJ0cyBwdWxsaW5nIGF3YXkgYSBiaXQgZnJvbSB0aGUgc2lkZXMsIGFuZCB0aGUgdG9wIGlzIG5vIGxvbmdlciB3ZXQsIGZsaXAgaXQgYW5kIGNvb2sgc2hvcnRseSBvbiB0aGUgb3RoZXIgc2lkZSBhcyB3ZWxsLlxyXG5UcmFuc2ZlciB0byBhIHBsYXRlLiBDb29rIHRoZSByZW1haW5pbmcgYmF0dGVyIHVudGlsIGFsbCB1c2VkIHVwLlxyXG5TZXJ2ZSB3YXJtLCB3aXRoIHRoZSBmaWxsaW5nIG9mIHlvdXIgY2hvaWNlLiIsImNhdGVnb3J5IjoiRGVzc2VydCIsImFyZWEiOiJQb2xpc2gifX19
+  recorded_at: Sun, 05 Jun 2022 20:10:41 GMT
+recorded_with: VCR 6.1.0

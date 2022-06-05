@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/recipes/area?q=Vietnamese
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"7a53a9f03b6b751cced13e62da6afd78"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e9f94639-329b-46b9-b902-534e436ee5e2
+      X-Runtime:
+      - '0.371270'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"52997","type":"recipe","attributes":{"name":"Beef Banh
+        Mi Bowls with Sriracha Mayo, Carrot \u0026 Pickled Cucumber","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/z0ageb1583189517.jpg","instructions":null,"category":null,"area":null}},{"id":"52828","type":"recipe","attributes":{"name":"Vietnamese
+        Grilled Pork (bun-thit-nuong)","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/qqwypw1504642429.jpg","instructions":null,"category":null,"area":null}}]}'
+  recorded_at: Sun, 05 Jun 2022 20:10:40 GMT
+recorded_with: VCR 6.1.0

@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/recipes/ingredient?q=chicken
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"015702e44bdcf9adca45f1669ff82dc2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - efd8e1c1-cf7e-4e7e-a224-0e2e8daeda59
+      X-Runtime:
+      - '0.253905'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"52940","type":"recipe","attributes":{"name":"Brown
+        Stew Chicken","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/sypxpx1515365095.jpg","instructions":null,"category":null,"area":null}},{"id":"52846","type":"recipe","attributes":{"name":"Chicken
+        \u0026 mushroom Hotpot","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/uuuspp1511297945.jpg","instructions":null,"category":null,"area":null}},{"id":"52796","type":"recipe","attributes":{"name":"Chicken
+        Alfredo Primavera","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/syqypv1486981727.jpg","instructions":null,"category":null,"area":null}},{"id":"52934","type":"recipe","attributes":{"name":"Chicken
+        Basquaise","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/wruvqv1511880994.jpg","instructions":null,"category":null,"area":null}},{"id":"52956","type":"recipe","attributes":{"name":"Chicken
+        Congee","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/1529446352.jpg","instructions":null,"category":null,"area":null}},{"id":"52795","type":"recipe","attributes":{"name":"Chicken
+        Handi","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/wyxwsp1486979827.jpg","instructions":null,"category":null,"area":null}},{"id":"52813","type":"recipe","attributes":{"name":"Kentucky
+        Fried Chicken","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/xqusqy1487348868.jpg","instructions":null,"category":null,"area":null}},{"id":"52945","type":"recipe","attributes":{"name":"Kung
+        Pao Chicken","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/1525872624.jpg","instructions":null,"category":null,"area":null}},{"id":"52774","type":"recipe","attributes":{"name":"Pad
+        See Ew","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/uuuspp1468263334.jpg","instructions":null,"category":null,"area":null}},{"id":"53039","type":"recipe","attributes":{"name":"Piri-piri
+        chicken and slaw","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/hglsbl1614346998.jpg","instructions":null,"category":null,"area":null}},{"id":"52814","type":"recipe","attributes":{"name":"Thai
+        Green Curry","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/sstssx1487349585.jpg","instructions":null,"category":null,"area":null}}]}'
+  recorded_at: Sun, 05 Jun 2022 20:10:39 GMT
+recorded_with: VCR 6.1.0
