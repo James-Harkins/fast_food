@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get "/recipes", to: "recipes#index"
 
   get "/recipes/search", to: "recipes/search#index"
+
+  delete "/sessions", to: "sessions#destroy"
 end
