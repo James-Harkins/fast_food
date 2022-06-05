@@ -31,5 +31,16 @@ class RecipesService
   end 
 
 
+  def self.recipes_by_area(area)
+    conn = Faraday.new(url: "http://localhost:5000") do |f|
+      f.adapter Faraday.default_adapter
+    end
+    response = conn.get("/api/v1/recipes/area") do |c|
+      c.params[:q] = area
+    end
+    results = JSON.parse(response.body, symbolize_names: true)[:data]
+  end 
+
+
 
 end 

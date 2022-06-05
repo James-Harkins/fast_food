@@ -126,30 +126,30 @@ RSpec.describe "Recipe Results Index Page" do
       end
     end 
 
-    # it 'Has results for selecting an area', :vcr do
-    #   visit '/recipes/search'
+    it 'Has results for selecting an area', :vcr do
+      visit '/recipes/search'
 
-    #   within(".area_drop_down") do
-    #     select 'Canadian', from: 'area'
-    #     click_button "Search"
-    #   end 
+      within(".area_drop_down") do
+        select 'Canadian', from: 'area'
+        click_button "Search"
+      end 
 
-    #   within "#recipe_id-52928" do
-    #     expect(page).to have_content("BeaverTails")
-    #   end
+      within "#recipe_id-52928" do
+        expect(page).to have_content("BeaverTails")
+      end
 
-    #   within "#recipe_id-52927" do
-    #     expect(page).to have_content("Montreal Smoked Meat")
-    #   end
+      within "#recipe_id-52927" do
+        expect(page).to have_content("Montreal Smoked Meat")
+      end
 
-    #   within "#recipe_id-52804" do
-    #     expect(page).to have_content("Poutine")
-    #   end
+      within "#recipe_id-52804" do
+        expect(page).to have_content("Poutine")
+      end
 
-    #   within "#recipe_id-52929" do
-    #     expect(page).to have_content("Timbits")
-    #   end
-    # end 
+      within "#recipe_id-52929" do
+        expect(page).to have_content("Timbits")
+      end
+    end 
 
     
 

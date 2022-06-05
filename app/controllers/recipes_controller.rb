@@ -16,6 +16,10 @@ class RecipesController < ApplicationController
     elsif params[:category]
       @query = params[:category]
       @recipes = RecipesFacade.find_recipes_by_category(@query)
+
+    elsif params[:area]
+      @query = params[:area]
+      @recipes = RecipesFacade.find_recipes_by_area(@query)
     end 
 
   

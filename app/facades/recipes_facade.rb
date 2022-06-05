@@ -26,4 +26,13 @@ class RecipesFacade
     end 
     recipes
   end 
+
+  def self.find_recipes_by_area(area)
+    results = RecipesService.recipes_by_area(area)
+    recipes = []
+    results.each do |result|
+      recipes << Recipe.new(result)
+    end 
+    recipes
+  end 
 end 
