@@ -24,10 +24,10 @@ class RecipesController < ApplicationController
   end
 
   def show
-    # binding.pry
     id = params[:id]
     @recipe = RecipesFacade.find_recipe_by_id(id)
-
+    binding.pry
+    
   end 
   
   
