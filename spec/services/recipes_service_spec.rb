@@ -1,10 +1,10 @@
 require "rails_helper"
 
-describe RecipeService do
+describe RecipesService do
   describe "class methods" do
     describe "#random_recipe" do
       it "returns data for a random recipe" do
-        recipe = RecipeService.random_recipe
+        recipe = RecipesService.random_recipe
 
         expect(recipe).to be_a Hash
         expect(recipe[:data]).to be_a Hash
