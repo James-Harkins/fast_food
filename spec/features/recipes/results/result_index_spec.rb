@@ -1,12 +1,11 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe "Recipe Results Index Page" do
-
   describe "As a Visitor - Sad Path" do
-    #sad path
-    it 'If I visit /recipes without having searched for a recipe first, I am redirected to /recipes/search', :vcr do
-      visit '/recipes'
-      
+    # sad path
+    it "If I visit /recipes without having searched for a recipe first, I am redirected to /recipes/search", :vcr do
+      visit "/recipes"
+
       expect(page).to have_content("Please Enter a Search Parameter")
     end
 
@@ -17,13 +16,12 @@ RSpec.describe "Recipe Results Index Page" do
     #     fill_in "Search for Recipe by Name", with: 'chili dogs'
     #       within "#click_button" do
     #       click_button
-    #     end 
-    #   end 
+    #     end
+    #   end
     #   # save_and_open_page
     #   expect(page).to have_content("No Match Was Found For: chili dogs")
-    # end 
-  
-  
+    # end
+
     # it 'Returns a notice that no recipes were found for bad search by ingredient', :vcr do
     #   visit '/recipes/search'
 
@@ -31,25 +29,24 @@ RSpec.describe "Recipe Results Index Page" do
     #     fill_in "Search for Recipe by Single Ingredient", with: 'meteorite'
     #       within("#click_button") do
     #       click_button
-    #     end 
-    #   end 
+    #     end
+    #   end
 
     #   expect(page).to have_content("No Match Was Found For: meteorite")
-    # end 
-  end 
-  
+    # end
+  end
+
   describe "As a Visitor - Happy Path" do
-    
-    it 'returns results for a search by recipe name', :vcr do
-      visit '/recipes/search'
-      
+    it "returns results for a search by recipe name", :vcr do
+      visit "/recipes/search"
+
       within "#recipes_search_name" do
-        fill_in "Search for Recipe by Name", with: 'chicken'
+        fill_in "Search for Recipe by Name", with: "chicken"
         within("#click_button") do
           click_button
-        end 
-      end 
-      
+        end
+      end
+
       expect(page).to have_content("Search Results For: chicken")
 
       within "#recipe_id-52795" do
@@ -73,18 +70,18 @@ RSpec.describe "Recipe Results Index Page" do
       end
     end
 
-    it 'Has results for searching by an ingredient', :vcr do
-      visit '/recipes/search'
-      
+    it "Has results for searching by an ingredient", :vcr do
+      visit "/recipes/search"
+
       within "#recipes_search_ingredient" do
-        fill_in "Search for Recipe by Single Ingredient", with: 'rice'
+        fill_in "Search for Recipe by Single Ingredient", with: "rice"
         within "#click_button" do
           click_button
-        end 
-      end 
+        end
+      end
 
       expect(page).to have_content("Search Results For: rice")
-    
+
       within "#recipe_id-52997" do
         expect(page).to have_content("Beef Banh Mi Bowls with Sriracha Mayo, Carrot & Pickled Cucumber")
       end
@@ -100,14 +97,14 @@ RSpec.describe "Recipe Results Index Page" do
       within "#recipe_id-53027" do
         expect(page).to have_content("Koshari")
       end
-    end 
+    end
 
-    it 'Has results for selecting a recipe category', :vcr do
-      visit '/recipes/search'
+    it "Has results for selecting a recipe category", :vcr do
+      visit "/recipes/search"
       within(".category_drop_down") do
-        select 'Beef', from: 'category'
+        select "Beef", from: "category"
         click_button "Search"
-      end 
+      end
 
       within "#recipe_id-52874" do
         expect(page).to have_content("Beef and Mustard Pie")
@@ -124,15 +121,15 @@ RSpec.describe "Recipe Results Index Page" do
       within "#recipe_id-52992" do
         expect(page).to have_content("Soy-Glazed Meatloaves with Wasabi Mashed Potatoes & Roasted Carrots")
       end
-    end 
+    end
 
-    it 'Has results for selecting an area', :vcr do
-      visit '/recipes/search'
+    it "Has results for selecting an area", :vcr do
+      visit "/recipes/search"
 
       within(".area_drop_down") do
-        select 'Canadian', from: 'area'
+        select "Canadian", from: "area"
         click_button "Search"
-      end 
+      end
 
       within "#recipe_id-52928" do
         expect(page).to have_content("BeaverTails")
@@ -170,8 +167,5 @@ RSpec.describe "Recipe Results Index Page" do
       end
       expect(current_path).to eq("/recipes/52881")
     end 
-
-    
-
   end 
 end 

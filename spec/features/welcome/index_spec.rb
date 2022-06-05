@@ -25,7 +25,7 @@ describe "landing page" do
         click_button "Log In With Google"
 
         expect(current_path).to eq("/dashboard")
-      end   
+      end
     end
   end
 end
