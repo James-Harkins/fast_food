@@ -1,5 +1,5 @@
 
-Meal Categores
+Meal Categories
 
 # Beef
 # Breakfast

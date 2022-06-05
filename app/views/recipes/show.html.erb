@@ -1,1 +1,47 @@
+<center>
 <h1>Recipe Show Page</h1>
+
+
+<div id="name_of_recipe">
+  <h4><%= @recipe.name %></h4>
+</div>
+
+<div id="image_of_recipe">
+  
+  <%= image_tag( @recipe.image, size: "200x200") %>
+
+
+</div>
+
+
+
+
+
+<div id="ingredient_header">
+  <h4>Ingredients:</h4>
+</div>
+
+<div id="ingredients">
+<% @recipe.ingredients.each do |name, qty| %>
+
+<ul><%= name %>: <%= qty %></ul>
+
+<% end  %>
+</div>
+
+
+<div id="instructions_header">
+  <h4>Instructions:</h4>
+</div>
+
+<div id="instructions">
+  <%= @recipe.instructions %>
+</div>
+
+
+
+
+
+
+
+</center>
