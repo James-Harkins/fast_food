@@ -43,13 +43,14 @@ group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
   gem "pry"
   gem "capybara"
-  # gem "faraday"
   gem "simplecov"
   gem "rspec-rails"
   gem "orderly"
   gem "launchy"
   gem "shoulda-matchers"
   gem "standardrb"
+  gem "faker"
+  gem "warden"
 end
 
 group :development do
