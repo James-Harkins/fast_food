@@ -25,7 +25,7 @@ RSpec.describe RecipesFacade do
     expect(recipes).to be_all Recipe
   end
 
-  it "returns a recipe poro for some random recipe" do
+  it "returns a recipe poro for some random recipe", :vcr do
     recipe = RecipesFacade.random_recipe
     expect(recipe).to be_a Recipe
   end
