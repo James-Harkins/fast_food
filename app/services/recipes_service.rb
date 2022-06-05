@@ -20,6 +20,16 @@ class RecipesService
     results = JSON.parse(response.body, symbolize_names: true)[:data]
   end 
 
+  def self.recipes_by_category(category)
+    conn = Faraday.new(url: "http://localhost:5000") do |f|
+      f.adapter Faraday.default_adapter
+    end
+    response = conn.get("/api/v1/recipes/category") do |c|
+      c.params[:q] = category
+    end
+    results = JSON.parse(response.body, symbolize_names: true)[:data]
+  end 
+
 
 
 end 

@@ -17,4 +17,13 @@ class RecipesFacade
     end 
     recipes
   end 
+
+  def self.find_recipes_by_category(category)
+    results = RecipesService.recipes_by_category(category)
+    recipes = []
+    results.each do |result|
+      recipes << Recipe.new(result)
+    end 
+    recipes
+  end 
 end 

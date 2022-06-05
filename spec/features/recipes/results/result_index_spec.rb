@@ -104,7 +104,6 @@ RSpec.describe "Recipe Results Index Page" do
 
     it 'Has results for selecting a recipe category', :vcr do
       visit '/recipes/search'
-
       within(".category_drop_down") do
         select 'Beef', from: 'category'
         click_button "Search"
