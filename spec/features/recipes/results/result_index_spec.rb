@@ -102,30 +102,30 @@ RSpec.describe "Recipe Results Index Page" do
       end
     end 
 
-    # it 'Has results for selecting a recipe category', :vcr do
-    #   visit '/recipes/search'
+    it 'Has results for selecting a recipe category', :vcr do
+      visit '/recipes/search'
 
-    #   within(".category_drop_down") do
-    #     select 'Beef', from: 'category'
-    #     click_button "Search"
-    #   end 
+      within(".category_drop_down") do
+        select 'Beef', from: 'category'
+        click_button "Search"
+      end 
 
-    #   within "#recipe_id-52874" do
-    #     expect(page).to have_content("Beef and Mustard Pie")
-    #   end
+      within "#recipe_id-52874" do
+        expect(page).to have_content("Beef and Mustard Pie")
+      end
 
-    #   within "#recipe_id-52878" do
-    #     expect(page).to have_content("Beef and Oyster pie")
-    #   end
+      within "#recipe_id-52878" do
+        expect(page).to have_content("Beef and Oyster pie")
+      end
 
-    #   within "#recipe_id-52997" do
-    #     expect(page).to have_content("Beef Banh Mi Bowls with Sriracha Mayo, Carrot & Pickled Cucumber")
-    #   end
+      within "#recipe_id-52997" do
+        expect(page).to have_content("Beef Banh Mi Bowls with Sriracha Mayo, Carrot & Pickled Cucumber")
+      end
 
-    #   within "#recipe_id-52992" do
-    #     expect(page).to have_content("Soy-Glazed Meatloaves with Wasabi Mashed Potatoes & Roasted Carrots")
-    #   end
-    # end 
+      within "#recipe_id-52992" do
+        expect(page).to have_content("Soy-Glazed Meatloaves with Wasabi Mashed Potatoes & Roasted Carrots")
+      end
+    end 
 
     # it 'Has results for selecting an area', :vcr do
     #   visit '/recipes/search'
