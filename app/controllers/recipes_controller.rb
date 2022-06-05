@@ -21,9 +21,12 @@ class RecipesController < ApplicationController
       @query = params[:area]
       @recipes = RecipesFacade.find_recipes_by_area(@query)
     end 
-
-  
   end
+
+  def show
+
+
+  end 
   
   
 end 
