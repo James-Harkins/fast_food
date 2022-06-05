@@ -34,5 +34,7 @@ class RecipesService
   end
 
   def self.random_recipe
+    response = conn.get("/api/v1/recipes/random_meal")
+    result = JSON.parse(response.body, symbolize_names: true)[:data]
   end
 end

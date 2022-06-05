@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/recipes/random_meal
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"d598cd768a101c0b08101e6f11109d41"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 597a1c6f-da3d-4c7a-bc36-383ecc464760
+      X-Runtime:
+      - '5.023956'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjoiNTI5OTUiLCJ0eXBlIjoicmVjaXBlIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiQkJRIFBvcmsgU2xvcHB5IEpvZXMiLCJpbmdyZWRpZW50cyI6eyJQb3RhdG9lcyI6IjIiLCJSZWQgT25pb25zIjoiMSIsIkdhcmxpYyI6IjIgY2xvdmVzIiwiTGltZSI6IjEiLCJCcmVhZCI6IjIiLCJQb3JrIjoiMSBsYiIsIkJhcmJlcXVlIFNhdWNlIjoiICIsIkhvdHNhdWNlIjoiICIsIlRvbWF0byBLZXRjaHVwIjoiICIsIlN1Z2FyIjoiICIsIlZlZ2V0YWJsZSBPaWwiOiIgIiwiU2FsdCI6IiAiLCJQZXBwZXIiOiIgIiwiIjoiICJ9LCJpbWFnZSI6Imh0dHBzOi8vd3d3LnRoZW1lYWxkYi5jb20vaW1hZ2VzL21lZGlhL21lYWxzL2F0ZDVzaDE1ODMxODg0NjcuanBnIiwiaW5zdHJ1Y3Rpb25zIjoiMVxyXG5cclxuUHJlaGVhdCBvdmVuIHRvIDQ1MCBkZWdyZWVzLiBXYXNoIGFuZCBkcnkgYWxsIHByb2R1Y2UuIEN1dCBzd2VldCBwb3RhdG9lcyBpbnRvIMK9LWluY2gtdGhpY2sgd2VkZ2VzLiBUb3NzIG9uIGEgYmFraW5nIHNoZWV0IHdpdGggYSBkcml6emxlIG9mIG9pbCwgc2FsdCwgYW5kIHBlcHBlci4gUm9hc3QgdW50aWwgYnJvd25lZCBhbmQgdGVuZGVyLCAyMC0yNSBtaW51dGVzLlxyXG5cclxuMlxyXG5cclxuTWVhbndoaWxlLCBoYWx2ZSBhbmQgcGVlbCBvbmlvbi4gU2xpY2UgYXMgdGhpbmx5IGFzIHBvc3NpYmxlIHVudGlsIHlvdSBoYXZlIMK8IGN1cCAowr0gY3VwIGZvciA0IHNlcnZpbmdzKTsgZmluZWx5IGNob3AgcmVtYWluaW5nIG9uaW9uLiBQZWVsIGFuZCBmaW5lbHkgY2hvcCBnYXJsaWMuIEhhbHZlIGxpbWU7IHNxdWVlemUganVpY2UgaW50byBhIHNtYWxsIGJvd2wuIEhhbHZlIGJ1bnMuIEFkZCAxIFRCU1AgYnV0dGVyICgyIFRCU1AgZm9yIDQpIHRvIGEgc2VwYXJhdGUgc21hbGwgbWljcm93YXZlLXNhZmUgYm93bDsgbWljcm93YXZlIHVudGlsIG1lbHRlZCwgMzAgc2Vjb25kcy4gQnJ1c2ggb250byBjdXQgc2lkZXMgb2YgYnVucy5cclxuXHJcbjNcclxuXHJcblRvIGJvd2wgd2l0aCBsaW1lIGp1aWNlLCBhZGQgc2xpY2VkIG9uaW9uLCDCvCB0c3Agc3VnYXIgKMK9IHRzcCBmb3IgNCBzZXJ2aW5ncyksIGFuZCBhIHBpbmNoIG9mIHNhbHQuIFN0aXIgdG8gY29tYmluZTsgc2V0IGFzaWRlIHRvIHF1aWNrLXBpY2tsZS5cclxuXHJcbjRcclxuXHJcbkhlYXQgYSBkcml6emxlIG9mIG9pbCBpbiBhIGxhcmdlIHBhbiBvdmVyIG1lZGl1bS1oaWdoIGhlYXQuIEFkZCBjaG9wcGVkIG9uaW9uIGFuZCBzZWFzb24gd2l0aCBzYWx0IGFuZCBwZXBwZXIuIENvb2ssIHN0aXJyaW5nLCB1bnRpbCBzb2Z0ZW5lZCwgNC01IG1pbnV0ZXMuIEFkZCBnYXJsaWMgYW5kIGNvb2sgdW50aWwgZnJhZ3JhbnQsIDMwIHNlY29uZHMgbW9yZS4gQWRkIHBvcmsgYW5kIHNlYXNvbiB3aXRoIHNhbHQgYW5kIHBlcHBlci4gQ29vaywgYnJlYWtpbmcgdXAgbWVhdCBpbnRvIHBpZWNlcywgdW50aWwgYnJvd25lZCBhbmQgY29va2VkIHRocm91Z2gsIDQtNiBtaW51dGVzLlxyXG5cclxuNVxyXG5cclxuV2hpbGUgcG9yayBjb29rcywgaW4gYSB0aGlyZCBzbWFsbCBib3dsLCBjb21iaW5lIEJCUSBzYXVjZSwgcGlja2xpbmcgbGlxdWlkIGZyb20gb25pb24sIDMgVEJTUCBrZXRjaHVwICg2IFRCU1AgZm9yIDQgc2VydmluZ3MpLCDCvSB0c3Agc3VnYXIgKDEgdHNwIGZvciA0KSwgYW5kIMK8IGN1cCB3YXRlciAo4oWTIGN1cCBmb3IgNCkuIE9uY2UgcG9yayBpcyBjb29rZWQgdGhyb3VnaCwgYWRkIEJCUSBzYXVjZSBtaXh0dXJlIHRvIHBhbi4gQ29vaywgc3RpcnJpbmcsIHVudGlsIHNhdWNlIGlzIHRoaWNrZW5lZCwgMi0zIG1pbnV0ZXMuIFRhc3RlIGFuZCBzZWFzb24gd2l0aCBzYWx0IGFuZCBwZXBwZXIuXHJcblxyXG42XHJcblxyXG5NZWFud2hpbGUsIHRvYXN0IGJ1bnMgaW4gb3ZlbiBvciB0b2FzdGVyIG92ZW4gdW50aWwgZ29sZGVuLCAzLTUgbWludXRlcy4gRGl2aWRlIHRvYXN0ZWQgYnVucyBiZXR3ZWVuIHBsYXRlcyBhbmQgZmlsbCB3aXRoIGFzIG11Y2ggQkJRIHBvcmsgYXMgeW914oCZZCBsaWtlLiBUb3Agd2l0aCBwaWNrbGVkIG9uaW9uIGFuZCBob3Qgc2F1Y2UuIFNlcnZlIHdpdGggc3dlZXQgcG90YXRvIHdlZGdlcyBvbiB0aGUgc2lkZS4iLCJjYXRlZ29yeSI6IlBvcmsiLCJhcmVhIjoiQW1lcmljYW4ifX19
+  recorded_at: Sun, 05 Jun 2022 02:24:59 GMT
+recorded_with: VCR 6.1.0
