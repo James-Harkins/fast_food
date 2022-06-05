@@ -17,7 +17,7 @@ RSpec.describe "Recipe Search Page" do
       expect(current_path).to eq('/recipes')
     end 
 
-    it 'On the Recipes::Search index page I see a serach field for searching a meal by an ingredient' do
+    it 'On the Recipes::Search index page I see a serach field for searching a meal by an ingredient', :vcr do
       visit '/recipes/search'
       # save_and_open_page
       within("#recipes_search_ingredient") do
@@ -29,7 +29,7 @@ RSpec.describe "Recipe Search Page" do
       expect(current_path).to eq('/recipes')
     end 
 
-    it 'On the Recipes::Search index page I see a drop down field for selecting a category' do
+    it 'On the Recipes::Search index page I see a drop down field for selecting a category', :vcr do
       visit '/recipes/search'
 
       within(".category_drop_down") do
@@ -45,7 +45,7 @@ RSpec.describe "Recipe Search Page" do
       expect(current_path).to eq('/recipes')
     end 
 
-    it 'On the Recipes::Search index page I see a drop down field for selecting an area' do
+    it 'On the Recipes::Search index page I see a drop down field for selecting an area', :vcr do
       visit '/recipes/search'
       
       within(".area_drop_down") do
