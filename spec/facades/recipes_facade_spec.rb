@@ -29,4 +29,9 @@ RSpec.describe RecipesFacade do
     recipe = RecipesFacade.random_recipe
     expect(recipe).to be_a Recipe
   end
+
+  it "returns a recipe poro when given a recipe id", :vcr do
+    recipe = RecipesFacade.find_recipe_by_id("52935")
+    expect(recipe).to be_a Recipe
+  end
 end
