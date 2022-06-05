@@ -19,7 +19,12 @@ RSpec.describe RecipesFacade do
     recipes = RecipesFacade.find_recipes_by_category('seafood')
     expect(recipes).to be_an Array
     expect(recipes).to be_all Recipe
+  end
 
+  it 'Returns recipe poros for find recipes by area', :vcr do
+    recipes = RecipesFacade.find_recipes_by_area('Canadian')
+    expect(recipes).to be_an Array
+    expect(recipes).to be_all Recipe
   end 
 
 
