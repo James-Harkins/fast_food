@@ -4,7 +4,7 @@ RSpec.describe "Recipe Results Show Page" do
 
   describe "As a Visitor - Happy Path" do
 
-    it 'Shows recipe details when clicking a recipe from the results index' do
+    it 'Shows recipe details when clicking a recipe from the results index', :vcr do
       visit '/recipes/search'
 
       within("#recipes_search_name") do
