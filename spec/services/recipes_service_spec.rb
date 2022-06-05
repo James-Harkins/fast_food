@@ -7,7 +7,6 @@ RSpec.describe RecipesService do
         recipe = RecipesService.random_recipe
 
         expect(recipe).to be_a Hash
-        expect(recipe).to be_a Hash
         expect(recipe).to have_key(:id)
         expect(recipe).to have_key(:attributes)
         expect(recipe[:attributes]).to have_key(:name)
@@ -22,19 +21,75 @@ RSpec.describe RecipesService do
 
     it 'Returns data for a recipe by given id', :vcr do
       recipe = RecipesService.recipe_by_id("52764")
-        expect(recipe).to be_a Hash
-        expect(recipe).to be_a Hash
-        expect(recipe).to have_key(:id)
-        expect(recipe).to have_key(:attributes)
-        expect(recipe[:attributes]).to have_key(:name)
-        expect(recipe[:attributes]).to have_key(:image)
-        expect(recipe[:attributes]).to have_key(:ingredients)
-        expect(recipe[:attributes][:ingredients]).to be_a(Hash)
-        expect(recipe[:attributes]).to have_key(:instructions)
-        expect(recipe[:attributes]).to have_key(:category)
-        expect(recipe[:attributes]).to have_key(:area)
+      expect(recipe).to be_a Hash
+      expect(recipe).to have_key(:id)
+      expect(recipe).to have_key(:attributes)
+      expect(recipe[:attributes]).to have_key(:name)
+      expect(recipe[:attributes]).to have_key(:image)
+      expect(recipe[:attributes]).to have_key(:ingredients)
+      expect(recipe[:attributes][:ingredients]).to be_a(Hash)
+      expect(recipe[:attributes]).to have_key(:instructions)
+      expect(recipe[:attributes]).to have_key(:category)
+      expect(recipe[:attributes]).to have_key(:area)
 
     end 
+
+    it 'Returns data for a recipe search by name', :vcr do
+      recipes = RecipesService.recipes_by_name("meat")
+      expect(recipes).to be_an Array
+      expect(recipes.first).to be_a Hash
+      expect(recipes.first).to have_key(:id)
+      expect(recipes.first).to have_key(:attributes)
+      expect(recipes.first[:attributes]).to have_key(:name)
+      expect(recipes.first[:attributes]).to have_key(:image)
+      expect(recipes.first[:attributes]).to have_key(:ingredients)
+      expect(recipes.first[:attributes][:ingredients]).to be_a(Hash)
+      expect(recipes.first[:attributes]).to have_key(:instructions)
+      expect(recipes.first[:attributes]).to have_key(:category)
+      expect(recipes.first[:attributes]).to have_key(:area)
+    end 
+
+
+    it 'Returns data for a recipe search by ingredient', :vcr do
+      recipes = RecipesService.recipes_by_ingredient("cheese")
+      expect(recipes).to be_an Array
+      expect(recipes.first).to be_a Hash
+      expect(recipes.first).to have_key(:id)
+      expect(recipes.first).to have_key(:attributes)
+      expect(recipes.first[:attributes]).to have_key(:name)
+      expect(recipes.first[:attributes]).to have_key(:image)
+    end 
+
+    it 'Returns data for a recipe search by category', :vcr do
+      recipes = RecipesService.recipes_by_category("Seafood")
+      expect(recipes).to be_an Array
+      expect(recipes.first).to be_a Hash
+      expect(recipes.first).to have_key(:id)
+      expect(recipes.first).to have_key(:attributes)
+      expect(recipes.first[:attributes]).to have_key(:name)
+      expect(recipes.first[:attributes]).to have_key(:image)
+      expect(recipes.first[:attributes]).to have_key(:ingredients)
+      expect(recipes.first[:attributes][:ingredients]).to be_a(Hash)
+      expect(recipes.first[:attributes]).to have_key(:instructions)
+      expect(recipes.first[:attributes]).to have_key(:category)
+      expect(recipes.first[:attributes]).to have_key(:area)
+    end 
+
+    it 'Returns data for a recipe search by area', :vcr do
+      recipes = RecipesService.recipes_by_area("Croatian")
+      expect(recipes).to be_an Array
+      expect(recipes.first).to be_a Hash
+      expect(recipes.first).to have_key(:id)
+      expect(recipes.first).to have_key(:attributes)
+      expect(recipes.first[:attributes]).to have_key(:name)
+      expect(recipes.first[:attributes]).to have_key(:image)
+      expect(recipes.first[:attributes]).to have_key(:ingredients)
+      expect(recipes.first[:attributes][:ingredients]).to be_a(Hash)
+      expect(recipes.first[:attributes]).to have_key(:instructions)
+      expect(recipes.first[:attributes]).to have_key(:category)
+      expect(recipes.first[:attributes]).to have_key(:area)
+    end 
+
 
 
   end

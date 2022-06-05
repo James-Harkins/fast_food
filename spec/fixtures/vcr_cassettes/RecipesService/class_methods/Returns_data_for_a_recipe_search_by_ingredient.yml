@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/recipes/random_meal
+    uri: http://localhost:5000/api/v1/recipes/ingredient?q=cheese
     body:
       encoding: US-ASCII
       string: ''
@@ -33,21 +33,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"a589315f02d13ee14357fd5e71b98820"
+      - W/"184e4c87de4d433e9b4fc9dd1a7fe5df"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 002b667d-2eb2-4ec7-9f05-b4dc3e86f48d
+      - 30ccee67-b14a-4f65-a152-26571c4fd509
       X-Runtime:
-      - '0.457239'
+      - '0.375597'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"53061","type":"recipe","attributes":{"name":"Fresh sardines","ingredients":{"Sardines":"500g","Vegetable
-        Oil":"Dash","Flour":"To Glaze","Salt":"Dash","":" "},"image":"https://www.themealdb.com/images/media/meals/nv5lf31628771380.jpg","instructions":"Wash
-        the fish under the cold tap. Roll in the flour and deep fry in oil until crispy.
-        Lay on kitchen towel to get rid of the excess oil and serve hot or cold with
-        a slice of lemon.","category":"Side","area":"Croatian"}}}'
-  recorded_at: Sun, 05 Jun 2022 20:39:27 GMT
+      string: '{"data":[{"id":"53013","type":"recipe","attributes":{"name":"Big Mac","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/urzj1d1587670726.jpg","instructions":null,"category":null,"area":null}},{"id":"52779","type":"recipe","attributes":{"name":"Cream
+        Cheese Tart","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/wurrux1468416624.jpg","instructions":null,"category":null,"area":null}},{"id":"52978","type":"recipe","attributes":{"name":"Kumpir","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/mlchx21564916997.jpg","instructions":null,"category":null,"area":null}}]}'
+  recorded_at: Sun, 05 Jun 2022 20:39:26 GMT
 recorded_with: VCR 6.1.0

@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/recipes/area?q=Croatian
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"2349429146d9be76b1068fa48aa0ef6e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4f851dcd-1470-434e-8724-6ed958869fc0
+      X-Runtime:
+      - '0.369619'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjpbeyJpZCI6IjUzMDYwIiwidHlwZSI6InJlY2lwZSIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IkJ1cmVrIiwiaW5ncmVkaWVudHMiOnt9LCJpbWFnZSI6Imh0dHBzOi8vd3d3LnRoZW1lYWxkYi5jb20vaW1hZ2VzL21lZGlhL21lYWxzL3RreHF1dzE2Mjg3NzEwMjguanBnIiwiaW5zdHJ1Y3Rpb25zIjpudWxsLCJjYXRlZ29yeSI6bnVsbCwiYXJlYSI6bnVsbH19LHsiaWQiOiI1MzA1NSIsInR5cGUiOiJyZWNpcGUiLCJhdHRyaWJ1dGVzIjp7Im5hbWUiOiJDZXZhcGkgU2F1c2FnZXMiLCJpbmdyZWRpZW50cyI6e30sImltYWdlIjoiaHR0cHM6Ly93d3cudGhlbWVhbGRiLmNvbS9pbWFnZXMvbWVkaWEvbWVhbHMvdmMwOGpuMTYyODc2OTU1My5qcGciLCJpbnN0cnVjdGlvbnMiOm51bGwsImNhdGVnb3J5IjpudWxsLCJhcmVhIjpudWxsfX0seyJpZCI6IjUzMDU4IiwidHlwZSI6InJlY2lwZSIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IkNyb2F0aWFuIEJlYW4gU3RldyIsImluZ3JlZGllbnRzIjp7fSwiaW1hZ2UiOiJodHRwczovL3d3dy50aGVtZWFsZGIuY29tL2ltYWdlcy9tZWRpYS9tZWFscy90bnd5OG0xNjI4NzcwMzg0LmpwZyIsImluc3RydWN0aW9ucyI6bnVsbCwiY2F0ZWdvcnkiOm51bGwsImFyZWEiOm51bGx9fSx7ImlkIjoiNTMwNTYiLCJ0eXBlIjoicmVjaXBlIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiQ3JvYXRpYW4gbGFtYiBwZWthIiwiaW5ncmVkaWVudHMiOnt9LCJpbWFnZSI6Imh0dHBzOi8vd3d3LnRoZW1lYWxkYi5jb20vaW1hZ2VzL21lZGlhL21lYWxzL3BuNTlvNTE2Mjg3Njk4MzcuanBnIiwiaW5zdHJ1Y3Rpb25zIjpudWxsLCJjYXRlZ29yeSI6bnVsbCwiYXJlYSI6bnVsbH19LHsiaWQiOiI1MzA2MSIsInR5cGUiOiJyZWNpcGUiLCJhdHRyaWJ1dGVzIjp7Im5hbWUiOiJGcmVzaCBzYXJkaW5lcyIsImluZ3JlZGllbnRzIjp7fSwiaW1hZ2UiOiJodHRwczovL3d3dy50aGVtZWFsZGIuY29tL2ltYWdlcy9tZWRpYS9tZWFscy9udjVsZjMxNjI4NzcxMzgwLmpwZyIsImluc3RydWN0aW9ucyI6bnVsbCwiY2F0ZWdvcnkiOm51bGwsImFyZWEiOm51bGx9fSx7ImlkIjoiNTMwNTkiLCJ0eXBlIjoicmVjaXBlIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiTXVzaHJvb20gc291cCB3aXRoIGJ1Y2t3aGVhdCIsImluZ3JlZGllbnRzIjp7fSwiaW1hZ2UiOiJodHRwczovL3d3dy50aGVtZWFsZGIuY29tL2ltYWdlcy9tZWRpYS9tZWFscy8xbmdjYmYxNjI4NzcwNzkzLmpwZyIsImluc3RydWN0aW9ucyI6bnVsbCwiY2F0ZWdvcnkiOm51bGwsImFyZWEiOm51bGx9fSx7ImlkIjoiNTMwNTciLCJ0eXBlIjoicmVjaXBlIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiVHJhZGl0aW9uYWwgQ3JvYXRpYW4gR291bGFzaCIsImluZ3JlZGllbnRzIjp7fSwiaW1hZ2UiOiJodHRwczovL3d3dy50aGVtZWFsZGIuY29tL2ltYWdlcy9tZWRpYS9tZWFscy9uMWhjb3UxNjI4NzcwMDg4LmpwZyIsImluc3RydWN0aW9ucyI6bnVsbCwiY2F0ZWdvcnkiOm51bGwsImFyZWEiOm51bGx9fSx7ImlkIjoiNTMwNjIiLCJ0eXBlIjoicmVjaXBlIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiV2FsbnV0IFJvbGwgR3XFvnZhcmEiLCJpbmdyZWRpZW50cyI6e30sImltYWdlIjoiaHR0cHM6Ly93d3cudGhlbWVhbGRiLmNvbS9pbWFnZXMvbWVkaWEvbWVhbHMvdTlsN2s4MTYyODc3MTY0Ny5qcGciLCJpbnN0cnVjdGlvbnMiOm51bGwsImNhdGVnb3J5IjpudWxsLCJhcmVhIjpudWxsfX1dfQ==
+  recorded_at: Sun, 05 Jun 2022 20:39:26 GMT
+recorded_with: VCR 6.1.0
