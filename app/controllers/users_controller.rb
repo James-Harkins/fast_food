@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     UserService.create_user(user_data)
     session[:email] = user_data[:email]
     redirect_to "/dashboard"
-
+  end
 
   def show
   end
