@@ -1,25 +1,21 @@
 class RecipesService 
 
-  def self.conn
-    Faraday.new(url: "http://localhost:5000") do |f|
+  def self.recipes_by_name(name)
+    conn = Faraday.new(url: "http://localhost:5000") do |f|
       f.adapter Faraday.default_adapter
     end
-  end 
-
-
-  def self.recipes_by_name(name)
-    # conn = Faraday.new(url: "http://localhost:5000") do |f|
-    #   f.adapter Faraday.default_adapter
-    # end
     response = conn.get("/api/v1/recipes/search") do |c|
-      c.params[:query] = name
+      c.params[:q] = name
     end
     results = JSON.parse(response.body, symbolize_names: true)[:data]
   end
 
   def self.recipes_by_ingredient(ingredient)
+    conn = Faraday.new(url: "http://localhost:5000") do |f|
+      f.adapter Faraday.default_adapter
+    end
     response = conn.get("/api/v1/recipes/ingredient") do |c|
-      c.params[:query] = ingredient
+      c.params[:q] = ingredient
     end
     results = JSON.parse(response.body, symbolize_names: true)[:data]
   end 

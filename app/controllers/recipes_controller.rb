@@ -9,7 +9,7 @@ class RecipesController < ApplicationController
     elsif params[:name]
       @query = params[:name]
       @recipes = RecipesFacade.find_recipes_by_name(@query)
-      
+      # binding.pry
     elsif params[:ingredient]
       @query = params[:ingredient]
       @recipes = RecipesFacade.find_recipes_by_ingredient(@query)

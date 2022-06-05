@@ -8,6 +8,7 @@
 <% if @recipes %>
   <center>
   <% @recipes.each do |recipe| %>
+
     <div id="recipe_id-<%= recipe.id %>">
       <ul><%= recipe.name %></ul>
 

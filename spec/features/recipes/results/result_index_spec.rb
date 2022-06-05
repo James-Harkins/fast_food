@@ -82,6 +82,9 @@ RSpec.describe "Recipe Results Index Page" do
           click_button
         end 
       end 
+
+      expect(page).to have_content("Search Results For: rice")
+    
       within "#recipe_id-52997" do
         expect(page).to have_content("Beef Banh Mi Bowls with Sriracha Mayo, Carrot & Pickled Cucumber")
       end
