@@ -10,7 +10,7 @@
   <% @recipes.each do |recipe| %>
 
     <div id="recipe_id-<%= recipe.id %>">
-      <ul><%= recipe.name %></ul>
+      <ul>   <%= link_to "#{recipe.name}", "/recipes/#{recipe.id}" %></ul>
 
     </div>
   <% end %>

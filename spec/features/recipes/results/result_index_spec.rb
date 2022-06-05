@@ -161,7 +161,7 @@ RSpec.describe "Recipe Results Index Page" do
           click_button
         end 
       end 
-
+      save_and_open_page
       within "#recipe_id-52935" do
         expect(page).to have_link("Steak Diane")
       end
