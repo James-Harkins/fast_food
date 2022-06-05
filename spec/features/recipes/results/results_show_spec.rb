@@ -2,34 +2,34 @@ require 'rails_helper'
 
 RSpec.describe "Recipe Results Show Page" do
 
-  # describe "As a Visitor - Happy Path" do
+  describe "As a Visitor - Happy Path" do
 
-  #   it 'Shows recipe details when clicking a recipe from the results index' do
-  #     visit '/recipes/search'
+    it 'Shows recipe details when clicking a recipe from the results index' do
+      visit '/recipes/search'
 
-  #     within("#recipes_search_name") do
-  #       fill_in "Search for Recipe by Name", with: 'pie'
-  #       within("#click_button") do
-  #         click_button
-  #       end 
-  #     end 
+      within("#recipes_search_name") do
+        fill_in "Search for Recipe by Name", with: 'pie'
+        within("#click_button") do
+          click_button
+        end 
+      end 
 
-  #     within "#recipe_id-52933" do
-  #       click_link "Rappie Pie"
-  #     end
-  #     # expect(current_path).to eq("/recipes/result")
-  #     expect(page).to have_content("Rappie Pie")
+      within "#recipe_id-52933" do
+        click_link "Rappie Pie"
+      end
+      # expect(current_path).to eq("/recipes/result")
+      expect(page).to have_content("Rappie Pie")
       
-  #     expect(page).to have_content("Ingredients")
-  #     within "#ingredients" do
-  #       expect(page).to have_content("Butter: 2 tbs")    
-  #       expect(page).to have_content("Onions: 2 chopped")    
-  #       expect(page).to have_content("Chicken Stock: 4 qt")    
-  #       expect(page).to have_content("Chicken Breast: 1.5kg")    
-  #       expect(page).to have_content("Potatoes: 4kg")    
-  #       expect(page).to have_content("Salt: 2 tbs")    
-  #       expect(page).to have_content("Black Pepper: 1tbsp")    
-  #     end 
+      expect(page).to have_content("Ingredients")
+      within "#ingredients" do
+        expect(page).to have_content("Butter: 2 tbs")    
+        expect(page).to have_content("Onions: 2 chopped")    
+        expect(page).to have_content("Chicken Stock: 4 qt")    
+        expect(page).to have_content("Chicken Breast: 1.5kg")    
+        expect(page).to have_content("Potatoes: 4kg")    
+        expect(page).to have_content("Salt: 2 tbs")    
+        expect(page).to have_content("Black Pepper: 1tbsp")    
+      end 
 
   #     expect(page).to have_content("Instructions")
   #     within "#ingredients" do
