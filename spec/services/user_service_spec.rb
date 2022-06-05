@@ -19,10 +19,10 @@ describe UserService do
         email = "kaepora.co@gmail.com"
 
         user = UserService.find_by_email(email)
-
+        
         expect(user).to be_a Hash
         expect(user[:data]).to be_a Hash
-        expect(user[:data][:id]).to eq("2")
+        expect(user[:data][:id]).to be_a String
         expect(user[:data][:attributes][:name]).to eq("Kaepora Music")
         expect(user[:data][:attributes][:email]).to eq(email)
       end

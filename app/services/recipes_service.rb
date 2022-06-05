@@ -37,4 +37,11 @@ class RecipesService
     response = conn.get("/api/v1/recipes/random_meal")
     result = JSON.parse(response.body, symbolize_names: true)[:data]
   end
+
+  def self.recipe_by_id(id)
+    response = conn.get("/api/v1/recipes/find") do |c|
+       c.params[:id] = id
+    end 
+    result = JSON.parse(response.body, symbolize_names: true)[:data]
+  end 
 end

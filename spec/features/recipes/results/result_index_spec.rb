@@ -146,6 +146,26 @@ RSpec.describe "Recipe Results Index Page" do
       within "#recipe_id-52929" do
         expect(page).to have_content("Timbits")
       end
-    end
-  end
-end
+    end 
+
+    it 'Each result is a link to that recipes show page', :vcr do
+    
+      visit '/recipes/search'
+
+      within "#recipes_search_name" do
+        fill_in "Search for Recipe by Name", with: 'steak'
+        within "#click_button" do
+          click_button
+        end 
+      end 
+      within "#recipe_id-52935" do
+        expect(page).to have_link("Steak Diane")
+      end
+      
+      within "#recipe_id-52881" do
+        click_link "Steak and Kidney Pie"
+      end
+      expect(current_path).to eq("/recipes/52881")
+    end 
+  end 
+end 

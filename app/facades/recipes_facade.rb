@@ -39,4 +39,9 @@ class RecipesFacade
     recipe_data = RecipesService.random_recipe
     Recipe.new(recipe_data)
   end
+
+  def self.find_recipe_by_id(id)
+    recipe_data = RecipesService.recipe_by_id(id)
+    Recipe.new(recipe_data)
+  end 
 end
