@@ -1,3 +1,5 @@
+<%= render "layouts/header" %>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 form.search_bar input[type=text]{
@@ -60,7 +62,7 @@ form.search_bar button {
   <div class="category_drop_down">
     <form method="get" id="category_drop_down" action="/recipes">
 
-      <select id="category" name="category">  
+      <select id="category" name="category">
         <option value="Category">Select a Category</option>
         <option value="Beef">Beef</option>
         <option value="Breakfast">Breakfast</option>
@@ -89,7 +91,7 @@ form.search_bar button {
   <div class="area_drop_down">
     <form id="area_drop_down" action="/recipes">
 
-      <select id="area" name="area">  
+      <select id="area" name="area">
         <option value="area">Select an Area</option>
         <option value="American">American</option>
         <option value="British">British</option>
