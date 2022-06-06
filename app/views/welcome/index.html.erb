@@ -1,10 +1,12 @@
-<h1>FAST FOOD</h1>
+<div class="container text-center">
+  <h1>FAST FOOD</h1>
 
-<% if current_user %>
+  <% if current_user %>
   <%= button_to "Log Out", "/sessions", method: :delete %>
-<% else %>
+  <% else %>
   <%= button_to "Log In With Google", "/auth/google_oauth2", method: :get %>
-<% end %>
-<br>
+  <% end %>
+  <br>
 
-<%= button_to "Browse Recipes", "/recipes/search", method: :get %>
+  <%= button_to "Browse Recipes", "/recipes/search", method: :get %>
+</div>
