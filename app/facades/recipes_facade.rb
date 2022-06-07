@@ -47,6 +47,6 @@ class RecipesFacade
 
   def self.user_saved_recipes(user_id)
     saved_recipes = RecipesService.user_saved_recipes(user_id)
-    saved_recipes.map { |recipe| Recipe.new(recipe) }
+    saved_recipes.map { |recipe| SavedRecipe.new(recipe) }
   end
 end
