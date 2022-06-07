@@ -17,7 +17,7 @@ RSpec.describe "Recipe Results Show Page" do
       within "#recipe_id-52933" do
         click_link "Rappie Pie"
       end
-      
+    
       expect(current_path).to eq("/recipes/52933")
       expect(page).to have_content("Rappie Pie")
       
@@ -34,10 +34,20 @@ RSpec.describe "Recipe Results Show Page" do
 
       expect(page).to have_content("Instructions")
       within "#instructions" do
-        expect(page).to have_content("Preheat oven to 400 degrees F (200 degrees C). Grease a 10x14x2-inch baking pan")    
-        expect(page).to have_content("ake in the preheated oven until golden brown, about 1 hour. Reheat chicken broth; pour over individual servings as desired.")    
+        expect(page).to have_content("Preheat oven to 400 degrees F (200 degrees C)")    
       end 
     end
+
+    it 'has a button to save the recipe if current_user is present', :vcr do
+      visit "/recipes/52933"
+      
+      click_on "Save This Recipe"
+
+      expect(current_path).to eq('/dashboard')
+
+    end 
+
+
   end 
 
 

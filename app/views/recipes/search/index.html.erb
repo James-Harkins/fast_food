@@ -19,12 +19,7 @@ form.search_bar button {
   border-left: none; /* Prevent double borders */
   cursor: pointer;
 }
-
-/*drop down styles */
-
 </style>
-
-<!-- Load icon library -->
 
 <center>
 <h1>Search for a Recipe</h1>
@@ -42,6 +37,7 @@ form.search_bar button {
   </form>
 </div>
 
+
 <br>
 
 <div id="recipes_search_ingredient">
@@ -55,12 +51,18 @@ form.search_bar button {
 </div>
 
 <br>
+
+
+
+
+
+
 <div id="recipes_select_categories">
 
   <div class="category_drop_down">
     <form method="get" id="category_drop_down" action="/recipes">
 
-      <select id="category" name="category">  
+      <select name="category">  
         <option value="Category">Select a Category</option>
         <option value="Beef">Beef</option>
         <option value="Breakfast">Breakfast</option>
@@ -78,7 +80,8 @@ form.search_bar button {
         <option value="Vegetarian">Vegetarian</option>
       </select>
 
-      <button type="submit">Search</button>
+      <%# <button type="submit">Search</button> %>
+      <button type="submit" id="cat_button" class="btn btn-info">Search</button>
     </form>
   </div>
 </div>
@@ -127,9 +130,16 @@ form.search_bar button {
 
 
 
+<div class="dropdown">
+ <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">    Select a Category
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="/recipes?category=beef">Beef</a>
+    <a class="dropdown-item" href="/recipes">Another action</a>
+    <a class="dropdown-item" href="/recipes">Something else here</a>
 
-
-
+  </div>
+</div>
 
 
 

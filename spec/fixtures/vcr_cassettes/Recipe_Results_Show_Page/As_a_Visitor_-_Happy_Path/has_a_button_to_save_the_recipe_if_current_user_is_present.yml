@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/recipes/find?id=52933
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"13d6c4f161ff0ab6e5bc852e4e748b59"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 63c7c401-d055-4571-a44c-c04e64bdc0cc
+      X-Runtime:
+      - '0.466913'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"52933","type":"recipe","attributes":{"name":"Rappie
+        Pie","ingredients":{"Butter":"2 tbs","Onions":"2 chopped","Chicken Stock":"4
+        qt ","Chicken Breast":"1.5kg","Potatoes":"4kg","Salt":"2 tbs","Black Pepper":"1tbsp","":""},"image":"https://www.themealdb.com/images/media/meals/ruwpww1511817242.jpg","instructions":"Preheat
+        oven to 400 degrees F (200 degrees C). Grease a 10x14x2-inch baking pan.\r\nHeat
+        margarine in a skillet over medium heat; stir in onion. Cook and stir until
+        onion has softened and turned translucent, about 5 minutes. Reduce heat to
+        low and continue to cook and stir until onion is very tender and dark brown,
+        about 40 minutes more.\r\nBring chicken broth to a boil in a large pot; stir
+        in chicken breasts, reduce heat, and simmer until chicken is no longer pink
+        at the center, about 20 minutes. Remove from heat. Remove chicken breasts
+        to a plate using a slotted spoon; reserve broth.\r\nJuice potatoes with an
+        electric juicer; place dry potato flesh into a bowl and discard juice. Stir
+        salt and pepper into potatoes; stir in enough reserved broth to make the mixture
+        the consistency of oatmeal. Set remaining broth aside.\r\nSpread half of potato
+        mixture evenly into the prepared pan. Lay cooked chicken breast evenly over
+        potatoes; scatter caramelized onion evenly over chicken. Spread remaining
+        potato mixture over onions and chicken to cover.\r\nBake in the preheated
+        oven until golden brown, about 1 hour. Reheat chicken broth; pour over individual
+        servings as desired.","category":"Chicken","area":"Canadian"}}}'
+  recorded_at: Tue, 07 Jun 2022 17:17:34 GMT
+recorded_with: VCR 6.1.0

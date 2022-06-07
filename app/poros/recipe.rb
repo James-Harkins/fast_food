@@ -13,5 +13,12 @@ class Recipe
 
   end 
 
+  def instruction_steps
+    @instructions.split('.').map do |instruction|
+      instruction.gsub("\r\n", " ")
+    end
+  end
+  
+
 
 end 
