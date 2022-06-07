@@ -75,3 +75,17 @@ VCR.configure do |config|
   config.hook_into :webmock
   config.configure_rspec_metadata!
 end
+
+OmniAuth.config.test_mode = true
+OmniAuth.config.mock_auth[:google_oauth2] = OmniAuth::AuthHash.new({
+  provider: "google_oauth2",
+  uid: "2345",
+  info: {
+    name: "Example User",
+    email: "example@example.com"
+  },
+  credentials: {
+    token: "token",
+    refresh_token: "refresh token"
+  }
+})
