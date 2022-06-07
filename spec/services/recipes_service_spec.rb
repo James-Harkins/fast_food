@@ -96,13 +96,9 @@ RSpec.describe RecipesService do
         expect(saved_recipes.first).to be_a Hash
         expect(saved_recipes.first).to have_key(:id)
         expect(saved_recipes.first).to have_key(:attributes)
-        expect(saved_recipes.first[:attributes]).to have_key(:name)
-        expect(saved_recipes.first[:attributes]).to have_key(:image)
-        expect(saved_recipes.first[:attributes]).to have_key(:ingredients)
-        expect(saved_recipes.first[:attributes][:ingredients]).to be_a(Hash)
-        expect(saved_recipes.first[:attributes]).to have_key(:instructions)
-        expect(saved_recipes.first[:attributes]).to have_key(:category)
-        expect(saved_recipes.first[:attributes]).to have_key(:area)
+        expect(saved_recipes.first[:attributes]).to have_key(:user_id)
+        expect(saved_recipes.first[:attributes]).to have_key(:recipe_id)
+        expect(saved_recipes.first[:attributes]).to have_key(:recipe_name)
       end
     end
   end

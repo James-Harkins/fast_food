@@ -40,8 +40,15 @@ class RecipesService
 
   def self.recipe_by_id(id)
     response = conn.get("/api/v1/recipes/find") do |c|
-       c.params[:id] = id
-    end 
+      c.params[:id] = id
+    end
     result = JSON.parse(response.body, symbolize_names: true)[:data]
-  end 
+  end
+
+  def self.user_saved_recipes(user_id)
+    response = conn.get("/api/v1/saved_recipes") do |c|
+      c.params[:user_id] = user_id
+    end
+    result = JSON.parse(response.body, symbolize_names: true)[:data]
+  end
 end
