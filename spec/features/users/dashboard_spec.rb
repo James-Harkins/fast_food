@@ -26,7 +26,7 @@ describe "as a logged-in user" do
       expect(current_path).to eq("/recipes/random")
     end
 
-    it "i see a list of all of my saved recipes, which are links to their show pages" do
+    it "i see a list of all of my saved recipes, which are links to their show pages", :vcr do
       within "#saved_recipes" do
         expect(page).to have_link("Garides Saganaki")
         expect(page).to have_link("Apple & Blackberry Crumble")
