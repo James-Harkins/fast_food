@@ -25,5 +25,13 @@ describe "as a logged-in user" do
 
       expect(current_path).to eq("/recipes/random")
     end
+
+    it "i see a list of all of my saved recipes, which are links to their show pages" do
+      within "#saved_recipes" do
+        expect(page).to have_link("Garides Saganaki")
+        expect(page).to have_link("Apple & Blackberry Crumble")
+        expect(page).to have_link("Beef Lo Mein")
+      end
+    end
   end
 end
