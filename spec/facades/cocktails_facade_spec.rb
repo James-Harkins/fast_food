@@ -3,7 +3,7 @@ require "rails_helper"
 describe CocktailsFacade do
   describe "class methods" do
     describe "#find_by_area" do
-      it "returns a cocktail PORO based on area input using the CocktailsService#find_by_area class method" do
+      it "returns a cocktail PORO based on area input using the CocktailsService#find_by_area class method", :vcr do
         drink = CocktailsFacade.find_by_area("American")
 
         expected_ids = ((drink.id == "17206") || (drink.id == "11001") || (drink.id == "11008"))
