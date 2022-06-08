@@ -1,0 +1,285 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:5000/api/v1/users?email=example@example.com&name=Example%20User
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ec4fdc15dfb4a03670eb572bd9c49330"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e978b086-2a4e-4186-9e7d-9c4cc3faea39
+      X-Runtime:
+      - '0.042665'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Wed, 08 Jun 2022 00:10:38 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/user?email=example@example.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ec4fdc15dfb4a03670eb572bd9c49330"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - acfa1823-ce83-48fe-a81e-1cfe632bccd3
+      X-Runtime:
+      - '0.002636'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Wed, 08 Jun 2022 00:10:38 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/saved_recipes?user_id=7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"9ab991182cb9af9c66bc628ebd44192e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 28ca4433-8797-4265-b881-b39751e88b2b
+      X-Runtime:
+      - '0.006895'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"7","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Garides
+        Saganaki","recipe_id":"52764"}},{"id":"8","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Apple
+        \u0026 Blackberry Crumble","recipe_id":"52893"}},{"id":"9","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Beef
+        Lo Mein","recipe_id":"52952"}}]}'
+  recorded_at: Wed, 08 Jun 2022 00:10:38 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/user?email=example@example.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ec4fdc15dfb4a03670eb572bd9c49330"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b1125e71-da60-4039-8ae4-6714861b489d
+      X-Runtime:
+      - '0.002643'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Wed, 08 Jun 2022 00:10:38 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/user?email=example@example.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ec4fdc15dfb4a03670eb572bd9c49330"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d1008111-621a-4ba3-9f58-eaa6ec50c3c3
+      X-Runtime:
+      - '0.002001'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Wed, 08 Jun 2022 00:10:38 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/recipes/find?id=52803
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"f127174676fdbcb8f30a8974bac3541e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d40e74fd-6a47-4c1a-b227-0c5af4c90684
+      X-Runtime:
+      - '0.351762'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjoiNTI4MDMiLCJ0eXBlIjoicmVjaXBlIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiQmVlZiBXZWxsaW5ndG9uIiwiaW5ncmVkaWVudHMiOnsibXVzaHJvb21zIjoiNDAwZyIsIkVuZ2xpc2ggTXVzdGFyZCI6IjEtMnRic3AiLCJPbGl2ZSBPaWwiOiJEYXNoIiwiQmVlZiBGaWxsZXQiOiI3NTBnIHBpZWNlIiwiUGFybWEgaGFtIjoiNi04IHNsaWNlcyIsIlB1ZmYgUGFzdHJ5IjoiNTAwZyIsIkZsb3VyIjoiRHVzdGluZyIsIkVnZyBZb2xrcyI6IjIgQmVhdGVuICIsIiI6IiJ9LCJpbWFnZSI6Imh0dHBzOi8vd3d3LnRoZW1lYWxkYi5jb20vaW1hZ2VzL21lZGlhL21lYWxzL3Z2cHByeDE0ODczMjU2OTkuanBnIiwiaW5zdHJ1Y3Rpb25zIjoiUHV0IHRoZSBtdXNocm9vbXMgaW50byBhIGZvb2QgcHJvY2Vzc29yIHdpdGggc29tZSBzZWFzb25pbmcgYW5kIHB1bHNlIHRvIGEgcm91Z2ggcGFzdGUuIFNjcmFwZSB0aGUgcGFzdGUgaW50byBhIHBhbiBhbmQgY29vayBvdmVyIGEgaGlnaCBoZWF0IGZvciBhYm91dCAxMCBtaW5zLCB0b3NzaW5nIGZyZXF1ZW50bHksIHRvIGNvb2sgb3V0IHRoZSBtb2lzdHVyZSBmcm9tIHRoZSBtdXNocm9vbXMuIFNwcmVhZCBvdXQgb24gYSBwbGF0ZSB0byBjb29sLlxyXG5IZWF0IGluIGEgZnJ5aW5nIHBhbiBhbmQgYWRkIGEgbGl0dGxlIG9saXZlIG9pbC4gU2Vhc29uIHRoZSBiZWVmIGFuZCBzZWFyIGluIHRoZSBob3QgcGFuIGZvciAzMCBzZWNzIG9ubHkgb24gZWFjaCBzaWRlLiAoWW91IGRvbid0IHdhbnQgdG8gY29vayBpdCBhdCB0aGlzIHN0YWdlLCBqdXN0IGNvbG91ciBpdCkuIFJlbW92ZSB0aGUgYmVlZiBmcm9tIHRoZSBwYW4gYW5kIGxlYXZlIHRvIGNvb2wsIHRoZW4gYnJ1c2ggYWxsIG92ZXIgd2l0aCB0aGUgbXVzdGFyZC5cclxuTGF5IGEgc2hlZXQgb2YgY2xpbmcgZmlsbSBvbiBhIHdvcmsgc3VyZmFjZSBhbmQgYXJyYW5nZSB0aGUgUGFybWEgaGFtIHNsaWNlcyBvbiBpdCwgaW4gc2xpZ2h0bHkgb3ZlcmxhcHBpbmcgcm93cy4gV2l0aCBhIHBhbGV0dGUga25pZmUsIHNwcmVhZCB0aGUgbXVzaHJvb20gcGFzdGUgb3ZlciB0aGUgaGFtLCB0aGVuIHBsYWNlIHRoZSBzZWFyZWQgYmVlZiBmaWxsZXQgaW4gdGhlIG1pZGRsZS4gS2VlcGluZyBhIHRpZ2h0IGhvbGQgb2YgdGhlIGNsaW5nIGZpbG0gZnJvbSB0aGUgZWRnZSwgbmVhdGx5IHJvbGwgdGhlIFBhcm1hIGhhbSBhbmQgbXVzaHJvb21zIGFyb3VuZCB0aGUgYmVlZiB0byBmb3JtIGEgdGlnaHQgYmFycmVsIHNoYXBlLiBUd2lzdCB0aGUgZW5kcyBvZiB0aGUgY2xpbmcgZmlsbSB0byBzZWN1cmUuIENoaWxsIGZvciAxNS0yMCBtaW5zIHRvIGFsbG93IHRoZSBiZWVmIHRvIHNldCBhbmQga2VlcCBpdHMgc2hhcGUuXHJcblJvbGwgb3V0IHRoZSBwdWZmIHBhc3RyeSBvbiBhIGZsb3VyZWQgc3VyZmFjZSB0byBhIGxhcmdlIHJlY3RhbmdsZSwgdGhlIHRoaWNrbmVzcyBvZiBhIMKjMSBjb2luLiBSZW1vdmUgdGhlIGNsaW5nIGZpbG0gZnJvbSB0aGUgYmVlZiwgdGhlbiBsYXkgaW4gdGhlIGNlbnRyZS4gQnJ1c2ggdGhlIHN1cnJvdW5kaW5nIHBhc3RyeSB3aXRoIGVnZyB5b2xrLiBGb2xkIHRoZSBlbmRzIG92ZXIsIHRoZSB3cmFwIHRoZSBwYXN0cnkgYXJvdW5kIHRoZSBiZWVmLCBjdXR0aW5nIG9mZiBhbnkgZXhjZXNzLiBUdXJuIG92ZXIsIHNvIHRoZSBzZWFtIGlzIHVuZGVybmVhdGgsIGFuZCBwbGFjZSBvbiBhIGJha2luZyBzaGVldC4gQnJ1c2ggb3ZlciBhbGwgdGhlIHBhc3RyeSB3aXRoIGVnZyBhbmQgY2hpbGwgZm9yIGFib3V0IDE1IG1pbnMgdG8gbGV0IHRoZSBwYXN0cnkgcmVzdC5cclxuSGVhdCB0aGUgb3ZlbiB0byAyMDBDLCA0MDBGLCBnYXMgNi5cclxuTGlnaHRseSBzY29yZSB0aGUgcGFzdHJ5IGF0IDFjbSBpbnRlcnZhbHMgYW5kIGdsYXplIGFnYWluIHdpdGggYmVhdGVuIGVnZyB5b2xrLiBCYWtlIGZvciAyMCBtaW51dGVzLCB0aGVuIGxvd2VyIHRoZSBvdmVuIHNldHRpbmcgdG8gMTgwQywgMzUwRiwgZ2FzIDQgYW5kIGNvb2sgZm9yIGFub3RoZXIgMTUgbWlucy4gQWxsb3cgdG8gcmVzdCBmb3IgMTAtMTUgbWlucyBiZWZvcmUgc2xpY2luZyBhbmQgc2VydmluZyB3aXRoIHRoZSBzaWRlIGRpc2hlcyBvZiB5b3VyIGNob2ljZS4gVGhlIGJlZWYgc2hvdWxkIHN0aWxsIGJlIHBpbmsgaW4gdGhlIGNlbnRyZSB3aGVuIHlvdSBzZXJ2ZSBpdC4iLCJjYXRlZ29yeSI6IkJlZWYiLCJhcmVhIjoiQnJpdGlzaCJ9fX0=
+  recorded_at: Wed, 08 Jun 2022 00:10:38 GMT
+recorded_with: VCR 6.1.0
