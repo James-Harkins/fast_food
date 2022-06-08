@@ -1,11 +1,9 @@
 class RecipesController < ApplicationController
-
   def index
-
     if params[:area].blank? && params[:category].blank? && params[:name].blank? && params[:ingredient].blank?
       flash[:error] = "Please Enter a Search Parameter"
       redirect_to "/recipes/search"
-      
+
     elsif params[:name]
       @query = params[:name]
       @recipes = RecipesFacade.find_recipes_by_name(@query)
@@ -20,13 +18,14 @@ class RecipesController < ApplicationController
     elsif params[:area]
       @query = params[:area]
       @recipes = RecipesFacade.find_recipes_by_area(@query)
-    end 
+    end
   end
 
   def show
-    id = params[:id]
-    @recipe = RecipesFacade.find_recipe_by_id(id)
-  end 
-  
-  
-end 
+    @recipe = if params[:id] == "random"
+      RecipesFacade.random_recipe
+    else
+      RecipesFacade.find_recipe_by_id(params[:id])
+    end
+  end
+end

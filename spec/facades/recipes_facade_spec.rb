@@ -34,4 +34,11 @@ RSpec.describe RecipesFacade do
     recipe = RecipesFacade.find_recipe_by_id("52935")
     expect(recipe).to be_a Recipe
   end
+
+  it "returns recipe poros for all of a given user's saved recipes", :vcr do
+    saved_recipes = RecipesFacade.user_saved_recipes(7)
+    expect(saved_recipes).to be_all SavedRecipe
+    expect(saved_recipes.first.id).to eq("52764")
+    expect(saved_recipes.first.name).to eq("Garides Saganaki")
+  end
 end

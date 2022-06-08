@@ -2,15 +2,13 @@ class Recipe
   attr_reader :id, :name, :category, :area, :image, :ingredients, :instructions
 
   def initialize(attributes)
-    @id = attributes[:id]
-    @name = attributes[:attributes][:name]
+    @id = attributes[:id] || attributes[:attributes][:recipe_id]
+    @name = attributes[:attributes][:name] || attributes[:attributes][:recipe_name]
     @category = attributes[:attributes][:category]
     @area = attributes[:attributes][:area]
     @image = attributes[:attributes][:image]
     @ingredients = attributes[:attributes][:ingredients]
     @instructions = attributes[:attributes][:instructions]
-
-
   end 
 
   def instruction_steps
@@ -18,7 +16,4 @@ class Recipe
       instruction.gsub("\r\n", " ")
     end
   end
-  
-
-
-end 
+end

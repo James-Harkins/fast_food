@@ -11,5 +11,6 @@ class UsersController < ApplicationController
   end
 
   def show
+    @saved_recipes = RecipesFacade.user_saved_recipes(current_user.id)
   end
 end

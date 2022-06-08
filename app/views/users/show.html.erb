@@ -1,3 +1,14 @@
-<% if current_user %>
-  <h1><%= current_user.name %></h1>
-<% end %>
+<%= render "layouts/header" %>
+
+<div class="container text-center">
+  <% if current_user %>
+    <h1><%= current_user.name %></h1>
+    <% if @saved_recipes %>
+      <div id="saved_recipes">
+        <% @saved_recipes.each do |recipe| %>
+          <%= link_to "#{recipe.name}", "/recipes/#{recipe.id}" %>
+        <% end %>
+      </div>
+    <% end %>
+  <% end %>
+</div>
