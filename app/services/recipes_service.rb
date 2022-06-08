@@ -51,4 +51,12 @@ class RecipesService
     end
     result = JSON.parse(response.body, symbolize_names: true)[:data]
   end
+
+  def self.save_recipe(recipe_data)
+    response = conn.post("/api/v1/saved_recipes") do |c|
+      c.params[:user_id] = recipe_data[:user_id]
+      c.params[:recipe_id] = recipe_data[:recipe_id]
+      c.params[:recipe_name] = recipe_data[:recipe_name]
+    end
+  end
 end
