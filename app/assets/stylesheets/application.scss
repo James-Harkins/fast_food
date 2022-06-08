@@ -15,6 +15,226 @@
  // Custom bootstrap variables must be set or imported *before* bootstrap.
  @import "bootstrap";
 
+
+
+
+
+
  body {
    background-color: rgb(255, 237, 219);
  }
+// root page
+
+
+
+
+ // Recipe show page styling
+ #image_of_recipe {
+  width: 250px;
+  border: 2px solid rgb(184, 92, 56);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  // justify-content: center;
+    display: block;
+      margin-left: auto;
+      margin-right: auto;
+ }
+
+ #name_of_recipe {
+  width: 250px;
+  border: 2px solid rgb(184, 92, 56);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  font-family: "Verdana";
+  text-align: center;
+ }
+
+#ingredient_header {
+  width: 250px;
+  border: 2px solid rgb(184, 92, 56);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  font-family: "Verdana";
+  text-align: center;
+}
+
+#ingredient_name {
+  width: 3px;
+  border: 2px solid rgb(184, 92, 56);
+  padding: 2px;
+  margin: 2px;
+  border-radius: 10px;
+  display: table-cell;
+  font-family: "Verdana";
+  text-align: center;
+}
+
+#ingredient_amount {
+  width: 3px;
+  border: 2px solid rgb(184, 92, 56);
+  padding: 2px;
+  margin: 2px;
+  border-radius: 10px;
+  display: table-cell;
+  font-family: "Verdana";
+  text-align: center;
+}
+
+#ingredient_row {
+  display: table;
+  width: 50%;
+  table-layout: fixed;
+  border-spacing: 10px;
+}
+
+#instructions_header {
+  width: 250px;
+  border: 2px solid rgb(184, 92, 56);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  font-family: "Verdana";
+  text-align: center;
+}
+
+#instruction_step {
+  width: 3px;
+  border: 2px solid rgb(184, 92, 56);
+  padding: 2px;
+  margin: 2px;
+  border-radius: 10px;
+  display: table-cell;
+  font-family: "Verdana";
+  text-align: left;
+}
+
+#instruction_row {
+  display: table;
+  width: 50%;
+  table-layout: fixed;
+  border-spacing: 10px;
+}
+
+.whole_page {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+// recipe search index (search for recipe)
+
+.category_drop_down {
+  appearance: none;
+  outline: 0;
+  background: rgb(184, 92, 56);
+  background-image: none;
+  width: 55%;
+  height: 55%;
+  color: rgb(184, 92, 56);
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+select {
+  position: relative;
+  display: block;
+  width: 15em;
+  height: 2em;
+  line-height: 3;
+  overflow: hidden;
+  border-radius: .25em;
+  padding-bottom: 10px;
+}
+
+#cat_button {
+  position: right;
+  justify-content: right;
+  color: rgb(92, 61, 46);
+  background-color:rgb(224, 192, 151);
+}
+///// 
+
+li a {
+  text-decoration: none;
+  font-variant: small-caps;
+  color: #2d2f31;
+    font-size: 1.2em;
+}
+
+
+nav {
+  width: 300px;
+  background-color: rgb(224, 192, 151);
+  margin: 40px auto;
+}
+
+span {
+  padding: 15px;
+  background: rgb(184, 92, 56);
+  color: white;
+  font-size: 1.2em;
+  font-variant: small-caps;
+  cursor: pointer;
+  display: block;
+}
+
+span::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear: both;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+}
+
+.slide li {
+  padding: 10px;
+}
+
+#touch {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+
+#touch:checked+.slide {
+  height: 680px;
+}
+
+.slide2 {
+  clear: both;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+}
+
+.slide2 li {
+  padding: 10px;
+}
+
+#touch2 {
+  position: absolute;
+  opacity: 0;
+  height: 0px;
+}
+
+#touch2:checked+.slide2 {
+  height: 1215px;
+}
+

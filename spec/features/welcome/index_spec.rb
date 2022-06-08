@@ -18,6 +18,7 @@ describe "landing page" do
       end
     end
   end
+  
   describe "as a logged-in user" do
     describe "when i visit the root path" do
       it "i see a button to login, which redirects me to the google oauth2 page and then to my dashboard", :vcr do

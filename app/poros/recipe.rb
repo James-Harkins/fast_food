@@ -9,5 +9,11 @@ class Recipe
     @image = attributes[:attributes][:image]
     @ingredients = attributes[:attributes][:ingredients]
     @instructions = attributes[:attributes][:instructions]
+  end 
+
+  def instruction_steps
+    @instructions.split('.').map do |instruction|
+      instruction.gsub("\r\n", " ")
+    end
   end
 end

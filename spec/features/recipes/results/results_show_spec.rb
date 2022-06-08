@@ -17,27 +17,37 @@ RSpec.describe "Recipe Results Show Page" do
       within "#recipe_id-52933" do
         click_link "Rappie Pie"
       end
-      
+    
       expect(current_path).to eq("/recipes/52933")
       expect(page).to have_content("Rappie Pie")
       
       expect(page).to have_content("Ingredients")
       within "#ingredients" do
-        expect(page).to have_content("Butter: 2 tbs")    
-        expect(page).to have_content("Onions: 2 chopped")    
-        expect(page).to have_content("Chicken Stock: 4 qt")    
-        expect(page).to have_content("Chicken Breast: 1.5kg")    
-        expect(page).to have_content("Potatoes: 4kg")    
-        expect(page).to have_content("Salt: 2 tbs")    
-        expect(page).to have_content("Black Pepper: 1tbsp")    
+        expect(page).to have_content("Butter:")    
+        expect(page).to have_content("2 tbs")    
+        expect(page).to have_content("Onions:")    
+        expect(page).to have_content("2 chopped")    
+        expect(page).to have_content("Chicken Stock:")    
+        expect(page).to have_content("4 qt")    
+        expect(page).to have_content("Chicken Breast:")    
+        expect(page).to have_content("1.5kg")    
+        expect(page).to have_content("Potatoes:")    
+        expect(page).to have_content("4kg")    
+        expect(page).to have_content("Salt:")    
+        expect(page).to have_content("2 tbs")    
+        expect(page).to have_content("Black Pepper:")    
+        expect(page).to have_content("1tbsp")    
       end 
 
       expect(page).to have_content("Instructions")
       within "#instructions" do
-        expect(page).to have_content("Preheat oven to 400 degrees F (200 degrees C). Grease a 10x14x2-inch baking pan")    
-        expect(page).to have_content("ake in the preheated oven until golden brown, about 1 hour. Reheat chicken broth; pour over individual servings as desired.")    
+        expect(page).to have_content("Preheat oven to 400 degrees F (200 degrees C)")    
       end 
     end
+
+
+
+
   end 
 
 

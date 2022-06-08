@@ -101,10 +101,8 @@ RSpec.describe "Recipe Results Index Page" do
 
     it "Has results for selecting a recipe category", :vcr do
       visit "/recipes/search"
-      within(".category_drop_down") do
-        select "Beef", from: "category"
-        click_button "Search"
-      end
+      
+      click_on "Beef"
 
       within "#recipe_id-52874" do
         expect(page).to have_content("Beef and Mustard Pie")
@@ -125,12 +123,9 @@ RSpec.describe "Recipe Results Index Page" do
 
     it "Has results for selecting an area", :vcr do
       visit "/recipes/search"
-
-      within(".area_drop_down") do
-        select "Canadian", from: "area"
-        click_button "Search"
-      end
-
+      
+      click_on "Canadian"
+    
       within "#recipe_id-52928" do
         expect(page).to have_content("BeaverTails")
       end

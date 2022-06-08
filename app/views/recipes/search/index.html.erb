@@ -8,28 +8,26 @@ form.search_bar input[type=text]{
   border: 1px solid grey;
   float: center;
   width: 45%;
-  backgroud: #f1f1f1;
+  background-color:rgb(224, 192, 151);
+
 }
 form.search_bar button {
   float: center;
   width: 10%;
   padding: 10px;
-  background: #2196F3;
+  background: rgb(184, 92, 56);
+  
   color: white;
   font-size: 17px;
   border: 1px solid grey;
   border-left: none; /* Prevent double borders */
   cursor: pointer;
 }
-
-/*drop down styles */
-
 </style>
 
-<!-- Load icon library -->
-
 <center>
-<h1>Search for a Recipe</h1>
+<h1 class="animate__animated animate__lightSpeedInLeft">Search for a Recipe</h1>
+
 </center>
 
 <center>
@@ -44,6 +42,7 @@ form.search_bar button {
   </form>
 </div>
 
+
 <br>
 
 <div id="recipes_search_ingredient">
@@ -57,80 +56,79 @@ form.search_bar button {
 </div>
 
 <br>
+
+
 <div id="recipes_select_categories">
+  <h3 class="animate__animated animate__lightSpeedInRight">Select a Category</h3>
+  
+  <nav>
 
-  <div class="category_drop_down">
-    <form method="get" id="category_drop_down" action="/recipes">
+    <label for="touch"><span>Category</span></label>               
+    <input type="checkbox" id="touch"> 
 
-      <select id="category" name="category">
-        <option value="Category">Select a Category</option>
-        <option value="Beef">Beef</option>
-        <option value="Breakfast">Breakfast</option>
-        <option value="Chicken">Chicken</option>
-        <option value="Dessert">Dessert</option>
-        <option value="Goat">Goat</option>
-        <option value="Lamb">Lamb</option>
-        <option value="Miscellaneous">Miscellaneous</option>
-        <option value="Pasta">Pasta</option>
-        <option value="Pork">Pork</option>
-        <option value="Seafood">Seafood</option>
-        <option value="Side" name="Side">Side</option>
-        <option value="Starter">Starter</option>
-        <option value="Vegan">Vegan</option>
-        <option value="Vegetarian">Vegetarian</option>
-      </select>
+    <ul class="slide">
+      <li><a href="/recipes?category=Beef">Beef</a></li> 
+      <li><a href="/recipes?category=Breakfast">Breakfast</a></li>
+      <li><a href="/recipes?category=Beef">Chicken</a></li>
+      <li><a href="/recipes?category=Chicken">Dessert</a></li>
+      <li><a href="/recipes?category=Goat">Goat</a></li>
+      <li><a href="/recipes?category=Lamb">Lamb</a></li>
+      <li><a href="/recipes?category=Miscellaneous">Miscellaneous</a></li>
+      <li><a href="/recipes?category=Pasta">Pasta</a></li>
+      <li><a href="/recipes?category=Pork">Pork</a></li>
+      <li><a href="/recipes?category=Seafood">Seafood</a></li>
+      <li><a href="/recipes?category=Side">Side</a></li>
+      <li><a href="/recipes?category=Starter">Starter</a></li>
+      <li><a href="/recipes?category=Vegan">Vegan</a></li>
+      <li><a href="/recipes?category=Vegetarian">Vegetarian</a></li>
+    </ul>
+  </nav> 
 
-      <button type="submit">Search</button>
-    </form>
-  </div>
 </div>
 
-<br>
+
 <div id="recipes_select_area">
+<h3 class="animate__animated animate__lightSpeedInRight">Select an Area</h3>
+  <nav>
 
-  <div class="area_drop_down">
-    <form id="area_drop_down" action="/recipes">
+    <label for="touch2"><span>Area</span></label>               
+    <input type="checkbox" id="touch2"> 
 
-      <select id="area" name="area">
-        <option value="area">Select an Area</option>
-        <option value="American">American</option>
-        <option value="British">British</option>
-        <option value="Canadian">Canadian</option>
-        <option value="Chinese">Chinese</option>
-        <option value="Croatian">Croatian</option>
-        <option value="Dutch">Dutch</option>
-        <option value="Egyptian">Egyptian</option>
-        <option value="French">French</option>
-        <option value="Greek">Greek</option>
-        <option value="Indian">Indian</option>
-        <option value="Irish">Irish</option>
-        <option value="Italian">Italian</option>
-        <option value="Jamaican">Jamaican</option>
-        <option value="Japanese">Japanese</option>
-        <option value="Kenyan">Kenyan</option>
-        <option value="Malaysian">Malaysian</option>
-        <option value="Mexican">Mexican</option>
-        <option value="Moroccan">Moroccan</option>
-        <option value="Polish">Polish</option>
-        <option value="Portuguese">Portuguese</option>
-        <option value="Russian">Russian</option>
-        <option value="Spanish">Spanish</option>
-        <option value="Thai">Thai</option>
-        <option value="Tunisian">Tunisian</option>
-        <option value="Turkish">Turkish</option>
-        <option value="Unknown">Unknown</option>
-        <option value="Vietnamese">Vietnamese</option>
-      </select>
-
-      <button type="submit">Search</button>
-    </form>
-  </div>
+    <ul class="slide2">
+      <li><a href="/recipes?area=American">American</a></li> 
+      <li><a href="/recipes?area=British">British</a></li>
+      <li><a href="/recipes?area=Canadian">Canadian</a></li>
+      <li><a href="/recipes?area=Canadian">Chicken</a></li>
+      <li><a href="/recipes?area=Chinese">Chinese</a></li>
+      <li><a href="/recipes?area=Croatian">Croatian</a></li>
+      <li><a href="/recipes?area=Dutch">Dutch</a></li>
+      <li><a href="/recipes?area=Greek">Greek</a></li>
+      <li><a href="/recipes?area=Indian">Indian</a></li>
+      <li><a href="/recipes?area=Irish">Irish</a></li>
+      <li><a href="/recipes?area=Italian">Italian</a></li>
+      <li><a href="/recipes?area=Jamaican">Jamaican</a></li>
+      <li><a href="/recipes?area=Japanese">Japanese</a></li>
+      <li><a href="/recipes?area=Kenyan">Kenyan</a></li>
+      <li><a href="/recipes?area=Malaysian">Malaysian</a></li>
+      <li><a href="/recipes?area=Mexican">Mexican</a></li>
+      <li><a href="/recipes?area=Moroccan">Moroccan</a></li>
+      <li><a href="/recipes?area=Polish">Polish</a></li>
+      <li><a href="/recipes?area=Portuguese">Portuguese</a></li>
+      <li><a href="/recipes?area=Russian">Russian</a></li>
+      <li><a href="/recipes?area=Spanish">Spanish</a></li>
+      <li><a href="/recipes?area=Thai">Thai</a></li>
+      <li><a href="/recipes?area=Tunisian">Tunisian</a></li>
+      <li><a href="/recipes?area=Turkish">Turkish</a></li>
+      <li><a href="/recipes?area=Unknown">Unknown</a></li>
+      <li><a href="/recipes?area=Vietnamese">Vietnamese</a></li>
+    </ul>
+  </nav> 
 </div>
 
 
 
 
-
+ 
 
 
 
