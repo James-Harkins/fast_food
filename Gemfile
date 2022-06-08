@@ -50,9 +50,9 @@ group :development, :test do
   gem "orderly"
   gem "launchy"
   gem "shoulda-matchers"
-  gem "standardrb"
   gem "faker"
   gem "warden"
+  gem "standardrb"
 end
 
 group :development do

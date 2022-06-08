@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get "/recipes", to: "recipes#index"
   get "/recipes/search", to: "recipes/search#index"
   get "/recipes/:id", to: "recipes#show"
+  get "/recipes/random", to: "recipes#show"
 
   delete "/sessions", to: "sessions#destroy"
 end

@@ -18,7 +18,7 @@ describe "landing page" do
       end
 
       it "i see a button to login, which redirects me to the login page", :vcr do
-        Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:google]
+        Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:google_oauth2]
 
         visit "/"
 
