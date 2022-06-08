@@ -33,5 +33,13 @@ describe "as a logged-in user" do
         expect(page).to have_link("Beef Lo Mein")
       end
     end
+
+    it "when I click one of the saved recipe links, I am redirected to that recipe's show page", :vcr do
+      within "#saved_recipes" do
+        click_link("Apple & Blackberry Crumble")
+
+        expect(current_path).to eq("/recipes/52893")
+      end
+    end
   end
 end
