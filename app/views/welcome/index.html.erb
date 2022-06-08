@@ -1,5 +1,12 @@
+<style>
+h1 {
+  font-size: 10em;
+}
+
+</style>
+
 <div class="container text-center">
-  <h1>FAST FOOD</h1>
+ 
 
   <% if current_user %>
   <%= button_to "Log Out", "/sessions", method: :delete %>
@@ -9,4 +16,6 @@
   <br>
 
   <%= button_to "Browse Recipes", "/recipes/search", method: :get %>
+
+<h1 class="animate__animated animate__backInLeft">FAST FOOD</h1>
 </div>
