@@ -40,8 +40,7 @@ describe "recipe show page" do
 
         expect(current_path).to eq("/recipes/52803")
 
-        expected_drink_content = ((expect(page).to have_content("Old Fashioned")) || (expect(page).to have_content("Manhattan")) || (expect(page).to have_content("Mint Julep")))
-        expect(expected_content).to be true
+        expect(page).to have_content("Bramble")
       end
     end
   end
