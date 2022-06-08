@@ -39,15 +39,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 5c0b1381-c88e-4e9a-af69-a10d1b452b64
+      - 56e264c9-59ab-4c8c-a5fd-f0d45ee82569
       X-Runtime:
-      - '0.086517'
+      - '0.049567'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Tue, 07 Jun 2022 22:34:09 GMT
+  recorded_at: Tue, 07 Jun 2022 23:59:44 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user?email=example@example.com
@@ -85,15 +85,64 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e2f3f064-6829-436b-b295-34561a235b41
+      - d201afd2-3c42-4c80-a4ad-7c850843c8dd
       X-Runtime:
-      - '0.003600'
+      - '0.003244'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Tue, 07 Jun 2022 22:34:09 GMT
+  recorded_at: Tue, 07 Jun 2022 23:59:45 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/saved_recipes?user_id=7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"9ab991182cb9af9c66bc628ebd44192e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d5497e70-e137-447f-a636-5514f0220270
+      X-Runtime:
+      - '0.009676'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"7","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Garides
+        Saganaki","recipe_id":"52764"}},{"id":"8","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Apple
+        \u0026 Blackberry Crumble","recipe_id":"52893"}},{"id":"9","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Beef
+        Lo Mein","recipe_id":"52952"}}]}'
+  recorded_at: Tue, 07 Jun 2022 23:59:45 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user?email=example@example.com
@@ -131,13 +180,59 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ed5ce7ba-60d5-4a8b-aa61-327b677f1b79
+      - 8200c556-2f44-4e7d-8c8d-b87a3c9831fe
       X-Runtime:
-      - '0.001685'
+      - '0.001755'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Tue, 07 Jun 2022 22:34:09 GMT
+  recorded_at: Tue, 07 Jun 2022 23:59:45 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/user?email=example@example.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ec4fdc15dfb4a03670eb572bd9c49330"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 95fcd662-ceed-4133-b2d8-632170a2c9aa
+      X-Runtime:
+      - '0.001646'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Tue, 07 Jun 2022 23:59:45 GMT
 recorded_with: VCR 6.1.0
