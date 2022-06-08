@@ -9,5 +9,7 @@ Rails.application.routes.draw do
   get "/recipes/:id", to: "recipes#show"
   get "/recipes/random", to: "recipes#show"
 
+  post "/saved_recipes", to: "saved_recipes#create"
+
   delete "/sessions", to: "sessions#destroy"
 end

@@ -43,5 +43,10 @@ class RecipesFacade
   def self.find_recipe_by_id(id)
     recipe_data = RecipesService.recipe_by_id(id)
     Recipe.new(recipe_data)
-  end 
+  end
+
+  def self.user_saved_recipes(user_id)
+    saved_recipes = RecipesService.user_saved_recipes(user_id)
+    saved_recipes.map { |recipe| SavedRecipe.new(recipe) }
+  end
 end

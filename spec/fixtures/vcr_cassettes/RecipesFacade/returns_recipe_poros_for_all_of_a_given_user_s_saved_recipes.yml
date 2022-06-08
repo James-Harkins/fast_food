@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/saved_recipes?user_id=7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"9ab991182cb9af9c66bc628ebd44192e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9ec5b692-0dd4-45da-b7d9-aa4a7519d68e
+      X-Runtime:
+      - '0.153772'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"7","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Garides
+        Saganaki","recipe_id":"52764"}},{"id":"8","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Apple
+        \u0026 Blackberry Crumble","recipe_id":"52893"}},{"id":"9","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Beef
+        Lo Mein","recipe_id":"52952"}}]}'
+  recorded_at: Tue, 07 Jun 2022 23:48:53 GMT
+recorded_with: VCR 6.1.0
