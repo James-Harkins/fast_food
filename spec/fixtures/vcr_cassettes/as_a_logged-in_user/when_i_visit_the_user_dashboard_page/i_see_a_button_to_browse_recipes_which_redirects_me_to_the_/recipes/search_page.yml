@@ -39,15 +39,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - '0876a9c9-c980-468d-adee-c93841ef5d8a'
+      - 01a9a6a9-c46d-4ec9-8ab0-43dc84b37d61
       X-Runtime:
-      - '0.002468'
+      - '0.002443'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Tue, 07 Jun 2022 23:59:45 GMT
+  recorded_at: Wed, 08 Jun 2022 00:40:26 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user?email=example@example.com
@@ -85,15 +85,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4a0f67dc-b502-4c30-ae15-d59beb9d3d30
+      - 626d61af-f035-4920-a7a3-3b8456f9495d
       X-Runtime:
-      - '0.002385'
+      - '0.002291'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Tue, 07 Jun 2022 23:59:45 GMT
+  recorded_at: Wed, 08 Jun 2022 00:40:26 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/saved_recipes?user_id=7
@@ -127,13 +127,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"9ab991182cb9af9c66bc628ebd44192e"
+      - W/"0ae1c6b0ee51089a105a36031244219b"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a24d8072-8dc4-4200-bfac-bc725b36d26d
+      - 0ddef8ae-994e-44f6-b444-fe23e27784cf
       X-Runtime:
-      - '0.020078'
+      - '0.002853'
       Transfer-Encoding:
       - chunked
     body:
@@ -141,8 +141,9 @@ http_interactions:
       string: '{"data":[{"id":"7","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Garides
         Saganaki","recipe_id":"52764"}},{"id":"8","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Apple
         \u0026 Blackberry Crumble","recipe_id":"52893"}},{"id":"9","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Beef
-        Lo Mein","recipe_id":"52952"}}]}'
-  recorded_at: Tue, 07 Jun 2022 23:59:45 GMT
+        Lo Mein","recipe_id":"52952"}},{"id":"12","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Beef
+        Wellington","recipe_id":"52803"}}]}'
+  recorded_at: Wed, 08 Jun 2022 00:40:26 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user?email=example@example.com
@@ -180,15 +181,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a3096f94-9391-45ff-95c9-83d274b8a2ec
+      - bef0c5f1-4976-4518-8867-1f2d58786e5e
       X-Runtime:
-      - '0.007645'
+      - '0.001485'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Tue, 07 Jun 2022 23:59:45 GMT
+  recorded_at: Wed, 08 Jun 2022 00:40:26 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user?email=example@example.com
@@ -226,13 +227,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 84ab5883-0651-4d71-83ce-dfed489e6540
+      - d0baf867-2588-4a3f-b151-96df29decd02
       X-Runtime:
-      - '0.002672'
+      - '0.001960'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Tue, 07 Jun 2022 23:59:45 GMT
+  recorded_at: Wed, 08 Jun 2022 00:40:26 GMT
 recorded_with: VCR 6.1.0
