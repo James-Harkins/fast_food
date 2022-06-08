@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/recipes/category?q=Side
+    uri: http://localhost:5000/api/v1/recipes/category?q=Pasta
     body:
       encoding: US-ASCII
       string: ''
@@ -33,18 +33,24 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"e0ced49b94e1f92df2b57d36b44298fe"
+      - W/"7fe4b385f283d51bcd8744bb92bed674"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 533d49c4-86e5-4151-a25e-62a5b29a13b8
+      - 6c3bf239-6ba0-4106-b911-4256cb7ca555
       X-Runtime:
-      - '0.412950'
+      - '0.542444'
       Transfer-Encoding:
       - chunked
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJkYXRhIjpbeyJpZCI6IjUyOTE0IiwidHlwZSI6InJlY2lwZSIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IkJvdWxhbmfDqHJlIFBvdGF0b2VzIiwiaW5ncmVkaWVudHMiOnt9LCJpbWFnZSI6Imh0dHBzOi8vd3d3LnRoZW1lYWxkYi5jb20vaW1hZ2VzL21lZGlhL21lYWxzL3F5d3VwczE1MTE3OTY3NjEuanBnIiwiaW5zdHJ1Y3Rpb25zIjpudWxsLCJjYXRlZ29yeSI6bnVsbCwiYXJlYSI6bnVsbH19LHsiaWQiOiI1MjkxMyIsInR5cGUiOiJyZWNpcGUiLCJhdHRyaWJ1dGVzIjp7Im5hbWUiOiJCcmllIHdyYXBwZWQgaW4gcHJvc2NpdXR0byBcdTAwMjYgYnJpb2NoZSIsImluZ3JlZGllbnRzIjp7fSwiaW1hZ2UiOiJodHRwczovL3d3dy50aGVtZWFsZGIuY29tL2ltYWdlcy9tZWRpYS9tZWFscy9xcXB3c3kxNTExNzk2Mjc2LmpwZyIsImluc3RydWN0aW9ucyI6bnVsbCwiY2F0ZWdvcnkiOm51bGwsImFyZWEiOm51bGx9fSx7ImlkIjoiNTMwNjAiLCJ0eXBlIjoicmVjaXBlIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiQnVyZWsiLCJpbmdyZWRpZW50cyI6e30sImltYWdlIjoiaHR0cHM6Ly93d3cudGhlbWVhbGRiLmNvbS9pbWFnZXMvbWVkaWEvbWVhbHMvdGt4cXV3MTYyODc3MTAyOC5qcGciLCJpbnN0cnVjdGlvbnMiOm51bGwsImNhdGVnb3J5IjpudWxsLCJhcmVhIjpudWxsfX0seyJpZCI6IjUyOTc3IiwidHlwZSI6InJlY2lwZSIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IkNvcmJhIiwiaW5ncmVkaWVudHMiOnt9LCJpbWFnZSI6Imh0dHBzOi8vd3d3LnRoZW1lYWxkYi5jb20vaW1hZ2VzL21lZGlhL21lYWxzLzU4b2lhNjE1NjQ5MTY1MjkuanBnIiwiaW5zdHJ1Y3Rpb25zIjpudWxsLCJjYXRlZ29yeSI6bnVsbCwiYXJlYSI6bnVsbH19LHsiaWQiOiI1MjkxOSIsInR5cGUiOiJyZWNpcGUiLCJhdHRyaWJ1dGVzIjp7Im5hbWUiOiJGZW5uZWwgRGF1cGhpbm9pc2UiLCJpbmdyZWRpZW50cyI6e30sImltYWdlIjoiaHR0cHM6Ly93d3cudGhlbWVhbGRiLmNvbS9pbWFnZXMvbWVkaWEvbWVhbHMveXR0dHN2MTUxMTc5ODczNC5qcGciLCJpbnN0cnVjdGlvbnMiOm51bGwsImNhdGVnb3J5IjpudWxsLCJhcmVhIjpudWxsfX0seyJpZCI6IjUzMDMwIiwidHlwZSI6InJlY2lwZSIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IkZldGVlciBNZXNoYWx0ZXQiLCJpbmdyZWRpZW50cyI6e30sImltYWdlIjoiaHR0cHM6Ly93d3cudGhlbWVhbGRiLmNvbS9pbWFnZXMvbWVkaWEvbWVhbHMvOWY0ejZ2MTU5ODczNDI5My5qcGciLCJpbnN0cnVjdGlvbnMiOm51bGwsImNhdGVnb3J5IjpudWxsLCJhcmVhIjpudWxsfX0seyJpZCI6IjUyOTAzIiwidHlwZSI6InJlY2lwZSIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IkZyZW5jaCBPbmlvbiBTb3VwIiwiaW5ncmVkaWVudHMiOnt9LCJpbWFnZSI6Imh0dHBzOi8vd3d3LnRoZW1lYWxkYi5jb20vaW1hZ2VzL21lZGlhL21lYWxzL3h2cnJ1eDE1MTE3ODM2ODUuanBnIiwiaW5zdHJ1Y3Rpb25zIjpudWxsLCJjYXRlZ29yeSI6bnVsbCwiYXJlYSI6bnVsbH19LHsiaWQiOiI1MzA2MSIsInR5cGUiOiJyZWNpcGUiLCJhdHRyaWJ1dGVzIjp7Im5hbWUiOiJGcmVzaCBzYXJkaW5lcyIsImluZ3JlZGllbnRzIjp7fSwiaW1hZ2UiOiJodHRwczovL3d3dy50aGVtZWFsZGIuY29tL2ltYWdlcy9tZWRpYS9tZWFscy9udjVsZjMxNjI4NzcxMzgwLmpwZyIsImluc3RydWN0aW9ucyI6bnVsbCwiY2F0ZWdvcnkiOm51bGwsImFyZWEiOm51bGx9fSx7ImlkIjoiNTMwMzMiLCJ0eXBlIjoicmVjaXBlIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiSmFwYW5lc2UgZ29oYW4gcmljZSIsImluZ3JlZGllbnRzIjp7fSwiaW1hZ2UiOiJodHRwczovL3d3dy50aGVtZWFsZGIuY29tL2ltYWdlcy9tZWRpYS9tZWFscy9rdzkydDQxNjA0MTgxODcxLmpwZyIsImluc3RydWN0aW9ucyI6bnVsbCwiY2F0ZWdvcnkiOm51bGwsImFyZWEiOm51bGx9fSx7ImlkIjoiNTI5NzgiLCJ0eXBlIjoicmVjaXBlIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiS3VtcGlyIiwiaW5ncmVkaWVudHMiOnt9LCJpbWFnZSI6Imh0dHBzOi8vd3d3LnRoZW1lYWxkYi5jb20vaW1hZ2VzL21lZGlhL21lYWxzL21sY2h4MjE1NjQ5MTY5OTcuanBnIiwiaW5zdHJ1Y3Rpb25zIjpudWxsLCJjYXRlZ29yeSI6bnVsbCwiYXJlYSI6bnVsbH19LHsiaWQiOiI1MzA1OSIsInR5cGUiOiJyZWNpcGUiLCJhdHRyaWJ1dGVzIjp7Im5hbWUiOiJNdXNocm9vbSBzb3VwIHdpdGggYnVja3doZWF0IiwiaW5ncmVkaWVudHMiOnt9LCJpbWFnZSI6Imh0dHBzOi8vd3d3LnRoZW1lYWxkYi5jb20vaW1hZ2VzL21lZGlhL21lYWxzLzFuZ2NiZjE2Mjg3NzA3OTMuanBnIiwiaW5zdHJ1Y3Rpb25zIjpudWxsLCJjYXRlZ29yeSI6bnVsbCwiYXJlYSI6bnVsbH19LHsiaWQiOiI1MzAzOCIsInR5cGUiOiJyZWNpcGUiLCJhdHRyaWJ1dGVzIjp7Im5hbWUiOiJNdXN0YXJkIGNoYW1wIiwiaW5ncmVkaWVudHMiOnt9LCJpbWFnZSI6Imh0dHBzOi8vd3d3LnRoZW1lYWxkYi5jb20vaW1hZ2VzL21lZGlhL21lYWxzL283cDk1ODE2MDg1ODkzMTcuanBnIiwiaW5zdHJ1Y3Rpb25zIjpudWxsLCJjYXRlZ29yeSI6bnVsbCwiYXJlYSI6bnVsbH19LHsiaWQiOiI1MzAxOSIsInR5cGUiOiJyZWNpcGUiLCJhdHRyaWJ1dGVzIjp7Im5hbWUiOiJQaWVyb2dpIChQb2xpc2ggRHVtcGxpbmdzKSIsImluZ3JlZGllbnRzIjp7fSwiaW1hZ2UiOiJodHRwczovL3d3dy50aGVtZWFsZGIuY29tL2ltYWdlcy9tZWRpYS9tZWFscy80NXh4cjIxNTkzMzQ4ODQ3LmpwZyIsImluc3RydWN0aW9ucyI6bnVsbCwiY2F0ZWdvcnkiOm51bGwsImFyZWEiOm51bGx9fSx7ImlkIjoiNTI5MjIiLCJ0eXBlIjoicmVjaXBlIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiUHJhd24gXHUwMDI2IEZlbm5lbCBCaXNxdWUiLCJpbmdyZWRpZW50cyI6e30sImltYWdlIjoiaHR0cHM6Ly93d3cudGhlbWVhbGRiLmNvbS9pbWFnZXMvbWVkaWEvbWVhbHMvcnR3d3Z2MTUxMTc5OTUwNC5qcGciLCJpbnN0cnVjdGlvbnMiOm51bGwsImNhdGVnb3J5IjpudWxsLCJhcmVhIjpudWxsfX0seyJpZCI6IjUyOTgxIiwidHlwZSI6InJlY2lwZSIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IlNuZXJ0IChEdXRjaCBTcGxpdCBQZWEgU291cCkiLCJpbmdyZWRpZW50cyI6e30sImltYWdlIjoiaHR0cHM6Ly93d3cudGhlbWVhbGRiLmNvbS9pbWFnZXMvbWVkaWEvbWVhbHMvOXB0eDBhMTU2NTA5MDg0My5qcGciLCJpbnN0cnVjdGlvbnMiOm51bGwsImNhdGVnb3J5IjpudWxsLCJhcmVhIjpudWxsfX0seyJpZCI6IjUyOTI1IiwidHlwZSI6InJlY2lwZSIsImF0dHJpYnV0ZXMiOnsibmFtZSI6IlNwbGl0IFBlYSBTb3VwIiwiaW5ncmVkaWVudHMiOnt9LCJpbWFnZSI6Imh0dHBzOi8vd3d3LnRoZW1lYWxkYi5jb20vaW1hZ2VzL21lZGlhL21lYWxzL3h4dHN2eDE1MTE4MTQwODMuanBnIiwiaW5zdHJ1Y3Rpb25zIjpudWxsLCJjYXRlZ29yeSI6bnVsbCwiYXJlYSI6bnVsbH19XX0=
-  recorded_at: Sun, 05 Jun 2022 20:10:40 GMT
+      encoding: UTF-8
+      string: '{"data":[{"id":"52839","type":"recipe","attributes":{"name":"Chilli
+        prawn linguine","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/usywpp1511189717.jpg","instructions":null,"category":null,"area":null}},{"id":"52835","type":"recipe","attributes":{"name":"Fettucine
+        alfredo","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/uquqtu1511178042.jpg","instructions":null,"category":null,"area":null}},{"id":"52829","type":"recipe","attributes":{"name":"Grilled
+        Mac and Cheese Sandwich","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/xutquv1505330523.jpg","instructions":null,"category":null,"area":null}},{"id":"52987","type":"recipe","attributes":{"name":"Lasagna
+        Sandwiches","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/xr0n4r1576788363.jpg","instructions":null,"category":null,"area":null}},{"id":"52844","type":"recipe","attributes":{"name":"Lasagne","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/wtsvxx1511296896.jpg","instructions":null,"category":null,"area":null}},{"id":"52837","type":"recipe","attributes":{"name":"Pilchard
+        puttanesca","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/vvtvtr1511180578.jpg","instructions":null,"category":null,"area":null}},{"id":"52982","type":"recipe","attributes":{"name":"Spaghetti
+        alla Carbonara","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg","instructions":null,"category":null,"area":null}},{"id":"52838","type":"recipe","attributes":{"name":"Venetian
+        Duck Ragu","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/qvrwpt1511181864.jpg","instructions":null,"category":null,"area":null}}]}'
+  recorded_at: Wed, 08 Jun 2022 17:26:05 GMT
 recorded_with: VCR 6.1.0

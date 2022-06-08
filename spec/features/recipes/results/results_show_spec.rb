@@ -23,13 +23,20 @@ RSpec.describe "Recipe Results Show Page" do
       
       expect(page).to have_content("Ingredients")
       within "#ingredients" do
-        expect(page).to have_content("Butter: 2 tbs")    
-        expect(page).to have_content("Onions: 2 chopped")    
-        expect(page).to have_content("Chicken Stock: 4 qt")    
-        expect(page).to have_content("Chicken Breast: 1.5kg")    
-        expect(page).to have_content("Potatoes: 4kg")    
-        expect(page).to have_content("Salt: 2 tbs")    
-        expect(page).to have_content("Black Pepper: 1tbsp")    
+        expect(page).to have_content("Butter:")    
+        expect(page).to have_content("2 tbs")    
+        expect(page).to have_content("Onions:")    
+        expect(page).to have_content("2 chopped")    
+        expect(page).to have_content("Chicken Stock:")    
+        expect(page).to have_content("4 qt")    
+        expect(page).to have_content("Chicken Breast:")    
+        expect(page).to have_content("1.5kg")    
+        expect(page).to have_content("Potatoes:")    
+        expect(page).to have_content("4kg")    
+        expect(page).to have_content("Salt:")    
+        expect(page).to have_content("2 tbs")    
+        expect(page).to have_content("Black Pepper:")    
+        expect(page).to have_content("1tbsp")    
       end 
 
       expect(page).to have_content("Instructions")
@@ -38,14 +45,7 @@ RSpec.describe "Recipe Results Show Page" do
       end 
     end
 
-    it 'has a button to save the recipe if current_user is present', :vcr do
-      visit "/recipes/52933"
-      
-      click_on "Save This Recipe"
 
-      expect(current_path).to eq('/dashboard')
-
-    end 
 
 
   end 

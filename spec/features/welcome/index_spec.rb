@@ -17,15 +17,7 @@ describe "landing page" do
         expect(current_path).to eq("/recipes/search")
       end
 
-      it "i see a button to login, which redirects me to the login page", :vcr do
-        Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:google]
 
-        visit "/"
-
-        click_button "Log In With Google"
-
-        expect(current_path).to eq("/dashboard")
-      end
     end
   end
 end
