@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
   def new
-    binding.pry
     oauth_response = request.env["omniauth.auth"]
     user_data = {}
     user_data[:name] = oauth_response["info"]["name"]
