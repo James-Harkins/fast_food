@@ -101,5 +101,18 @@ RSpec.describe RecipesService do
         expect(saved_recipes.first[:attributes]).to have_key(:recipe_name)
       end
     end
+
+    describe "#save_recipe" do
+      it "sends a post request to the back-end to create a saved recipe for some user", :vcr do
+        saved_recipe_data = {
+          user_id: "1",
+          recipe_name: "Garides Saganaki",
+          recipe_id: "52764"
+        }
+        response = RecipesService.save_recipe(saved_recipe_data)
+
+        expect(response).to be_a(Faraday::Response)
+      end
+    end
   end
 end

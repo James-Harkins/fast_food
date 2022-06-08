@@ -24,4 +24,14 @@ describe "recipe show page" do
       end
     end
   end
+
+  describe "as a visitor" do
+    describe "when i visit a recipe show page" do
+      it "i do not see a link to save that recipe", :vcr do
+        visit "/recipes/52803"
+
+        expect(page).not_to have_button "Save This Recipe"
+      end
+    end
+  end
 end
