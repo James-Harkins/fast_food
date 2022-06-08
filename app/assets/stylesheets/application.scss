@@ -31,6 +31,7 @@
  // Recipe show page styling
  #image_of_recipe {
   width: 250px;
+  height: 250px;
   border: 2px solid rgb(184, 92, 56);
   padding: 10px;
   margin: 10px;
@@ -118,15 +119,15 @@
   border-spacing: 10px;
 }
 
-.whole_page {
-  position: relative;
-  width: 500px;
-  height: 500px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+// .whole_page {
+//   position: relative;
+//   width: 500px;
+//   height: 500px;
+//   display: block;
+//   margin-left: auto;
+//   margin-right: auto;
  
-}
+// }
 
 // recipe search index (search for recipe)
 
