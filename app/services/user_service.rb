@@ -1,6 +1,6 @@
 class UserService
   def self.conn
-    Faraday.new(url: "http://localhost:5000") do |f|
+    Faraday.new(url: ENV['BASE_URL']) do |f|
       f.adapter Faraday.default_adapter
     end
   end

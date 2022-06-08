@@ -1,13 +1,14 @@
+<%= render "layouts/header" %>
+
+<% if current_user %>
+  <%= button_to "Save This Recipe", "/saved_recipes", params: {user_id: current_user.id, recipe_id: @recipe.id, recipe_name: @recipe.name}, method: :post %>
+<% end %>
 
 
-  <div id="image_of_recipe">
-    <%= image_tag( @recipe.image, size: "200x200") %>
-  </div>
 <div class="whole_page">
 
 
   <h1>Recipe Show Page</h1>
-<%= render "layouts/header" %>
 
 <center>
 <div id="name_of_recipe">
@@ -18,9 +19,7 @@
 
   <%= image_tag( @recipe.image, size: "200x200") %>
 
-  <div id="name_of_recipe">
-    <h4><%= @recipe.name %></h4>
-  </div>
+</div>
 
 
 
@@ -29,9 +28,6 @@
     <h4>Ingredients:</h4>
   </div>
 
-<% if current_user %>
-  <%= button_to "Save This Recipe", "/saved_recipes", params: {user_id: current_user.id, recipe_id: @recipe.id, recipe_name: @recipe.name}, method: :post %>
-<% end %>
 
 
 
@@ -65,7 +61,6 @@
 
 
 
-</div>
 
 
 </center>
