@@ -14,7 +14,10 @@
 
  // Custom bootstrap variables must be set or imported *before* bootstrap.
  @import "bootstrap";
-
+@font-face {
+  font-family: 'Tai Hertiage Pro';
+  src: url('/assets/Tai_Heritage_pro.TaiHeritagePro-Regular.tff')
+}
 
 
 
@@ -268,7 +271,7 @@ span::after {
 #users_name{
   padding-top: 100px;
   font-size: 4em;
-  font-variant: small-caps;
+  font-family: 'Tai Hertiage Pro';
   color: rgb(92, 61, 46)
 }
 
@@ -286,10 +289,11 @@ span::after {
   margin-top: 20px;
   border-radius: 1em;
   font-size: 2.3em;
-  font-variant: small-caps;
+  // font-variant: small-caps;
   text-decoration: bold;
   background-color: rgb(236, 153, 75);
-  color: rgb(92, 61, 46)
+  color: rgb(92, 61, 46);
+  font-family: 'Tai Hertiage Pro';
 }
 
 #saved_recipes_container{
@@ -304,11 +308,11 @@ span::after {
   width: 40%;
   margin-bottom: 200px;
   border-radius: .6em;
-  font-variant: small-caps;
   font-size: 1.5em;
   background-color: rgb(224, 192, 151);
 }
 
 .a-primary {
+  font-family: 'Tai Hertiage Pro';
   color: rgb(92, 61, 46)
 }
