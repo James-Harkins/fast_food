@@ -41,6 +41,9 @@ background-color: rgb(191, 146, 112) !important;
 .btn-outline-danger:hover {
 background-color: rgb(191, 146, 112) !important;
 }
+.a-primary {
+  color: black;
+}
 </style>
 
 
@@ -75,7 +78,7 @@ background-color: rgb(191, 146, 112) !important;
     <div class="inner_right">
       <% if current_user %>
         <div class="btn btn-outline-danger" > 
-          <%= link_to 'Log Out', '/sessions', method: :delete %>
+          <%= link_to 'Log Out', '/sessions', method: :delete, class: "a-primary" %>
       <% end %>
         </div>
   </div>

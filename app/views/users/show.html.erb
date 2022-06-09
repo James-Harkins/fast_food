@@ -1,14 +1,35 @@
 <%= render "layouts/header" %>
 
 <div class="container text-center">
-  <% if current_user %>
-    <h1><%= current_user.name %></h1>
-    <% if @saved_recipes %>
-      <div id="saved_recipes">
-        <% @saved_recipes.each do |recipe| %>
-          <%= link_to "#{recipe.name}", "/recipes/#{recipe.id}" %>
-        <% end %>
-      </div>
-    <% end %>
-  <% end %>
+
+<% if current_user %>
+  <div id="users_name">
+    <text>Welcome back,<br> <%= current_user.name %>!</text>
+  </div>
+
+
 </div>
+<center>
+  <% if @saved_recipes %>
+  <div id="saved_recipes_header">
+    <text>Saved Recipes</text>
+  </div>
+    <div id="saved_recipes_container">
+      <% @saved_recipes.each do |recipe| %>
+     
+        <%= link_to "#{recipe.name}", "/recipes/#{recipe.id}", class: "a-primary"%><br>
+      
+      <% end %>
+    </div>
+
+
+
+
+
+
+</center>
+
+
+
+  <% end %>
+<% end %>
