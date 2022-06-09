@@ -43,11 +43,8 @@ class RecipesFacade
   end
 
   def self.find_recipe_by_id(id)
-    if recipe_data = RecipesService.recipe_by_id(id)
-      Recipe.new(recipe_data)
-    else
-      "No search results found."
-    end
+    recipe_data = RecipesService.recipe_by_id(id)
+    Recipe.new(recipe_data)
   end
 
   def self.user_saved_recipes(user_id)
