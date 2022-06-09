@@ -89,7 +89,7 @@ RSpec.describe RecipesService do
     end
 
     describe "#user_saved_recipes" do
-      it "returns data for all of a given users saved recipes", :vcr do
+      xit "returns data for all of a given users saved recipes", :vcr do
         saved_recipes = RecipesService.user_saved_recipes(7)
 
         expect(saved_recipes).to be_an Array
