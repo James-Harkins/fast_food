@@ -24,5 +24,8 @@ class RecipesController < ApplicationController
     else
       RecipesFacade.find_recipe_by_id(params[:id])
     end
+    if params[:area]
+      @cocktail = CocktailsFacade.find_by_area(params[:area])
+    end
   end
 end

@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/cocktail?area=American
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"0022ad4a3250cb96f66e5a9f559d60a6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3ace9e37-348a-4514-a4cc-9e4d6a49eaa9
+      X-Runtime:
+      - '0.467527'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"11001","type":"cocktail","attributes":{"name":"Old Fashioned","image":"https://www.thecocktaildb.com/images/media/drink/vrwquq1478252802.jpg","ingredients":{"Bourbon":"4.5
+        cL","Angostura bitters":"2 dashes","Sugar":"1 cube","Water":"dash"},"instructions":"Place
+        sugar cube in old fashioned glass and saturate with bitters, add a dash of
+        plain water. Muddle until dissolved.\r\nFill the glass with ice cubes and
+        add whiskey.\r\n\r\nGarnish with orange twist, and a cocktail cherry."}}}'
+  recorded_at: Wed, 08 Jun 2022 22:36:52 GMT
+recorded_with: VCR 6.1.0

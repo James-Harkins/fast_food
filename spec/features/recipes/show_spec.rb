@@ -32,6 +32,16 @@ describe "recipe show page" do
 
         expect(page).not_to have_button "Save This Recipe"
       end
+
+      it "i see a button to pair this recipe with a cocktail", :vcr do
+        visit "/recipes/52803"
+
+        click_button "Pair With A Cocktail"
+
+        expect(current_path).to eq("/recipes/52803")
+
+        expect(page).to have_content("Bramble")
+      end
     end
   end
 end

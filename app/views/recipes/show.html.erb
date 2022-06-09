@@ -4,11 +4,9 @@
   <%= button_to "Save This Recipe", "/saved_recipes", params: {user_id: current_user.id, recipe_id: @recipe.id, recipe_name: @recipe.name}, method: :post %>
 <% end %>
 
+<%= button_to "Pair With A Cocktail", "/recipes/#{@recipe.id}", params: {area: @recipe.area}, method: :get %>
 
 <div class="whole_page">
-
-
-  <h1>Recipe Show Page</h1>
 
 <center>
 <div id="name_of_recipe">
@@ -53,15 +51,27 @@
 
         <div id="instruction_step"><%= step %><br></div>
       </div>
-    
+
     <% end %>
 
   </div>
 
 
 
+<div class="cocktail_info">
+  <% if @cocktail %>
+    <%= @cocktail.name %>
+    <%= image_tag( @cocktail.image, size: "200x200") %>
+    <% @cocktail.ingredients.each do |name, qty| %>
+      <div id="ingredient_row">
 
+        <div id="ingredient_name"><%= name %>:</div><div id="ingredient_amount"><%= qty %></div>
+      </div>
+
+
+    <% end  %>
+  <% end %>
+</div>
 
 
 </center>
-
