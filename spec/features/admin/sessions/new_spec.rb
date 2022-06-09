@@ -18,6 +18,15 @@ describe "/admin/sessions/new page" do
         expect(current_path).to eq("/admin/dashboard")
       end
 
+      it "if i input credentials for an account that does not exist, i am redirected to the admin/login with an error" do
+        fill_in :email, with: "what_the_fuck_did_i_do@bawlmur_po-lice.com"
+        fill_in :password, with: "password123"
+        click_button "Login As Admin"
+
+        expect(current_path).to eq("/admin/login")
+        expect(page).to have_content("There is no user on file with this email address.")
+      end
+
       it "if i input incorect login credentials, i am redirected back to the form with an error message" do
         fill_in :email, with: "just_a_humble_muthafucka@bawlmur_po-lice.com"
         fill_in :password, with: "password12"

@@ -9,13 +9,22 @@ class Admin::SessionsController < ApplicationController
   end
 
   def create
-    admin = Admin.find_by(email: params[:email])
-    if admin.authenticate(params[:password])
-      session[:admin_id] = admin.id
-      redirect_to "/admin/dashboard"
+    if admin = Admin.find_by(email: params[:email])
+      if admin.authenticate(params[:password])
+        session[:admin_id] = admin.id
+        redirect_to "/admin/dashboard"
+      else
+        redirect_to "/admin/login?bypassed=true"
+        flash[:incorrect_credentials] = "Incorrect Credentials."
+      end
     else
       redirect_to "/admin/login?bypassed=true"
-      flash[:incorrect_credentials] = "Incorrect Credentials."
+      flash[:user_not_found] = "There is no user on file with this email address."
     end
+  end
+
+  def destroy
+    session.destroy
+    redirect_to "/"
   end
 end
