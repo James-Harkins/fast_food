@@ -7,37 +7,41 @@
 }
 .inner
 {
-    display: inline-block;
+display: inline-block;
 }
 .btn-outline-primary{
   margin: 1px;
-  /* border-radius: 15px; */
   background-color: rgb(236, 153, 75);
   font-variant: small-caps;
   font-size: 1.2em;
-
+  color: black !important;
+  outline: 0 none !important;
+  box-shadow: none !important;
+  border-color: black !important;
 }
 .btn-outline-primary:hover {
-background-color: rgb(191, 146, 112);
+background-color: rgb(191, 146, 112) !important;
+}
+.btn-outline-primary:focus, .btn-outline-primary:active:focus, .btn.active-outline-primary:focus {
+  outline: 0 none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+.btn-outline-danger{
+  margin: 1px;
+  font-variant: small-caps;
+  font-size: 1.2em;
+  color: black !important;
+  outline: 0 none !important;
+  box-shadow: none !important;
+  border-color: black !important;
+  background-color: rgb(222, 74, 72);
+  font-color: black !important;
+}
+.btn-outline-danger:hover {
+background-color: rgb(191, 146, 112) !important;
 }
 </style>
-<%# <div id="top_bar">
-  <div class="btn btn-outline-primary">
-  <%= link_to "Home", "/", method: :get %>
-  <%# </div> %>
-  <%# <div class="btn btn-outline-primary"> %>
-    <%# <%= link_to "Search Recipes", "/recipes/search", method: :get %> 
-  <%# </div> %>
-  <%# <div class="btn btn-outline-primary"> %>
-    <%# <%= link_to "Random Recipe", "/recipes/random", method: :get %> 
-  <%# </div> %>
-  <%# <% if current_user %> 
-  <%# <form action="/dashboard"> %>
-    <%# <button id="dashboard_header" type="submit" class="btn btn-outline-primary">Dashboard</button> %>
-  <%# </form> %> 
-
-  <%# <% end %> 
-<%# </div> %>
 
 
 <div id="outer">
@@ -75,4 +79,21 @@ background-color: rgb(191, 146, 112);
       <% end %>
         </div>
   </div>
+<%# <div id="top_bar">
+  <div class="btn btn-outline-primary">
+  <%= link_to "Home", "/", method: :get %>
+  <%# </div> %>
+  <%# <div class="btn btn-outline-primary"> %>
+    <%# <%= link_to "Search Recipes", "/recipes/search", method: :get %> 
+  <%# </div> %>
+  <%# <div class="btn btn-outline-primary"> %>
+    <%# <%= link_to "Random Recipe", "/recipes/random", method: :get %> 
+  <%# </div> %>
+  <%# <% if current_user %> 
+  <%# <form action="/dashboard"> %>
+    <%# <button id="dashboard_header" type="submit" class="btn btn-outline-primary">Dashboard</button> %>
+  <%# </form> %> 
+
+  <%# <% end %> 
+<%# </div> %>
 </div>
