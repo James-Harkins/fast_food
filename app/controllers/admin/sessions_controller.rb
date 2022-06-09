@@ -18,4 +18,9 @@ class Admin::SessionsController < ApplicationController
       flash[:incorrect_credentials] = "Incorrect Credentials."
     end
   end
+
+  def destroy
+    session.destroy
+    redirect_to "/"
+  end
 end
