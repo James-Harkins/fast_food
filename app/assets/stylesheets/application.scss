@@ -269,6 +269,7 @@ span::after {
   padding-top: 100px;
   font-size: 4em;
   font-variant: small-caps;
+  color: rgb(92, 61, 46)
 }
 
 #saved_recipes_header{
@@ -287,6 +288,8 @@ span::after {
   font-size: 2.3em;
   font-variant: small-caps;
   text-decoration: bold;
+  background-color: rgb(236, 153, 75);
+  color: rgb(92, 61, 46)
 }
 
 #saved_recipes_container{
@@ -303,7 +306,9 @@ span::after {
   border-radius: .6em;
   font-variant: small-caps;
   font-size: 1.5em;
+  background-color: rgb(224, 192, 151);
 }
+
 .a-primary {
-  color: black;
+  color: rgb(92, 61, 46)
 }
