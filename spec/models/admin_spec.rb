@@ -9,8 +9,8 @@ describe Admin do
 
     it "should not have a password attribute saved and the password_digest attribute should be a hash" do
       admin = Admin.create(name: "Jimmy McNulty", email: "what_the_fuck_did_i_do@bawlmur-po-lice.com", password: "password123", password_confirmation: "password123")
-      expect(user).to_not have_attribute(:password)
-      expect(user.password_digest).to_not eq("password123")
+      expect(admin).to_not have_attribute(:password)
+      expect(admin.password_digest).to_not eq("password123")
     end
   end
 end
