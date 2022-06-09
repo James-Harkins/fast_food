@@ -43,8 +43,12 @@ RSpec.describe RecipesFacade do
   end
 
   it "returns a text response that no results were found if a bad param is passed for name search", :vcr do
-    results = RecipesFacade.find_recipes_by_name("gabagool")
+    bad_name = RecipesFacade.find_recipes_by_name("gabagool")
+    bad_ingredient = RecipesFacade.find_recipes_by_ingredient("gabagool")
+    bad_id = RecipesFacade.find_recipe_by_id("gabagool")
 
-    expect(results).to eq("No search results found.")
+    expect(bad_name).to eq("No search results found.")
+    expect(bad_ingredient).to eq("No search results found.")
+    expect(bad_id).to eq("No search results found.")
   end
 end

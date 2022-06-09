@@ -10,12 +10,13 @@ class RecipesFacade
   end
 
   def self.find_recipes_by_ingredient(ingredient)
-    results = RecipesService.recipes_by_ingredient(ingredient)
-    recipes = []
-    results.each do |result|
-      recipes << Recipe.new(result)
+    if results = RecipesService.recipes_by_ingredient(ingredient)
+      results.map do |result|
+        Recipe.new(result)
+      end
+    else
+      "No search results found."
     end
-    recipes
   end
 
   def self.find_recipes_by_category(category)
@@ -42,8 +43,11 @@ class RecipesFacade
   end
 
   def self.find_recipe_by_id(id)
-    recipe_data = RecipesService.recipe_by_id(id)
-    Recipe.new(recipe_data)
+    if recipe_data = RecipesService.recipe_by_id(id)
+      Recipe.new(recipe_data)
+    else
+      "No search results found."
+    end
   end
 
   def self.user_saved_recipes(user_id)
