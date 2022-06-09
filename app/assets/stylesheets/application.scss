@@ -26,6 +26,17 @@
  body {
    background-color: rgb(255, 237, 219);
  }
+
+
+#page-container {
+   position: relative;
+   min-height: 100vh;
+ }
+
+ #content-wrap {
+   padding-bottom: 5rem;
+   /* Footer height */
+ }
 // root page
 
 
@@ -157,6 +168,7 @@
 }
 
 .btn-light{
+  position: sticky;
   margin: 10px;
   border-radius: 15px;
   background-color: rgb(236, 153, 75);
@@ -328,4 +340,71 @@ span::after {
 .a-primary {
   font-family: 'Tai Hertiage Pro';
   color: rgb(92, 61, 46)
+}
+
+
+
+
+
+/// ADMIN SECURITY CHECK PAGE
+
+#enter_password_text{
+  font-family: 'Tai Hertiage Pro';
+  color: rgb(92, 61, 46);
+  font-size: 3em;
+}
+
+#site_password_form{
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: 2px solid rgb(184, 92, 56);
+  height: 100%;
+  width: 50%;
+  margin-bottom: 100%;
+  border-radius: .6em;
+  font-family: 'Tai Hertiage Pro';
+  color: rgb(92, 61, 46);
+  font-size: 1.5em;
+  background-color: rgb(224, 192, 151);
+}
+
+
+.btn-outline-primary {
+  margin: 1px;
+  background-color: rgb(236, 153, 75);
+
+  font-size: 1.2em;
+  color: black !important;
+  outline: 0 none !important;
+  box-shadow: none !important;
+  border-color: black !important;
+  font-family: 'Tai Hertiage Pro';
+
+}
+
+.btn-primary {
+  margin: 1px;
+  background-color: rgb(236, 153, 75);
+  font-size: .8em;
+  color: black !important;
+  outline: 0 none !important;
+  box-shadow: none !important;
+  border-color: black !important;
+  font-family: 'Tai Hertiage Pro';
+}
+
+.btn-primary:hover {
+  background-color: rgb(191, 146, 112) !important;
+}
+
+.btn-primary:focus,
+.btn-primary:active:focus,
+.btn.active-primary:focus {
+  outline: 0 none !important;
+  box-shadow: none !important;
+  border: none !important;
 }

@@ -1,108 +1,90 @@
 <%= render "layouts/header" %>
 
-<% if current_user %>
-  <%# <%= button_to "Save This Recipe", "/saved_recipes", params: {user_id: current_user.id, recipe_id: @recipe.id, recipe_name: @recipe.name}, method: :post %>
-  <form action="/saved_recipes" method="post">
-    <input type="hidden"
-           name="user_id"
-           value="<%= current_user.id %>">
-    <input type="hidden"
-           name="recipe_id"
-           value="<%= @recipe.id %>">
-    <input type="hidden"
-           name="recipe_name"
-           value="<%= @recipe.name %>">
-    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-    <button id="save_recipe" type="submit" class="btn btn-light">Save This Recipe</button>
-</form>
 
-
-<% end %>
-<div id="pair_cocktail_button">
-<%# <%= button_to "Pair With A Cocktail", "/recipes/#{@recipe.id}", params: {area: @recipe.area}, method: :get %>
-
-  <form action="/recipes/<%=@recipe.id%>" method="get">
-    <input type="hidden"
-           name="area"
-           value="<%= @recipe.area %>">
-    <input type="hidden" name="authenticity_token" value="ViECdS4KxrTfhazHRcx/6uUp+VXYUUUrqIMNX7jCz24cpeIEcY41IGDAHU1KLOYp2RuwNidxyIKHRlZubUU61SLA==">
-    <button id="save_recipe" type="submit" class="btn btn-light">Pair With A Cocktail</button>
-</form>
-</div>
-
-
-
-
-
-
-
-<div class="whole_page">
-
-<center>
-<div id="name_of_recipe">
-  <text><%= @recipe.name %></text>
-</div>
-
-<div id="image_of_recipe">
-
-  <%= image_tag( @recipe.image, size: "300x300") %>
-
-</div>
-
-
-  <div id="ingredient_header">
-    <text>Ingredients:</text>
-  </div>
-
-
-  <div id="ingredients">
-    <% @recipe.ingredients.each do |name, qty| %>
-      <div id="ingredient_row">
-
-        <div id="ingredient_name"><%= name %>:</div><div id="ingredient_amount"><%= qty %></div>
-      </div>
-
-
-    <% end  %>
-  </div>
-
-
-  <div id="instructions_header">
-    <text>Instructions:</text>
-  </div>
-
-  <div id="instructions">
-    <% @recipe.instruction_steps.each do |step| %>
-      <div id="instruction_row">
-
-        <div id="instruction_step"><%= step %><br></div>
-      </div>
-
+<br>
+<br>
+<div id="page-container">
+  <div id="content-wrap">
+    <% if current_user %>
+      <form action="/saved_recipes" method="post">
+        <input type="hidden"
+              name="user_id"
+              value="<%= current_user.id %>">
+        <input type="hidden"
+              name="recipe_id"
+              value="<%= @recipe.id %>">
+        <input type="hidden"
+              name="recipe_name"
+              value="<%= @recipe.name %>">
+        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">      
+        <button id="save_recipe" type="submit" class="btn btn-light">Save This Recipe</button>
+      </form>
     <% end %>
 
+    <div id="pair_cocktail_button">
+      <form action="/recipes/<%=@recipe.id%>" method="get">
+        <input type="hidden"
+              name="area"
+              value="<%= @recipe.area %>">
+        <input type="hidden" name="authenticity_token" value="ViECdS4KxrTfhazHRcx/6uUp+VXYUUUrqIMNX7jCz24cpeIEcY41IGDAHU1KLOYp2RuwNidxyIKHRlZubUU61SLA==">       
+        <button id="save_recipe" type="submit" class="btn btn-light">Pair With A Cocktail</button>
+      </form>
+    </div>
+
+  <center>
+    <div id="name_of_recipe">
+      <text><%= @recipe.name %></text>
+    </div>
+
+    <div id="image_of_recipe">
+      <%= image_tag( @recipe.image, size: "300x300") %>
+    </div>
+
+    <div id="ingredient_header">
+      <text>Ingredients:</text>
+    </div>
+
+
+    <div id="ingredients">
+      <% @recipe.ingredients.each do |name, qty| %>
+        <div id="ingredient_row">
+          <div id="ingredient_name"><%= name %>:</div><div id="ingredient_amount"><%= qty %></div>
+        </div>
+      <% end  %>
+    </div>
+
+    <div id="instructions_header">
+      <text>Instructions:</text>
+    </div>
+
+    <div id="instructions">
+      <% @recipe.instruction_steps.each do |step| %>
+        <div id="instruction_row">
+          <div id="instruction_step"><%= step %><br></div>
+        </div>
+      <% end %>
+
+    </div>
+
+    <div class="cocktail_info">
+      <% if @cocktail %>
+        <div id="name_of_cocktail">
+          <%= @cocktail.name %>
+        </div> 
+        <div id="image_of_cocktail">
+          <%= image_tag( @cocktail.image, size: "200x200") %>
+        </div>  
+        
+        <% @cocktail.ingredients.each do |name, qty| %>
+          <div id="ingredient_row">
+            <div id="ingredient_name"><%= name %>:</div><div id="ingredient_amount"><%= qty %></div>
+          </div>
+        <% end  %>
+      <% end %>
+    </div>
   </div>
+  </center>
+  <br>
+  <%= render "layouts/footer" %>
 
-
-
-<div class="cocktail_info">
-  <% if @cocktail %>
-  <div id="name_of_cocktail">
-    <%= @cocktail.name %>
-  </div>
-  <div id="image_of_cocktail">
-    <%= image_tag( @cocktail.image, size: "200x200") %>
-  </div>
-
-    <% @cocktail.ingredients.each do |name, qty| %>
-      <div id="ingredient_row">
-
-        <div id="ingredient_name"><%= name %>:</div><div id="ingredient_amount"><%= qty %></div>
-      </div>
-
-
-    <% end  %>
-  <% end %>
 </div>
-
-
-</center>

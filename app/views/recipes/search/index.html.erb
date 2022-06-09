@@ -1,4 +1,6 @@
 <%= render "layouts/header" %>
+<br>
+<br>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -58,116 +60,126 @@ h3 {
 </style>
 
 
-
-
-
-<center>
-<h1 class="animate__animated animate__lightSpeedInLeft">Search for a Recipe</h1>
-
-</center>
-
-<center>
-
-<div id="recipes_search_name">
-
-  <form class="search_bar" action="/recipes">
-    <div id="click_button">
-    <input type="text" placeholder="Search for Recipe by Name" name="name">
-      <button type="submit" placeholder="Search"><i class="fa fa-search"></i></button>
-    </div>
-  </form>
-</div>
-
-
 <br>
+<div id="page-container">
+  <div id="content-wrap">
+    <center>
+    <h1 class="animate__animated animate__lightSpeedInLeft">Search for a Recipe</h1>
+    </center>
 
-<div id="recipes_search_ingredient">
+    <center>
 
-  <form class="search_bar" action="/recipes">
-    <div id="click_button">
-    <input type="text" placeholder="Search for Recipe by Single Ingredient" name="ingredient">
-      <button type="submit" placeholder="Search"><i class="fa fa-search"></i></button>
+    <div id="recipes_search_name">
+
+      <form class="search_bar" action="/recipes">
+        <div id="click_button">
+        <input type="text" placeholder="Search for Recipe by Name" name="name">
+          <button type="submit" placeholder="Search"><i class="fa fa-search"></i></button>
+        </div>
+      </form>
     </div>
-  </form>
+
+    <br>
+
+    <div id="recipes_search_ingredient">
+
+      <form class="search_bar" action="/recipes">
+        <div id="click_button">
+        <input type="text" placeholder="Search for Recipe by Single Ingredient" name="ingredient">
+          <button type="submit" placeholder="Search"><i class="fa fa-search"></i></button>
+        </div>
+      </form>
+    </div>
+
+    <br>
+
+    <div id="recipes_select_categories">
+      <h3 class="animate__animated animate__lightSpeedInRight">Select a Category</h3>
+
+      <nav>
+
+        <label for="touch"><span>Category</span></label>               
+        <input type="checkbox" id="touch"> 
+
+        <ul class="slide">
+          <li><a href="/recipes?category=Beef">Beef</a></li> 
+          <li><a href="/recipes?category=Breakfast">Breakfast</a></li>
+          <li><a href="/recipes?category=Beef">Chicken</a></li>
+          <li><a href="/recipes?category=Chicken">Dessert</a></li>
+          <li><a href="/recipes?category=Goat">Goat</a></li>
+          <li><a href="/recipes?category=Lamb">Lamb</a></li>
+          <li><a href="/recipes?category=Miscellaneous">Miscellaneous</a></li>
+          <li><a href="/recipes?category=Pasta">Pasta</a></li>
+          <li><a href="/recipes?category=Pork">Pork</a></li>
+          <li><a href="/recipes?category=Seafood">Seafood</a></li>
+          <li><a href="/recipes?category=Side">Side</a></li>
+          <li><a href="/recipes?category=Starter">Starter</a></li>
+          <li><a href="/recipes?category=Vegan">Vegan</a></li>
+          <li><a href="/recipes?category=Vegetarian">Vegetarian</a></li>
+        </ul>
+      </nav> 
+    </div>
+
+    <div id="recipes_select_area">
+    <h3 class="animate__animated animate__lightSpeedInRight">Select an Area</h3>
+      <nav>
+
+        <label for="touch2"><span>Area</span></label>               
+        <input type="checkbox" id="touch2"> 
+
+        <ul class="slide2">
+          <li><a href="/recipes?area=American">American</a></li> 
+          <li><a href="/recipes?area=British">British</a></li>
+          <li><a href="/recipes?area=Canadian">Canadian</a></li>
+          <li><a href="/recipes?area=Canadian">Chicken</a></li>
+          <li><a href="/recipes?area=Chinese">Chinese</a></li>
+          <li><a href="/recipes?area=Croatian">Croatian</a></li>
+          <li><a href="/recipes?area=Dutch">Dutch</a></li>
+          <li><a href="/recipes?area=Greek">Greek</a></li>
+          <li><a href="/recipes?area=Indian">Indian</a></li>
+          <li><a href="/recipes?area=Irish">Irish</a></li>
+          <li><a href="/recipes?area=Italian">Italian</a></li>
+          <li><a href="/recipes?area=Jamaican">Jamaican</a></li>
+          <li><a href="/recipes?area=Japanese">Japanese</a></li>
+          <li><a href="/recipes?area=Kenyan">Kenyan</a></li>
+          <li><a href="/recipes?area=Malaysian">Malaysian</a></li>
+          <li><a href="/recipes?area=Mexican">Mexican</a></li>
+          <li><a href="/recipes?area=Moroccan">Moroccan</a></li>
+          <li><a href="/recipes?area=Polish">Polish</a></li>
+          <li><a href="/recipes?area=Portuguese">Portuguese</a></li>
+          <li><a href="/recipes?area=Russian">Russian</a></li>
+          <li><a href="/recipes?area=Spanish">Spanish</a></li>
+          <li><a href="/recipes?area=Thai">Thai</a></li>
+          <li><a href="/recipes?area=Tunisian">Tunisian</a></li>
+          <li><a href="/recipes?area=Turkish">Turkish</a></li>
+          <li><a href="/recipes?area=Unknown">Unknown</a></li>
+          <li><a href="/recipes?area=Vietnamese">Vietnamese</a></li>
+        </ul>
+      </nav> 
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <img src="<%= image_path('burger.png') %>" class="rotate" width="500" height="500" />
+
+    </center>
+  </div>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br><br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <%= render "layouts/footer" %>
 </div>
 
-<br>
-
-
-<div id="recipes_select_categories">
-  <h3 class="animate__animated animate__lightSpeedInRight">Select a Category</h3>
-  
-  <nav>
-
-    <label for="touch"><span>Category</span></label>               
-    <input type="checkbox" id="touch"> 
-
-    <ul class="slide">
-      <li><a href="/recipes?category=Beef">Beef</a></li> 
-      <li><a href="/recipes?category=Breakfast">Breakfast</a></li>
-      <li><a href="/recipes?category=Beef">Chicken</a></li>
-      <li><a href="/recipes?category=Chicken">Dessert</a></li>
-      <li><a href="/recipes?category=Goat">Goat</a></li>
-      <li><a href="/recipes?category=Lamb">Lamb</a></li>
-      <li><a href="/recipes?category=Miscellaneous">Miscellaneous</a></li>
-      <li><a href="/recipes?category=Pasta">Pasta</a></li>
-      <li><a href="/recipes?category=Pork">Pork</a></li>
-      <li><a href="/recipes?category=Seafood">Seafood</a></li>
-      <li><a href="/recipes?category=Side">Side</a></li>
-      <li><a href="/recipes?category=Starter">Starter</a></li>
-      <li><a href="/recipes?category=Vegan">Vegan</a></li>
-      <li><a href="/recipes?category=Vegetarian">Vegetarian</a></li>
-    </ul>
-  </nav> 
-
-</div>
-
-
-<div id="recipes_select_area">
-<h3 class="animate__animated animate__lightSpeedInRight">Select an Area</h3>
-  <nav>
-
-    <label for="touch2"><span>Area</span></label>               
-    <input type="checkbox" id="touch2"> 
-
-    <ul class="slide2">
-      <li><a href="/recipes?area=American">American</a></li> 
-      <li><a href="/recipes?area=British">British</a></li>
-      <li><a href="/recipes?area=Canadian">Canadian</a></li>
-      <li><a href="/recipes?area=Canadian">Chicken</a></li>
-      <li><a href="/recipes?area=Chinese">Chinese</a></li>
-      <li><a href="/recipes?area=Croatian">Croatian</a></li>
-      <li><a href="/recipes?area=Dutch">Dutch</a></li>
-      <li><a href="/recipes?area=Greek">Greek</a></li>
-      <li><a href="/recipes?area=Indian">Indian</a></li>
-      <li><a href="/recipes?area=Irish">Irish</a></li>
-      <li><a href="/recipes?area=Italian">Italian</a></li>
-      <li><a href="/recipes?area=Jamaican">Jamaican</a></li>
-      <li><a href="/recipes?area=Japanese">Japanese</a></li>
-      <li><a href="/recipes?area=Kenyan">Kenyan</a></li>
-      <li><a href="/recipes?area=Malaysian">Malaysian</a></li>
-      <li><a href="/recipes?area=Mexican">Mexican</a></li>
-      <li><a href="/recipes?area=Moroccan">Moroccan</a></li>
-      <li><a href="/recipes?area=Polish">Polish</a></li>
-      <li><a href="/recipes?area=Portuguese">Portuguese</a></li>
-      <li><a href="/recipes?area=Russian">Russian</a></li>
-      <li><a href="/recipes?area=Spanish">Spanish</a></li>
-      <li><a href="/recipes?area=Thai">Thai</a></li>
-      <li><a href="/recipes?area=Tunisian">Tunisian</a></li>
-      <li><a href="/recipes?area=Turkish">Turkish</a></li>
-      <li><a href="/recipes?area=Unknown">Unknown</a></li>
-      <li><a href="/recipes?area=Vietnamese">Vietnamese</a></li>
-    </ul>
-  </nav> 
-</div>
-
-
-
-
- <img src="<%= image_path('burger.png') %>" class="rotate" width="500" height="500" />
 
 
 
 
 
-</center>

@@ -21,7 +21,7 @@ describe "landing page" do
       it "i see a button to login as an admin, which redirects me to the admin security_check page" do
         visit "/"
 
-        click_button "Admin Login"
+        click_link "Admin Login"
 
         expect(current_path).to eq("/admin/security_check")
       end

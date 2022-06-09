@@ -1,3 +1,8 @@
+<%= render "layouts/header" %>
+<br>
+<br>
+
+<h3>Already an Admin? Click Here</h3>
 <%= form_with url: "/admin/login", method: :post, local: true do |form| %>
   <%= form.label :email %>
   <%= form.text_field :email %><br>
@@ -7,5 +12,9 @@
 
   <%= form.submit "Login As Admin" %>
 <% end %>
+
+<br>
+<br>
+<h3>Need to Create an Admin Account? Click Here</h3>
 
 <%= button_to "Register As Admin", "/admin/new", params: {bypassed: true}, method: :get %>
