@@ -1,26 +1,82 @@
 <style>
 h1 {
   font-size: 10em;
+  font-family: 'Tai Hertiage Pro';
+  color: rgb(45, 36, 36);
+  display: inline-block;
+  width: 100%;
+}
+h2 {
+  font-size: 10em;
+  font-family: 'Tai Hertiage Pro';
+  color: rgb(45, 36, 36);
+  display: inline-block;
+  height: 100%;
+}
+img {
+  width: 400px;
+  height: 400px;
+
+} 
+.btn-outline-primary{
+  margin: 1px;
+  background-color: rgb(236, 153, 75);
+  font-size: 1.2em;
+  color: black !important;
+  outline: 0 none !important;
+  box-shadow: none !important;
+  border-color: black !important;
+  font-family: 'Tai Hertiage Pro';
+}
+
+.btn-outline-primary:hover {
+background-color: rgb(191, 146, 112) !important;
+}
+
+.btn-outline-primary:focus, .btn-outline-primary:active:focus, .btn.active-outline-primary:focus {
+  outline: 0 none !important;
+  box-shadow: none !important;
+  border: none !important;
 }
 
 </style>
 
+<div id="logged_in_header">
+<% if current_user %>
+  <%= render "layouts/header" %>
+<% end %>
+</div>
 <div class="container text-center">
+  <div id="outer">
+    <div id="inner">
+    <img class="animate__animated animate__bounceInDown" src="<%= image_path('burger.png', size: "300x300") %>" />
+      <h1 class="animate__animated animate__lightSpeedInLeft">FAST </h1>
+    </div>
+    <div id="inner">
+      <h2 class="animate__animated animate__lightSpeedInRight">FOOD</h2>
+    </div>
+  </div>
+<br>
+<% if current_user.present? == false %>
 
+   <form action="/auth/google_oauth2">
+      <button id="root_buttons" type="submit" class="btn btn-outline-primary">Log In With Google</button>
+    </form>
+  
+  <br>
+ 
+  <form action="/recipes/search">
+    <button id="root_buttons" type="submit" class="btn btn-outline-primary">Search Recipes</button>
+  </form>
 
-  <% if current_user %>
-  <%= button_to "Log Out", "/sessions", method: :delete %>
-  <% else %>
-  <%= button_to "Log In With Google", "/auth/google_oauth2", method: :get %>
-  <% end %>
   <br>
 
-  <%= button_to "Browse Recipes", "/recipes/search", method: :get %>
+  <form action="/recipes/random">
+    <button id="root_buttons" type="submit" class="btn btn-outline-primary">Random Recipe</button>
+  </form>
+<% end %>
 
-
-<h1 class="animate__animated animate__lightSpeedInLeft">FAST FOOD</h1>
-
-  <br><%= button_to "Random Recipe", "/recipes/random", method: :get %>
-  <br><%= button_to "Admin Login", "/admin/security_check", method: :get %>
+<%= button_to "Admin Login", "/admin/security_check", method: :get %>
 
 </div>
+

@@ -33,17 +33,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"91e026e712c6eef7e9bb8e64e34bacf1"
+      - W/"bcc6c8885e4fd0d8fb2dc674ba38d297"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 37816995-859e-404b-a1be-24a6c6e79e5f
+      - 708017b3-f195-43db-841c-d25d1df26c3e
       X-Runtime:
-      - '0.013076'
+      - '0.003177'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Kaepora Music","email":"kaepora.co@gmail.com"}}}'
-  recorded_at: Sun, 05 Jun 2022 20:10:41 GMT
+      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Kaepora Music","email":"kaepora.co@gmail.com"}}}'
+  recorded_at: Thu, 09 Jun 2022 19:09:32 GMT
 recorded_with: VCR 6.1.0

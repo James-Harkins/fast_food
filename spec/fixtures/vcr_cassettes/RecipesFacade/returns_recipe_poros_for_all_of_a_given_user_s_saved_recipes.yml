@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/saved_recipes?user_id=7
+    uri: http://localhost:5000/api/v1/saved_recipes?user_id=1
     body:
       encoding: US-ASCII
       string: ''
@@ -33,20 +33,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"9ab991182cb9af9c66bc628ebd44192e"
+      - W/"3207111583d755513b29e1baa73b88d1"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9ec5b692-0dd4-45da-b7d9-aa4a7519d68e
+      - 2f626ff5-0c9e-4003-8596-98e3e7336429
       X-Runtime:
-      - '0.153772'
+      - '0.003422'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"7","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Garides
-        Saganaki","recipe_id":"52764"}},{"id":"8","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Apple
-        \u0026 Blackberry Crumble","recipe_id":"52893"}},{"id":"9","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Beef
-        Lo Mein","recipe_id":"52952"}}]}'
-  recorded_at: Tue, 07 Jun 2022 23:48:53 GMT
+      string: '{"data":[{"id":"1","type":"saved_recipes","attributes":{"user_id":1,"recipe_name":"soup","recipe_id":"5468"}},{"id":"2","type":"saved_recipes","attributes":{"user_id":1,"recipe_name":"burrito","recipe_id":"5445"}},{"id":"3","type":"saved_recipes","attributes":{"user_id":1,"recipe_name":"rice","recipe_id":"5465"}},{"id":"7","type":"saved_recipes","attributes":{"user_id":1,"recipe_name":"Garides
+        Saganaki","recipe_id":"52764"}}]}'
+  recorded_at: Thu, 09 Jun 2022 19:47:30 GMT
 recorded_with: VCR 6.1.0

@@ -14,7 +14,10 @@
 
  // Custom bootstrap variables must be set or imported *before* bootstrap.
  @import "bootstrap";
-
+@font-face {
+  font-family: 'Tai Hertiage Pro';
+  src: url('/assets/Tai_Heritage_pro.TaiHeritagePro-Regular.tff')
+}
 
 
 
@@ -30,36 +33,42 @@
 
  // Recipe show page styling
  #image_of_recipe {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   border: 2px solid rgb(184, 92, 56);
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
-  // justify-content: center;
-    display: block;
-      margin-left: auto;
-      margin-right: auto;
+  display: flex;
+  flex-direction: column;
+
  }
 
  #name_of_recipe {
-  width: 250px;
+  width: 40%;
   border: 2px solid rgb(184, 92, 56);
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
-  font-family: "Verdana";
+  font-family: 'Tai Hertiage Pro';
+  color: rgb(92, 61, 46);
+  font-size: 2.5em;
   text-align: center;
+  background-color: rgb(236, 153, 75);
  }
 
 #ingredient_header {
-  width: 250px;
+  width: 30%;
   border: 2px solid rgb(184, 92, 56);
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
-  font-family: "Verdana";
+  font-family: 'Tai Hertiage Pro';
+  color: rgb(92, 61, 46);
   text-align: center;
+  font-size: 2em;
+  background-color: rgb(236, 153, 75);
+  
 }
 
 #ingredient_name {
@@ -69,8 +78,11 @@
   margin: 2px;
   border-radius: 10px;
   display: table-cell;
-  font-family: "Verdana";
+  font-family: 'Tai Hertiage Pro';
+  color: rgb(92, 61, 46);
   text-align: center;
+  font-size: 1.5em;
+  background-color: rgb(224, 192, 151);
 }
 
 #ingredient_amount {
@@ -80,8 +92,11 @@
   margin: 2px;
   border-radius: 10px;
   display: table-cell;
-  font-family: "Verdana";
+  font-family: 'Tai Hertiage Pro';
+  color: rgb(92, 61, 46);
   text-align: center;
+  font-size: 1.5em;
+  background-color: rgb(224, 192, 151);
 }
 
 #ingredient_row {
@@ -97,19 +112,25 @@
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
-  font-family: "Verdana";
+  font-family: 'Tai Hertiage Pro';
+  color: rgb(92, 61, 46);
   text-align: center;
+  font-size: 2em;
+  background-color: rgb(236, 153, 75);
 }
 
 #instruction_step {
   width: 3px;
   border: 2px solid rgb(184, 92, 56);
-  padding: 2px;
+  padding: 15px;
   margin: 2px;
   border-radius: 10px;
   display: table-cell;
-  font-family: "Verdana";
+  font-family: 'Tai Hertiage Pro';
+  color: rgb(92, 61, 46);
   text-align: left;
+  font-size: 1.5em;
+  background-color: rgb(224, 192, 151);
 }
 
 #instruction_row {
@@ -119,15 +140,32 @@
   border-spacing: 10px;
 }
 
-// .whole_page {
-//   position: relative;
-//   width: 500px;
-//   height: 500px;
-//   display: block;
-//   margin-left: auto;
-//   margin-right: auto;
- 
-// }
+// cocktail styling
+#name_of_cocktail{
+  width: 40%;
+  border: 2px solid rgb(184, 92, 56);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  font-family: 'Tai Hertiage Pro';
+  color: rgb(92, 61, 46);
+  text-align: center;
+  background-color: rgb(236, 153, 75);
+  justify-content: center;
+  font-size: 2em;
+  
+}
+
+.btn-light{
+  margin: 10px;
+  border-radius: 15px;
+  background-color: rgb(236, 153, 75);
+  font-family: 'Tai Hertiage Pro';
+  font-size: 1.2em;
+}
+.btn-light:hover {
+background-color: rgb(191, 146, 112);
+}
 
 // recipe search index (search for recipe)
 
@@ -142,6 +180,7 @@
   cursor: pointer;
   border: 1px solid black;
   border-radius: 3px;
+  font-family: 'Tai Hertiage Pro';
 }
 
 select {
@@ -165,9 +204,9 @@ select {
 
 li a {
   text-decoration: none;
-  font-variant: small-caps;
+  font-family: 'Tai Hertiage Pro';
   color: #2d2f31;
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 
@@ -181,8 +220,8 @@ span {
   padding: 15px;
   background: rgb(184, 92, 56);
   color: white;
-  font-size: 1.2em;
-  font-variant: small-caps;
+  font-size: 1.4em;
+  font-family: 'Tai Hertiage Pro';
   cursor: pointer;
   display: block;
 }
@@ -239,3 +278,54 @@ span::after {
   height: 1215px;
 }
 
+//// User Dashboard Styling
+
+
+#users_name{
+  padding-top: 100px;
+  font-size: 4em;
+  font-family: 'Tai Hertiage Pro';
+  color: rgb(92, 61, 46)
+}
+
+#saved_recipes_header{
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: 2px solid rgb(184, 92, 56);
+  height: 100%;
+  width: 40%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 1em;
+  font-size: 2.3em;
+  // font-variant: small-caps;
+  text-decoration: bold;
+  background-color: rgb(236, 153, 75);
+  color: rgb(92, 61, 46);
+  font-family: 'Tai Hertiage Pro';
+}
+
+#saved_recipes_container{
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: 2px solid rgb(184, 92, 56);
+  height: 100%;
+  width: 40%;
+  margin-bottom: 200px;
+  border-radius: .6em;
+  font-size: 1.5em;
+  background-color: rgb(224, 192, 151);
+}
+
+.a-primary {
+  font-family: 'Tai Hertiage Pro';
+  color: rgb(92, 61, 46)
+}

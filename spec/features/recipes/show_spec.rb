@@ -17,8 +17,7 @@ describe "recipe show page" do
         click_button "Save This Recipe"
 
         expect(current_path).to eq("/dashboard")
-
-        within "#saved_recipes" do
+        within "#saved_recipes_container" do
           expect(page).to have_link("Beef Wellington")
         end
       end
@@ -39,8 +38,9 @@ describe "recipe show page" do
         click_button "Pair With A Cocktail"
 
         expect(current_path).to eq("/recipes/52803")
+    
 
-        expect(page).to have_content("Bramble")
+        expect(page).to have_content("Gin Fizz")
       end
     end
   end

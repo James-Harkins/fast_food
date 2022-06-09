@@ -37,9 +37,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4538c53f-fb53-4773-8c92-a1b4912e9ebc
+      - ad5eb4df-3303-4ebc-b209-70d79041db95
       X-Runtime:
-      - '0.424871'
+      - '0.575175'
       Transfer-Encoding:
       - chunked
     body:
@@ -48,5 +48,5 @@ http_interactions:
         Vermouth":"3/4 oz ","Bourbon":"2 1/2 oz Blended ","Angostura bitters":"dash
         ","Ice":"2 or 3 ","Maraschino cherry":"1 ","Orange peel":"1 twist of "},"instructions":"Stirred
         over ice, strained into a chilled glass, garnished, and served up."}}}'
-  recorded_at: Wed, 08 Jun 2022 22:41:33 GMT
+  recorded_at: Thu, 09 Jun 2022 19:09:16 GMT
 recorded_with: VCR 6.1.0

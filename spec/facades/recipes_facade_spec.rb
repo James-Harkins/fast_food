@@ -36,9 +36,9 @@ RSpec.describe RecipesFacade do
   end
 
   it "returns recipe poros for all of a given user's saved recipes", :vcr do
-    saved_recipes = RecipesFacade.user_saved_recipes(7)
+    saved_recipes = RecipesFacade.user_saved_recipes(1)
     expect(saved_recipes).to be_all SavedRecipe
-    expect(saved_recipes.first.id).to eq("52764")
-    expect(saved_recipes.first.name).to eq("Garides Saganaki")
+    expect(saved_recipes.first.id).to eq("5468")
+    expect(saved_recipes.first.name).to eq("soup")
   end
 end

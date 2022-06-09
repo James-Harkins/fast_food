@@ -37,9 +37,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6c3bf239-6ba0-4106-b911-4256cb7ca555
+      - a6d08cab-b992-48f9-920e-233066606ef9
       X-Runtime:
-      - '0.542444'
+      - '0.245792'
       Transfer-Encoding:
       - chunked
     body:
@@ -52,5 +52,5 @@ http_interactions:
         puttanesca","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/vvtvtr1511180578.jpg","instructions":null,"category":null,"area":null}},{"id":"52982","type":"recipe","attributes":{"name":"Spaghetti
         alla Carbonara","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg","instructions":null,"category":null,"area":null}},{"id":"52838","type":"recipe","attributes":{"name":"Venetian
         Duck Ragu","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/qvrwpt1511181864.jpg","instructions":null,"category":null,"area":null}}]}'
-  recorded_at: Wed, 08 Jun 2022 17:26:05 GMT
+  recorded_at: Thu, 09 Jun 2022 19:09:24 GMT
 recorded_with: VCR 6.1.0

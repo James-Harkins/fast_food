@@ -5,6 +5,8 @@
 form.search_bar input[type=text]{
   padding: 10px;
   font-size: 17px;
+  font-family: 'Tai Hertiage Pro';
+
   border: 1px solid grey;
   float: center;
   width: 45%;
@@ -23,7 +25,41 @@ form.search_bar button {
   border-left: none; /* Prevent double borders */
   cursor: pointer;
 }
+
+h1 {
+  font-size: 4em;
+  font-family: 'Tai Hertiage Pro';
+  color: rgb(45, 36, 36);
+  display: inline-block;
+  width: 100%;
+}
+
+h3 {
+  font-size: 2.2em;
+  font-family: 'Tai Hertiage Pro';
+  color: rgb(45, 36, 36);
+  display: inline-block;
+  width: 100%;
+}
+
+.rotate {
+  animation: rotation 3s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 </style>
+
+
+
+
 
 <center>
 <h1 class="animate__animated animate__lightSpeedInLeft">Search for a Recipe</h1>
@@ -128,8 +164,7 @@ form.search_bar button {
 
 
 
- 
-
+ <img src="<%= image_path('burger.png') %>" class="rotate" width="500" height="500" />
 
 
 

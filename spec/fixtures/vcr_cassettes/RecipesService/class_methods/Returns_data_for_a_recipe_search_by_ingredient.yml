@@ -37,14 +37,14 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 30ccee67-b14a-4f65-a152-26571c4fd509
+      - f3f5a045-d91e-4872-aeb8-81f64ce0deb1
       X-Runtime:
-      - '0.375597'
+      - '0.362912'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"53013","type":"recipe","attributes":{"name":"Big Mac","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/urzj1d1587670726.jpg","instructions":null,"category":null,"area":null}},{"id":"52779","type":"recipe","attributes":{"name":"Cream
         Cheese Tart","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/wurrux1468416624.jpg","instructions":null,"category":null,"area":null}},{"id":"52978","type":"recipe","attributes":{"name":"Kumpir","ingredients":{},"image":"https://www.themealdb.com/images/media/meals/mlchx21564916997.jpg","instructions":null,"category":null,"area":null}}]}'
-  recorded_at: Sun, 05 Jun 2022 20:39:26 GMT
+  recorded_at: Thu, 09 Jun 2022 19:46:56 GMT
 recorded_with: VCR 6.1.0
