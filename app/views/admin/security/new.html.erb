@@ -1,0 +1,8 @@
+<h1>Enter the Site Password to Proceed to Admin Login:</h1>
+
+<%= form_with url: "/admin/login", method: :get, local: true do |form| %>
+  <%= form.label :site_password %>
+  <%= form.password_field :site_password %>
+
+  <br><%= form.submit "Submit" %>
+<% end %>

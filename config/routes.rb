@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   post "/saved_recipes", to: "saved_recipes#create"
 
   delete "/sessions", to: "sessions#destroy"
+
+  get "/admin/security_check", to: "admin/security#new"
 end
