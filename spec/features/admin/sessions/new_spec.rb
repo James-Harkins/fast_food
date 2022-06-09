@@ -36,7 +36,7 @@ describe "/admin/sessions/new page" do
   end
 
   describe "as a visitor who has not completed the admin security check" do
-    desceribe "when i attempt to visit the /admin/login page" do
+    describe "when i attempt to visit the /admin/login page" do
       it "i am redirected to the admin/security check page" do
         visit "/admin/login"
 

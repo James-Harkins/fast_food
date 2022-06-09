@@ -2,7 +2,7 @@ class Admin::SessionsController < ApplicationController
   def new
     if params[:site_password] && (params[:site_password] != ENV["SITE_PASSWORD"])
       redirect_to "/admin/security_check"
-    elsif !params[:site_password]
+    elsif !params[:site_password] && params[:bypassed] != "true"
       redirect_to "/admin/security_check"
       flash[:unathorized] = "You must input the site password in order to access the Admin Login page."
     end
@@ -14,7 +14,7 @@ class Admin::SessionsController < ApplicationController
       session[:admin_id] = admin.id
       redirect_to "/admin/dashboard"
     else
-      redirect_to "/admin/login"
+      redirect_to "/admin/login?bypassed=true"
       flash[:incorrect_credentials] = "Incorrect Credentials."
     end
   end
