@@ -33,31 +33,28 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"1b4f458ed1ca826e4a0f930e64de7932"
+      - W/"39312399979a076b130c36b617cc5b3b"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9f70bc80-8e59-400d-a0e4-67cbf5886e5f
+      - db33acc7-c10d-4d52-98d7-4c7d1456af20
       X-Runtime:
-      - '0.375379'
+      - '0.389847'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"52780","type":"recipe","attributes":{"name":"Potato
-        Gratin with Chicken","ingredients":{"Potatoes":"800g","Onions":"3","Olive
-        Oil":"2 tblsp","Chicken Stock":"100ml","Creme Fraiche":"1 pot","Parmesan":"Topping","Chicken
-        Breasts":"4","Bacon":"4","Spinach":"Topping","Peas":"Topping","":null},"image":"https://www.themealdb.com/images/media/meals/qwrtut1468418027.jpg","instructions":"15
-        minute potato gratin with chicken and bacon greens: a gratin always seems
-        more effort and more indulgent than ordinary boiled or roasts, but it doesn''t
-        have to take 45mins, it''s nice for a change and you can control the calorie
-        content by going with full fat to low fat creme fraiche. (It''s always tastes
-        better full fat though obviously!) to serve 4: use 800g of potatoes, finely
-        slice and boil in a pan for about 5-8 mins till firmish, not soft. Finely
-        slice 3 onions and place in an oven dish with 2 tblsp of olive oil and 100ml
-        of chicken stock. Cook till the onions are soft then drain the potatoes and
-        pour onto the onions. Season and spoon over cream or creme fraiche till all
-        is covered but not swimming. Grate Parmesan over the top then finish under
-        the grill till nicely golden. serve with chicken and bacon, peas and spinach.","category":"Chicken","area":"Unknown"}}}'
-  recorded_at: Thu, 09 Jun 2022 19:09:19 GMT
+      string: '{"data":{"id":"52860","type":"recipe","attributes":{"name":"Chocolate
+        Raspberry Brownies","ingredients":{"Dark Chocolate":"200g","Milk Chocolate":"100g
+        ","Salted Butter":"250g","Light Brown Soft Sugar":"400g","Eggs":"4 large","Plain
+        Flour":"140g","Cocoa":"50g","Raspberries":"200g","":""},"image":"https://www.themealdb.com/images/media/meals/yypvst1511386427.jpg","instructions":"Heat
+        oven to 180C/160C fan/gas 4. Line a 20 x 30cm baking tray tin with baking
+        parchment. Put the chocolate, butter and sugar in a pan and gently melt, stirring
+        occasionally with a wooden spoon. Remove from the heat.\r\nStir the eggs,
+        one by one, into the melted chocolate mixture. Sieve over the flour and cocoa,
+        and stir in. Stir in half the raspberries, scrape into the tray, then scatter
+        over the remaining raspberries. Bake on the middle shelf for 30 mins or, if
+        you prefer a firmer texture, for 5 mins more. Cool before slicing into squares.
+        Store in an airtight container for up to 3 days.","category":"Dessert","area":"American"}}}'
+  recorded_at: Thu, 09 Jun 2022 19:47:30 GMT
 recorded_with: VCR 6.1.0
