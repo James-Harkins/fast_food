@@ -119,6 +119,28 @@
   border-spacing: 10px;
 }
 
+// cocktail styling
+#name_of_cocktail{
+  width: 250px;
+  border: 2px solid rgb(184, 92, 56);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  font-family: "Verdana";
+  text-align: center;
+
+  justify-content: center;
+}
+
+.btn-light{
+  margin: 10px;
+  background-color: rgb(236, 153, 75);
+  font-variant: small-caps;
+  // color: rgb(184, 92, 56);
+}
+.btn-light:hover {
+background-color: rgb(191, 146, 112);
+}
 // .whole_page {
 //   position: relative;
 //   width: 500px;
