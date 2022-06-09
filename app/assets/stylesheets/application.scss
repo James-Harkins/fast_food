@@ -46,12 +46,13 @@
  }
 
  #name_of_recipe {
-  width: 250px;
+  width: 40%;
   border: 2px solid rgb(184, 92, 56);
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
-  font-family: "Verdana";
+  font-family: 'Tai Hertiage Pro';
+  font-size: 2.5em;
   text-align: center;
  }
 
@@ -61,8 +62,9 @@
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
-  font-family: "Verdana";
+  font-family: 'Tai Hertiage Pro';
   text-align: center;
+  font-size: 1.2em;
 }
 
 #ingredient_name {
@@ -72,7 +74,7 @@
   margin: 2px;
   border-radius: 10px;
   display: table-cell;
-  font-family: "Verdana";
+  font-family: 'Tai Hertiage Pro';
   text-align: center;
 }
 
@@ -83,7 +85,7 @@
   margin: 2px;
   border-radius: 10px;
   display: table-cell;
-  font-family: "Verdana";
+  font-family: 'Tai Hertiage Pro';
   text-align: center;
 }
 
@@ -100,7 +102,7 @@
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
-  font-family: "Verdana";
+  font-family: 'Tai Hertiage Pro';
   text-align: center;
 }
 
@@ -111,7 +113,7 @@
   margin: 2px;
   border-radius: 10px;
   display: table-cell;
-  font-family: "Verdana";
+  font-family: 'Tai Hertiage Pro';
   text-align: left;
 }
 
@@ -129,7 +131,7 @@
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
-  font-family: "Verdana";
+  font-family: 'Tai Hertiage Pro';
   text-align: center;
 
   justify-content: center;
@@ -139,7 +141,7 @@
   margin: 10px;
   border-radius: 15px;
   background-color: rgb(236, 153, 75);
-  font-variant: small-caps;
+font-family: 'Tai Hertiage Pro';
   font-size: 1.2em;
 }
 .btn-light:hover {
