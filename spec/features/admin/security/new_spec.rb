@@ -8,7 +8,7 @@ describe "admin/security_check page" do
 
         expect(page).to have_content("Enter the Site Password to Proceed to Admin Login:")
 
-        fill_in "Site password", with: "LocalAdminTestingPassword"
+        fill_in "Site Password", with: ENV['SITE_PASSWORD']
         click_button "Submit"
 
         expect(current_path).to eq("/admin/login")
@@ -19,7 +19,7 @@ describe "admin/security_check page" do
 
         expect(page).to have_content("Enter the Site Password to Proceed to Admin Login:")
 
-        fill_in "Site password", with: "NotTheRightPassword"
+        fill_in "Site Password", with: "NotTheRightPassword"
         click_button "Submit"
 
         expect(current_path).to eq("/admin/security_check")

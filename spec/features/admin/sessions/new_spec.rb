@@ -6,7 +6,7 @@ describe "/admin/sessions/new page" do
       before do
         admin = Admin.create!(name: "Bunk Moreland", email: "just_a_humble_muthafucka@bawlmur_po-lice.com", password: "password123", password_confirmation: "password123")
         visit "/admin/security_check"
-        fill_in "Site password", with: "LocalAdminTestingPassword"
+        fill_in "Site Password", with: ENV['SITE_PASSWORD']
         click_button "Submit"
       end
 

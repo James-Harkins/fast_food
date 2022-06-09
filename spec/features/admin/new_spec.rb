@@ -6,7 +6,7 @@ describe "admin/new page" do
       before do
         admin = Admin.create!(name: "Bunk Moreland", email: "just_a_humble_muthafucka@bawlmur_po-lice.com", password: "password123", password_confirmation: "password123")
         visit "/admin/security_check"
-        fill_in "Site password", with: "LocalAdminTestingPassword"
+        fill_in "Site Password", with: ENV['SITE_PASSWORD']
         click_button "Submit"
         click_button "Register As Admin"
       end
@@ -21,7 +21,7 @@ describe "admin/new page" do
 
         expect(current_path).to eq("/admin/security_check")
         expect(page).to have_content("Admin successfully created. Please re-submit the Site Password and proceed to Admin Login.")
-        fill_in "Site password", with: "LocalAdminTestingPassword"
+        fill_in "Site Password", with: ENV['SITE_PASSWORD']
         click_button "Submit"
         fill_in :email, with: "13_years_and_4_months@bawlmur_po-lice.com"
         fill_in :password, with: "test123"
