@@ -33,16 +33,15 @@
 
  // Recipe show page styling
  #image_of_recipe {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   border: 2px solid rgb(184, 92, 56);
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
-  // justify-content: center;
-    display: block;
-      margin-left: auto;
-      margin-right: auto;
+  display: flex;
+  flex-direction: column;
+
  }
 
  #name_of_recipe {
@@ -52,19 +51,24 @@
   margin: 10px;
   border-radius: 10px;
   font-family: 'Tai Hertiage Pro';
+  color: rgb(92, 61, 46);
   font-size: 2.5em;
   text-align: center;
+  background-color: rgb(236, 153, 75);
  }
 
 #ingredient_header {
-  width: 250px;
+  width: 30%;
   border: 2px solid rgb(184, 92, 56);
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
   font-family: 'Tai Hertiage Pro';
+  color: rgb(92, 61, 46);
   text-align: center;
-  font-size: 1.2em;
+  font-size: 2em;
+  background-color: rgb(236, 153, 75);
+  
 }
 
 #ingredient_name {
@@ -75,7 +79,10 @@
   border-radius: 10px;
   display: table-cell;
   font-family: 'Tai Hertiage Pro';
+  color: rgb(92, 61, 46);
   text-align: center;
+  font-size: 1.5em;
+  background-color: rgb(224, 192, 151);
 }
 
 #ingredient_amount {
@@ -86,7 +93,10 @@
   border-radius: 10px;
   display: table-cell;
   font-family: 'Tai Hertiage Pro';
+  color: rgb(92, 61, 46);
   text-align: center;
+  font-size: 1.5em;
+  background-color: rgb(224, 192, 151);
 }
 
 #ingredient_row {
@@ -103,18 +113,24 @@
   margin: 10px;
   border-radius: 10px;
   font-family: 'Tai Hertiage Pro';
+  color: rgb(92, 61, 46);
   text-align: center;
+  font-size: 2em;
+  background-color: rgb(236, 153, 75);
 }
 
 #instruction_step {
   width: 3px;
   border: 2px solid rgb(184, 92, 56);
-  padding: 2px;
+  padding: 15px;
   margin: 2px;
   border-radius: 10px;
   display: table-cell;
   font-family: 'Tai Hertiage Pro';
+  color: rgb(92, 61, 46);
   text-align: left;
+  font-size: 1.5em;
+  background-color: rgb(224, 192, 151);
 }
 
 #instruction_row {
@@ -126,22 +142,25 @@
 
 // cocktail styling
 #name_of_cocktail{
-  width: 250px;
+  width: 40%;
   border: 2px solid rgb(184, 92, 56);
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
   font-family: 'Tai Hertiage Pro';
+  color: rgb(92, 61, 46);
   text-align: center;
-
+  background-color: rgb(236, 153, 75);
   justify-content: center;
+  font-size: 2em;
+  
 }
 
 .btn-light{
   margin: 10px;
   border-radius: 15px;
   background-color: rgb(236, 153, 75);
-font-family: 'Tai Hertiage Pro';
+  font-family: 'Tai Hertiage Pro';
   font-size: 1.2em;
 }
 .btn-light:hover {
