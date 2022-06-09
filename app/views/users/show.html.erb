@@ -1,5 +1,6 @@
 <%= render "layouts/header" %>
-
+<div id="page-container">
+<div id="content-wrap">
 <div class="container text-center">
 
 <% if current_user %>
@@ -33,3 +34,6 @@
 
   <% end %>
 <% end %>
+</div>
+<%= render "layouts/footer" %>
+</div>

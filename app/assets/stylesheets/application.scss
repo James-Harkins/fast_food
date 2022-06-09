@@ -26,6 +26,17 @@
  body {
    background-color: rgb(255, 237, 219);
  }
+
+
+#page-container {
+   position: relative;
+   min-height: 100vh;
+ }
+
+ #content-wrap {
+   padding-bottom: 5rem;
+   /* Footer height */
+ }
 // root page
 
 
@@ -157,7 +168,7 @@
 }
 
 .btn-light{
-  position: relative;
+  position: sticky;
   margin: 10px;
   border-radius: 15px;
   background-color: rgb(236, 153, 75);
@@ -357,7 +368,7 @@ span::after {
   border-radius: .6em;
   font-family: 'Tai Hertiage Pro';
   color: rgb(92, 61, 46);
-  font-size: 2em;
+  font-size: 1.5em;
   background-color: rgb(224, 192, 151);
 }
 
@@ -378,7 +389,7 @@ span::after {
 .btn-primary {
   margin: 1px;
   background-color: rgb(236, 153, 75);
-  font-size: .5em;
+  font-size: .8em;
   color: black !important;
   outline: 0 none !important;
   box-shadow: none !important;

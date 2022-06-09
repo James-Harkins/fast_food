@@ -1,3 +1,5 @@
+<%= render "layouts/header" %>
+
 <center>
 
 <div id="enter_password_text">
@@ -9,10 +11,10 @@
 <div id="site_password_form">
 <form action="/admin/login" method="get">
   <div class="form-group">
-    <label for="site_password" name="site_password">Site Password</label>
+    <label for="site_password" name="site_password">Site Password:</label>
     <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 
-    <input type="password" class="site_password" id="site_password" placeholder="Site Password" name="site_password" value="site_password">
+    <input type="password" class="site_password" id="site_password" name="site_password" ><br>
     <small id="contact_admin" class="form-text text-muted">Please contact site owners<br> if you wish to become an admin</small>
   </div>
 

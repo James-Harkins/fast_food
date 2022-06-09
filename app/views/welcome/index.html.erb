@@ -38,45 +38,62 @@ background-color: rgb(191, 146, 112) !important;
   box-shadow: none !important;
   border: none !important;
 }
+#root_buttons_random {
+  top-padding: 500px;
+  border-padding: 600px;
+}
+#outer_group
+{
+    width:100%;
+    text-align: center;
+}
 
 </style>
 
 <div id="logged_in_header">
-<% if current_user %>
-  <%= render "layouts/header" %>
-<% end %>
-</div>
-<div class="container text-center">
-  <div id="outer">
-    <div id="inner">
-    <img class="animate__animated animate__bounceInDown" src="<%= image_path('burger.png', size: "300x300") %>" />
-      <h1 class="animate__animated animate__lightSpeedInLeft">FAST </h1>
-    </div>
-    <div id="inner">
-      <h2 class="animate__animated animate__lightSpeedInRight">FOOD</h2>
+  <% if current_user %>
+    <%= render "layouts/header" %>
+  <% end %>
+  </div>
+
+<div id="page-container">
+  <div id="content-wrap">
+
+    <div class="container text-center">
+      <div id="outer">
+        <div id="inner">
+        <img class="animate__animated animate__bounceInDown" src="<%= image_path('burger.png', size: "300x300") %>" />
+          <h1 class="animate__animated animate__lightSpeedInLeft">FAST </h1>
+        </div>
+        <div id="inner">
+          <h2 class="animate__animated animate__lightSpeedInRight">FOOD</h2>
+        </div>
+      </div>
+      <br>
+      <% if current_user.present? == false %>
+
+        <form action="/auth/google_oauth2">
+          <button id="root_buttons" type="submit" class="btn btn-outline-primary">Log In With Google</button>
+        </form>
+
+        <br>
+
+        <form action="/recipes/search">
+          <button id="root_buttons" type="submit" class="btn btn-outline-primary">Search Recipes</button>
+        </form>
+
+        <br>
+
+        <form action="/recipes/random">
+          <button id="root_buttons" type="submit" class="btn btn-outline-primary">Random Recipe</button>
+        </form>
+
+
+      <% end %>
+
     </div>
   </div>
-<br>
-<% if current_user.present? == false %>
-
-   <form action="/auth/google_oauth2">
-      <button id="root_buttons" type="submit" class="btn btn-outline-primary">Log In With Google</button>
-    </form>
-  
-  <br>
- 
-  <form action="/recipes/search">
-    <button id="root_buttons" type="submit" class="btn btn-outline-primary">Search Recipes</button>
-  </form>
-
   <br>
 
-  <form action="/recipes/random">
-    <button id="root_buttons" type="submit" class="btn btn-outline-primary">Random Recipe</button>
-  </form>
-<% end %>
-
-<%= button_to "Admin Login", "/admin/security_check", method: :get %>
-
+ <%= render "layouts/footer" %>
 </div>
-
