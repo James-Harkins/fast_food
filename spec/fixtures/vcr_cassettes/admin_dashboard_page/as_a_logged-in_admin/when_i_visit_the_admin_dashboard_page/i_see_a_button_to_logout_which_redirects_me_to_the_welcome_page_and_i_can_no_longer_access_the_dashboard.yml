@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"eec55c7ffa34af1c04e5932e1c97c45d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3b9fbedb-c545-40fb-aab6-13e57e8ae1c1
+      X-Runtime:
+      - '0.117952'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"user","attributes":{"name":"Frank","email":"frankhdafgfad@g.com"}},{"id":"2","type":"user","attributes":{"name":"tom","email":"king@g.com"}},{"id":"3","type":"user","attributes":{"name":"nate","email":"nate@g.com"}},{"id":"4","type":"user","attributes":{"name":"bill","email":"bill@g.com"}},{"id":"5","type":"user","attributes":{"name":"timmy","email":"timmy@g.com"}},{"id":"6","type":"user","attributes":{"name":"sue","email":"sue@g.com"}},{"id":"7","type":"user","attributes":{"name":"Example
+        User","email":"example@example.com"}}]}'
+  recorded_at: Thu, 09 Jun 2022 20:20:45 GMT
+recorded_with: VCR 6.1.0
