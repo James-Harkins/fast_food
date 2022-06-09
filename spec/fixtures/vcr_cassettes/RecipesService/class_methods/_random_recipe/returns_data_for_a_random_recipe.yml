@@ -33,21 +33,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"a589315f02d13ee14357fd5e71b98820"
+      - W/"0ed02c5201b6835cf9a6012f2805767b"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 002b667d-2eb2-4ec7-9f05-b4dc3e86f48d
+      - 2df771c7-23d9-4add-81c3-eb777cece80c
       X-Runtime:
-      - '0.457239'
+      - '0.251934'
       Transfer-Encoding:
       - chunked
     body:
-      encoding: UTF-8
-      string: '{"data":{"id":"53061","type":"recipe","attributes":{"name":"Fresh sardines","ingredients":{"Sardines":"500g","Vegetable
-        Oil":"Dash","Flour":"To Glaze","Salt":"Dash","":" "},"image":"https://www.themealdb.com/images/media/meals/nv5lf31628771380.jpg","instructions":"Wash
-        the fish under the cold tap. Roll in the flour and deep fry in oil until crispy.
-        Lay on kitchen towel to get rid of the excess oil and serve hot or cold with
-        a slice of lemon.","category":"Side","area":"Croatian"}}}'
-  recorded_at: Sun, 05 Jun 2022 20:39:27 GMT
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjp7ImlkIjoiNTMwNDciLCJ0eXBlIjoicmVjaXBlIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiTW9yb2NjYW4gQ2Fycm90IFNvdXAiLCJpbmdyZWRpZW50cyI6eyJDYXJyb3RzIjoiNiBjaG9wcGVkIiwiT25pb24iOiIxIHNsaWNlZCIsIkdhcmxpYyBDbG92ZSI6IjQiLCJDdW1pbiI6IjEgdHNwICIsIkNvcmlhbmRlciI6IjEvMiB0c3AiLCJPbGl2ZSBPaWwiOiIxIHRicyIsIkdhcmFtIE1hc2FsYSI6IjEvNCB0c3AiLCJMZW1vbiBKdWljZSI6IjEgdHNwICIsIiI6IiAifSwiaW1hZ2UiOiJodHRwczovL3d3dy50aGVtZWFsZGIuY29tL2ltYWdlcy9tZWRpYS9tZWFscy9qY3I0NmQxNjE0NzYzODMxLmpwZyIsImluc3RydWN0aW9ucyI6IlN0ZXAgMVxyXG5QcmVoZWF0IG92ZW4gdG8gMTgwwrAgQy5cclxuU3RlcCAyXHJcbkNvbWJpbmUgY2Fycm90cywgb25pb24sIGdhcmxpYywgY3VtaW4gc2VlZHMsIGNvcmlhbmRlciBzZWVkcywgc2FsdCBhbmQgb2xpdmUgb2lsIGluIGEgYm93bCBhbmQgbWl4IHdlbGwuIFRyYW5zZmVyIG9uIGEgYmFraW5nIHRyYXkuXHJcblN0ZXAgM1xyXG5QdXQgdGhlIGJha2luZyB0cmF5IGluIHByZWhlYXRlZCBvdmVuIGFuZCByb2FzdCBmb3IgMTAtMTIgbWludXRlcyBvciB0aWxsIGNhcnJvdHMgc29mdGVuLiBSZW1vdmUgZnJvbSBoZWF0IGFuZCBjb29sLlxyXG5TdGVwIDRcclxuR3JpbmQgdGhlIGJha2VkIGNhcnJvdCBtaXh0dXJlIGFsb25nIHdpdGggc29tZSB3YXRlciB0byBtYWtlIGEgc21vb3RoIHBhc3RlIGFuZCBzdHJhaW4gaW4gYSBib3dsLlxyXG5TdGVwIDVcclxuSGVhdCB0aGUgY2Fycm90IG1peHR1cmUgaW4gYSBub24tc3RpY2sgcGFuLiBBZGQgdHdvIGN1cHMgb2Ygd2F0ZXIgYW5kIGJyaW5nIHRvIGEgYm9pbC4gQWRkIGdhcmFtIG1hc2FsYSBwb3dkZXIgYW5kIG1peC4gQWRkIHNhbHQgYW5kIG1peCB3ZWxsLlxyXG5TdGVwIDZcclxuUmVtb3ZlIGZyb20gaGVhdCwgYWRkIGxlbW9uIGp1aWNlIGFuZCBtaXggd2VsbC5cclxuU3RlcCA3XHJcblNlcnZlIGhvdC4iLCJjYXRlZ29yeSI6IlZlZ2V0YXJpYW4iLCJhcmVhIjoiTW9yb2NjYW4ifX19
+  recorded_at: Thu, 09 Jun 2022 19:09:31 GMT
 recorded_with: VCR 6.1.0

@@ -33,21 +33,20 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"0022ad4a3250cb96f66e5a9f559d60a6"
+      - W/"0399fcc8dfe3a501ad1b5f20b5eeeda3"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3ace9e37-348a-4514-a4cc-9e4d6a49eaa9
+      - fd0be036-b2cc-4ac6-ad8f-10451ea4cbb4
       X-Runtime:
-      - '0.467527'
+      - '0.370040'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"11001","type":"cocktail","attributes":{"name":"Old Fashioned","image":"https://www.thecocktaildb.com/images/media/drink/vrwquq1478252802.jpg","ingredients":{"Bourbon":"4.5
-        cL","Angostura bitters":"2 dashes","Sugar":"1 cube","Water":"dash"},"instructions":"Place
-        sugar cube in old fashioned glass and saturate with bitters, add a dash of
-        plain water. Muddle until dissolved.\r\nFill the glass with ice cubes and
-        add whiskey.\r\n\r\nGarnish with orange twist, and a cocktail cherry."}}}'
-  recorded_at: Wed, 08 Jun 2022 22:36:52 GMT
+      string: '{"data":{"id":"11008","type":"cocktail","attributes":{"name":"Manhattan","image":"https://www.thecocktaildb.com/images/media/drink/yk70e31606771240.jpg","ingredients":{"Sweet
+        Vermouth":"3/4 oz ","Bourbon":"2 1/2 oz Blended ","Angostura bitters":"dash
+        ","Ice":"2 or 3 ","Maraschino cherry":"1 ","Orange peel":"1 twist of "},"instructions":"Stirred
+        over ice, strained into a chilled glass, garnished, and served up."}}}'
+  recorded_at: Thu, 09 Jun 2022 19:09:29 GMT
 recorded_with: VCR 6.1.0

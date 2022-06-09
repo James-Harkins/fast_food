@@ -35,19 +35,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ec4fdc15dfb4a03670eb572bd9c49330"
+      - W/"f1f69f8066a1ade663c82bd38cf996c0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b0037317-14a3-4268-8a5d-faa7f4b0994b
+      - 6d78a5df-c88b-481c-9f23-e0db51f6b807
       X-Runtime:
-      - '0.002181'
+      - '0.006751'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Wed, 08 Jun 2022 00:40:26 GMT
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Thu, 09 Jun 2022 19:09:28 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user?email=example@example.com
@@ -81,22 +81,22 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ec4fdc15dfb4a03670eb572bd9c49330"
+      - W/"f1f69f8066a1ade663c82bd38cf996c0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0e3f0256-790c-4e61-ac80-8d651f77d7fd
+      - 26c83548-5ff1-4eb3-8c14-021ce50f8659
       X-Runtime:
-      - '0.002027'
+      - '0.004519'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Wed, 08 Jun 2022 00:40:26 GMT
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Thu, 09 Jun 2022 19:09:28 GMT
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/saved_recipes?user_id=7
+    uri: http://localhost:5000/api/v1/saved_recipes?user_id=6
     body:
       encoding: US-ASCII
       string: ''
@@ -127,23 +127,20 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"0ae1c6b0ee51089a105a36031244219b"
+      - W/"2baa0d845f23d00c822cb571e1f00557"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 34599969-a9d4-4d7d-9d2e-097a96fc358a
+      - bccea7e1-8590-49ca-a24f-21253180c12e
       X-Runtime:
-      - '0.003070'
+      - '0.017771'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"7","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Garides
-        Saganaki","recipe_id":"52764"}},{"id":"8","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Apple
-        \u0026 Blackberry Crumble","recipe_id":"52893"}},{"id":"9","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Beef
-        Lo Mein","recipe_id":"52952"}},{"id":"12","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Beef
+      string: '{"data":[{"id":"12","type":"saved_recipes","attributes":{"user_id":6,"recipe_name":"Beef
         Wellington","recipe_id":"52803"}}]}'
-  recorded_at: Wed, 08 Jun 2022 00:40:26 GMT
+  recorded_at: Thu, 09 Jun 2022 19:09:28 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user?email=example@example.com
@@ -177,19 +174,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ec4fdc15dfb4a03670eb572bd9c49330"
+      - W/"f1f69f8066a1ade663c82bd38cf996c0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 10723950-76ac-45f8-923f-b3e7939c4c7a
+      - 2163bbe5-ef03-49da-a609-cf1318495d9d
       X-Runtime:
-      - '0.001798'
+      - '0.004416'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Wed, 08 Jun 2022 00:40:26 GMT
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Thu, 09 Jun 2022 19:09:28 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user?email=example@example.com
@@ -223,78 +220,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ec4fdc15dfb4a03670eb572bd9c49330"
+      - W/"f1f69f8066a1ade663c82bd38cf996c0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1321c3ff-6c6a-45f6-9d4b-061e7cd10230
+      - 32c9e5bf-9358-46d8-ad94-b3b9903f6153
       X-Runtime:
-      - '0.001993'
+      - '0.004337'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Wed, 08 Jun 2022 00:40:26 GMT
-- request:
-    method: get
-    uri: http://localhost:5000/api/v1/recipes/random_meal
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.3.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - W/"37622acab115b3bf7850061287ca677e"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - f2c7cf33-2cfe-4040-9674-6deb1e1c1cef
-      X-Runtime:
-      - '0.278658'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"52785","type":"recipe","attributes":{"name":"Dal fry","ingredients":{"Toor
-        dal":"1 cup","Water":"2-1/2 cups","Salt":"1/2 tsp","Turmeric":"1/4 tsp","Ghee":"3
-        tbs","Chopped tomatoes":"1 cup","Cumin seeds":"1/2 tsp","Mustard Seeds":"1/2
-        tsp","Bay Leaf":"2","Green Chili":"1 tbs chopped","Ginger":"2 tsp shredded","Cilantro":"2
-        tbs ","Red Pepper":"1/2 tsp","Sugar":"1 tsp","Garam Masala":"1/4 tsp","":""},"image":"https://www.themealdb.com/images/media/meals/wuxrtu1483564410.jpg","instructions":"Wash
-        and soak toor dal in approx. 3 cups of water, for at least one hours. Dal
-        will be double in volume after soaking. Drain the water.\r\nCook dal with
-        2-1/2 cups water and add salt, turmeric, on medium high heat, until soft in
-        texture (approximately 30 mins) it should be like thick soup.\r\nIn a frying
-        pan, heat the ghee. Add cumin seeds, and mustard seeds. After the seeds crack,
-        add bay leaves, green chili, ginger and chili powder. Stir for a few seconds.\r\nAdd
-        tomatoes, salt and sugar stir and cook until tomatoes are tender and mushy.\r\nAdd
-        cilantro and garam masala cook for about one minute.\r\nPour the seasoning
-        over dal mix it well and cook for another minute.\r\nServe with Naan.","category":"Vegetarian","area":"Indian"}}}'
-  recorded_at: Wed, 08 Jun 2022 00:40:26 GMT
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Thu, 09 Jun 2022 19:09:28 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user?email=example@example.com
@@ -328,19 +266,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ec4fdc15dfb4a03670eb572bd9c49330"
+      - W/"f1f69f8066a1ade663c82bd38cf996c0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f4edec5a-21bc-4195-82d9-ab94aab718ce
+      - 5f3f7db4-1762-4a6d-87dc-73f95445853e
       X-Runtime:
-      - '0.001945'
+      - '0.004458'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Wed, 08 Jun 2022 00:40:26 GMT
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Thu, 09 Jun 2022 19:09:28 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user?email=example@example.com
@@ -374,17 +312,17 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ec4fdc15dfb4a03670eb572bd9c49330"
+      - W/"f1f69f8066a1ade663c82bd38cf996c0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6f80aebd-f03a-4a97-a125-7280184744fc
+      - 073cab8b-ed05-4a44-83b2-7dc7132ff784
       X-Runtime:
-      - '0.001357'
+      - '0.008009'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Wed, 08 Jun 2022 00:40:26 GMT
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Thu, 09 Jun 2022 19:09:28 GMT
 recorded_with: VCR 6.1.0

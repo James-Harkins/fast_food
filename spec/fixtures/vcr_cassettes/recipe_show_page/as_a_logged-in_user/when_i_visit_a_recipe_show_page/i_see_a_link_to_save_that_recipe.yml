@@ -35,19 +35,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ec4fdc15dfb4a03670eb572bd9c49330"
+      - W/"f1f69f8066a1ade663c82bd38cf996c0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4a8cb79c-1a8e-4623-af28-816c5c593096
+      - 290637c6-364b-4101-a6ef-216f1714e7ff
       X-Runtime:
-      - '0.046385'
+      - '0.024365'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Wed, 08 Jun 2022 00:40:25 GMT
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Thu, 09 Jun 2022 19:09:25 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user?email=example@example.com
@@ -81,22 +81,22 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ec4fdc15dfb4a03670eb572bd9c49330"
+      - W/"f1f69f8066a1ade663c82bd38cf996c0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 98ce0b3b-aee8-48d2-a2b7-8320fe13ec42
+      - 40768cce-b04a-49ec-9084-cf2e674f645c
       X-Runtime:
-      - '0.002187'
+      - '0.007488'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Wed, 08 Jun 2022 00:40:25 GMT
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Thu, 09 Jun 2022 19:09:25 GMT
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/saved_recipes?user_id=7
+    uri: http://localhost:5000/api/v1/saved_recipes?user_id=6
     body:
       encoding: US-ASCII
       string: ''
@@ -127,22 +127,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"9ab991182cb9af9c66bc628ebd44192e"
+      - W/"8fe32e407a1038ee38753b70e5374b3a"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9cbd781d-ba88-42ad-8a22-e453440c171d
+      - a9b46acd-5d14-4fe5-9d7f-84f2be572e15
       X-Runtime:
-      - '0.007462'
+      - '0.014427'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"7","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Garides
-        Saganaki","recipe_id":"52764"}},{"id":"8","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Apple
-        \u0026 Blackberry Crumble","recipe_id":"52893"}},{"id":"9","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Beef
-        Lo Mein","recipe_id":"52952"}}]}'
-  recorded_at: Wed, 08 Jun 2022 00:40:25 GMT
+      string: '{"data":[]}'
+  recorded_at: Thu, 09 Jun 2022 19:09:25 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user?email=example@example.com
@@ -176,19 +173,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ec4fdc15dfb4a03670eb572bd9c49330"
+      - W/"f1f69f8066a1ade663c82bd38cf996c0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 504c2199-f6c8-4667-a000-10ca51a2337a
+      - 2236c211-9b9c-4984-b293-2c9726207404
       X-Runtime:
-      - '0.001977'
+      - '0.005942'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Wed, 08 Jun 2022 00:40:25 GMT
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Thu, 09 Jun 2022 19:09:25 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user?email=example@example.com
@@ -222,19 +219,111 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ec4fdc15dfb4a03670eb572bd9c49330"
+      - W/"f1f69f8066a1ade663c82bd38cf996c0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 644344bb-77db-4c31-b789-08c327d85e2a
+      - acc81e36-52ab-4cd0-b34c-0336f746bfeb
       X-Runtime:
-      - '0.001873'
+      - '0.016655'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Wed, 08 Jun 2022 00:40:25 GMT
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Thu, 09 Jun 2022 19:09:25 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/user?email=example@example.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"f1f69f8066a1ade663c82bd38cf996c0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f8df0dff-54f0-4ead-9354-da44f71585d3
+      X-Runtime:
+      - '0.004299'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Thu, 09 Jun 2022 19:09:25 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/user?email=example@example.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"f1f69f8066a1ade663c82bd38cf996c0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 33f85c13-d6e6-4f48-9ab7-5ac1ae6cfca6
+      X-Runtime:
+      - '0.003341'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Thu, 09 Jun 2022 19:09:25 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/recipes/find?id=52803
@@ -272,16 +361,16 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1d83e1ee-5ac3-4196-ab4c-6d8cdd13c7e6
+      - 82467b0a-e507-44a2-8169-f4e1376f5299
       X-Runtime:
-      - '0.396615'
+      - '0.249491'
       Transfer-Encoding:
       - chunked
     body:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJkYXRhIjp7ImlkIjoiNTI4MDMiLCJ0eXBlIjoicmVjaXBlIiwiYXR0cmlidXRlcyI6eyJuYW1lIjoiQmVlZiBXZWxsaW5ndG9uIiwiaW5ncmVkaWVudHMiOnsibXVzaHJvb21zIjoiNDAwZyIsIkVuZ2xpc2ggTXVzdGFyZCI6IjEtMnRic3AiLCJPbGl2ZSBPaWwiOiJEYXNoIiwiQmVlZiBGaWxsZXQiOiI3NTBnIHBpZWNlIiwiUGFybWEgaGFtIjoiNi04IHNsaWNlcyIsIlB1ZmYgUGFzdHJ5IjoiNTAwZyIsIkZsb3VyIjoiRHVzdGluZyIsIkVnZyBZb2xrcyI6IjIgQmVhdGVuICIsIiI6IiJ9LCJpbWFnZSI6Imh0dHBzOi8vd3d3LnRoZW1lYWxkYi5jb20vaW1hZ2VzL21lZGlhL21lYWxzL3Z2cHByeDE0ODczMjU2OTkuanBnIiwiaW5zdHJ1Y3Rpb25zIjoiUHV0IHRoZSBtdXNocm9vbXMgaW50byBhIGZvb2QgcHJvY2Vzc29yIHdpdGggc29tZSBzZWFzb25pbmcgYW5kIHB1bHNlIHRvIGEgcm91Z2ggcGFzdGUuIFNjcmFwZSB0aGUgcGFzdGUgaW50byBhIHBhbiBhbmQgY29vayBvdmVyIGEgaGlnaCBoZWF0IGZvciBhYm91dCAxMCBtaW5zLCB0b3NzaW5nIGZyZXF1ZW50bHksIHRvIGNvb2sgb3V0IHRoZSBtb2lzdHVyZSBmcm9tIHRoZSBtdXNocm9vbXMuIFNwcmVhZCBvdXQgb24gYSBwbGF0ZSB0byBjb29sLlxyXG5IZWF0IGluIGEgZnJ5aW5nIHBhbiBhbmQgYWRkIGEgbGl0dGxlIG9saXZlIG9pbC4gU2Vhc29uIHRoZSBiZWVmIGFuZCBzZWFyIGluIHRoZSBob3QgcGFuIGZvciAzMCBzZWNzIG9ubHkgb24gZWFjaCBzaWRlLiAoWW91IGRvbid0IHdhbnQgdG8gY29vayBpdCBhdCB0aGlzIHN0YWdlLCBqdXN0IGNvbG91ciBpdCkuIFJlbW92ZSB0aGUgYmVlZiBmcm9tIHRoZSBwYW4gYW5kIGxlYXZlIHRvIGNvb2wsIHRoZW4gYnJ1c2ggYWxsIG92ZXIgd2l0aCB0aGUgbXVzdGFyZC5cclxuTGF5IGEgc2hlZXQgb2YgY2xpbmcgZmlsbSBvbiBhIHdvcmsgc3VyZmFjZSBhbmQgYXJyYW5nZSB0aGUgUGFybWEgaGFtIHNsaWNlcyBvbiBpdCwgaW4gc2xpZ2h0bHkgb3ZlcmxhcHBpbmcgcm93cy4gV2l0aCBhIHBhbGV0dGUga25pZmUsIHNwcmVhZCB0aGUgbXVzaHJvb20gcGFzdGUgb3ZlciB0aGUgaGFtLCB0aGVuIHBsYWNlIHRoZSBzZWFyZWQgYmVlZiBmaWxsZXQgaW4gdGhlIG1pZGRsZS4gS2VlcGluZyBhIHRpZ2h0IGhvbGQgb2YgdGhlIGNsaW5nIGZpbG0gZnJvbSB0aGUgZWRnZSwgbmVhdGx5IHJvbGwgdGhlIFBhcm1hIGhhbSBhbmQgbXVzaHJvb21zIGFyb3VuZCB0aGUgYmVlZiB0byBmb3JtIGEgdGlnaHQgYmFycmVsIHNoYXBlLiBUd2lzdCB0aGUgZW5kcyBvZiB0aGUgY2xpbmcgZmlsbSB0byBzZWN1cmUuIENoaWxsIGZvciAxNS0yMCBtaW5zIHRvIGFsbG93IHRoZSBiZWVmIHRvIHNldCBhbmQga2VlcCBpdHMgc2hhcGUuXHJcblJvbGwgb3V0IHRoZSBwdWZmIHBhc3RyeSBvbiBhIGZsb3VyZWQgc3VyZmFjZSB0byBhIGxhcmdlIHJlY3RhbmdsZSwgdGhlIHRoaWNrbmVzcyBvZiBhIMKjMSBjb2luLiBSZW1vdmUgdGhlIGNsaW5nIGZpbG0gZnJvbSB0aGUgYmVlZiwgdGhlbiBsYXkgaW4gdGhlIGNlbnRyZS4gQnJ1c2ggdGhlIHN1cnJvdW5kaW5nIHBhc3RyeSB3aXRoIGVnZyB5b2xrLiBGb2xkIHRoZSBlbmRzIG92ZXIsIHRoZSB3cmFwIHRoZSBwYXN0cnkgYXJvdW5kIHRoZSBiZWVmLCBjdXR0aW5nIG9mZiBhbnkgZXhjZXNzLiBUdXJuIG92ZXIsIHNvIHRoZSBzZWFtIGlzIHVuZGVybmVhdGgsIGFuZCBwbGFjZSBvbiBhIGJha2luZyBzaGVldC4gQnJ1c2ggb3ZlciBhbGwgdGhlIHBhc3RyeSB3aXRoIGVnZyBhbmQgY2hpbGwgZm9yIGFib3V0IDE1IG1pbnMgdG8gbGV0IHRoZSBwYXN0cnkgcmVzdC5cclxuSGVhdCB0aGUgb3ZlbiB0byAyMDBDLCA0MDBGLCBnYXMgNi5cclxuTGlnaHRseSBzY29yZSB0aGUgcGFzdHJ5IGF0IDFjbSBpbnRlcnZhbHMgYW5kIGdsYXplIGFnYWluIHdpdGggYmVhdGVuIGVnZyB5b2xrLiBCYWtlIGZvciAyMCBtaW51dGVzLCB0aGVuIGxvd2VyIHRoZSBvdmVuIHNldHRpbmcgdG8gMTgwQywgMzUwRiwgZ2FzIDQgYW5kIGNvb2sgZm9yIGFub3RoZXIgMTUgbWlucy4gQWxsb3cgdG8gcmVzdCBmb3IgMTAtMTUgbWlucyBiZWZvcmUgc2xpY2luZyBhbmQgc2VydmluZyB3aXRoIHRoZSBzaWRlIGRpc2hlcyBvZiB5b3VyIGNob2ljZS4gVGhlIGJlZWYgc2hvdWxkIHN0aWxsIGJlIHBpbmsgaW4gdGhlIGNlbnRyZSB3aGVuIHlvdSBzZXJ2ZSBpdC4iLCJjYXRlZ29yeSI6IkJlZWYiLCJhcmVhIjoiQnJpdGlzaCJ9fX0=
-  recorded_at: Wed, 08 Jun 2022 00:40:26 GMT
+  recorded_at: Thu, 09 Jun 2022 19:09:25 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user?email=example@example.com
@@ -315,19 +404,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ec4fdc15dfb4a03670eb572bd9c49330"
+      - W/"f1f69f8066a1ade663c82bd38cf996c0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - bb4ed8bb-57ae-4667-837b-b7726df07614
+      - ea910ed8-c50d-492a-a836-c32172216cfd
       X-Runtime:
-      - '0.002393'
+      - '0.008714'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Wed, 08 Jun 2022 00:40:26 GMT
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Thu, 09 Jun 2022 19:09:25 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user?email=example@example.com
@@ -361,22 +450,114 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ec4fdc15dfb4a03670eb572bd9c49330"
+      - W/"f1f69f8066a1ade663c82bd38cf996c0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e2f928f4-f92e-4a7b-81f1-c74d7de1c246
+      - 79055807-ff7a-4296-8599-cfded7b03d13
       X-Runtime:
-      - '0.002150'
+      - '0.006427'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Wed, 08 Jun 2022 00:40:26 GMT
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Thu, 09 Jun 2022 19:09:25 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/user?email=example@example.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"f1f69f8066a1ade663c82bd38cf996c0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5cad396d-73d5-4ebb-bfe0-ea4a017d4782
+      X-Runtime:
+      - '0.007525'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Thu, 09 Jun 2022 19:09:25 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/user?email=example@example.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"f1f69f8066a1ade663c82bd38cf996c0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 53432d73-d1e1-4bce-a422-14211806c234
+      X-Runtime:
+      - '0.006145'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Thu, 09 Jun 2022 19:09:25 GMT
 - request:
     method: post
-    uri: http://localhost:5000/api/v1/saved_recipes?recipe_id=52803&recipe_name=Beef%20Wellington&user_id=7
+    uri: http://localhost:5000/api/v1/saved_recipes?recipe_id=52803&recipe_name=Beef%20Wellington&user_id=6
     body:
       encoding: UTF-8
       string: ''
@@ -409,13 +590,13 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 6021007d-8af9-412c-bb24-87fd718db8df
+      - c4256a8a-3753-4ea1-8fdd-60243aedcabd
       X-Runtime:
-      - '0.011218'
+      - '0.027239'
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Wed, 08 Jun 2022 00:40:26 GMT
+  recorded_at: Thu, 09 Jun 2022 19:09:25 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user?email=example@example.com
@@ -449,22 +630,22 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ec4fdc15dfb4a03670eb572bd9c49330"
+      - W/"f1f69f8066a1ade663c82bd38cf996c0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 859b5b0c-d40d-4993-b5a8-747c7bcd397e
+      - 94e2c3d2-4928-4f6b-b898-3c3f1f713ab0
       X-Runtime:
-      - '0.001906'
+      - '0.005111'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Wed, 08 Jun 2022 00:40:26 GMT
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Thu, 09 Jun 2022 19:09:25 GMT
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/saved_recipes?user_id=7
+    uri: http://localhost:5000/api/v1/saved_recipes?user_id=6
     body:
       encoding: US-ASCII
       string: ''
@@ -495,23 +676,20 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"0ae1c6b0ee51089a105a36031244219b"
+      - W/"2baa0d845f23d00c822cb571e1f00557"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 13b42cc8-0694-4d4f-a516-98a5bb5845f9
+      - 54e5ac31-ff39-4db0-a4e1-61d739e960f1
       X-Runtime:
-      - '0.002577'
+      - '0.012125'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"7","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Garides
-        Saganaki","recipe_id":"52764"}},{"id":"8","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Apple
-        \u0026 Blackberry Crumble","recipe_id":"52893"}},{"id":"9","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Beef
-        Lo Mein","recipe_id":"52952"}},{"id":"12","type":"saved_recipes","attributes":{"user_id":7,"recipe_name":"Beef
+      string: '{"data":[{"id":"12","type":"saved_recipes","attributes":{"user_id":6,"recipe_name":"Beef
         Wellington","recipe_id":"52803"}}]}'
-  recorded_at: Wed, 08 Jun 2022 00:40:26 GMT
+  recorded_at: Thu, 09 Jun 2022 19:09:25 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user?email=example@example.com
@@ -545,19 +723,19 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ec4fdc15dfb4a03670eb572bd9c49330"
+      - W/"f1f69f8066a1ade663c82bd38cf996c0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d27494d4-fbbd-48f6-b680-2b110c595858
+      - 4a0d375c-9d0f-4bd1-a53e-e1c3844ad6fa
       X-Runtime:
-      - '0.001824'
+      - '0.004645'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Wed, 08 Jun 2022 00:40:26 GMT
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Thu, 09 Jun 2022 19:09:26 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user?email=example@example.com
@@ -591,17 +769,109 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ec4fdc15dfb4a03670eb572bd9c49330"
+      - W/"f1f69f8066a1ade663c82bd38cf996c0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 804e945c-35e9-4da8-9f6a-6343f2366248
+      - 2c7e45b1-be05-4f0d-a2ca-614ea45f2243
       X-Runtime:
-      - '0.001370'
+      - '0.012774'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"7","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Wed, 08 Jun 2022 00:40:26 GMT
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Thu, 09 Jun 2022 19:09:26 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/user?email=example@example.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"f1f69f8066a1ade663c82bd38cf996c0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - cd94283b-a046-471a-a261-75fe243fb05c
+      X-Runtime:
+      - '0.008388'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Thu, 09 Jun 2022 19:09:26 GMT
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/user?email=example@example.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"f1f69f8066a1ade663c82bd38cf996c0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 90e1a934-0c15-4c4f-b805-642aadad1364
+      X-Runtime:
+      - '0.007519'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
+  recorded_at: Thu, 09 Jun 2022 19:09:26 GMT
 recorded_with: VCR 6.1.0
