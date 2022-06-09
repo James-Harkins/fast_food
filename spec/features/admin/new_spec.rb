@@ -20,6 +20,7 @@ describe "admin/new page" do
         click_button "Register"
 
         expect(current_path).to eq("/admin/security_check")
+        expect(page).to have_content("Admin successfully created. Please re-submit the Site Password and proceed to Admin Login.")
         fill_in "Site password", with: "LocalAdminTestingPassword"
         click_button "Submit"
         fill_in :email, with: "13_years_and_4_months@bawlmur_po-lice.com"
