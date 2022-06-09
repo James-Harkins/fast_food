@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   delete "/sessions", to: "sessions#destroy"
 
   get "/admin/security_check", to: "admin/security#new"
+  get "/admin/login", to: "admin/sessions#new"
 end
