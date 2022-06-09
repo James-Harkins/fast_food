@@ -1,9 +1,78 @@
-<div class="btn btn-outline-primary">
- <%= link_to "Home", "/", method: :get %>
-</div>
-<div class="btn btn-outline-primary">
-  <%= link_to "Search Recipes", "/recipes/search", method: :get %>
-</div>
-<div class="btn btn-outline-primary">
-  <%= link_to "Random Recipe", "/recipes/random", method: :get %>
+<style>
+#top_bar {
+    width:100%;
+    text-align: center;
+    /* height: 48px; */
+    /* line-height: 48px; */
+}
+.inner
+{
+    display: inline-block;
+}
+.btn-outline-primary{
+  margin: 1px;
+  /* border-radius: 15px; */
+  background-color: rgb(236, 153, 75);
+  font-variant: small-caps;
+  font-size: 1.2em;
+
+}
+.btn-outline-primary:hover {
+background-color: rgb(191, 146, 112);
+}
+</style>
+<%# <div id="top_bar">
+  <div class="btn btn-outline-primary">
+  <%= link_to "Home", "/", method: :get %>
+  <%# </div> %>
+  <%# <div class="btn btn-outline-primary"> %>
+    <%# <%= link_to "Search Recipes", "/recipes/search", method: :get %> 
+  <%# </div> %>
+  <%# <div class="btn btn-outline-primary"> %>
+    <%# <%= link_to "Random Recipe", "/recipes/random", method: :get %> 
+  <%# </div> %>
+  <%# <% if current_user %> 
+  <%# <form action="/dashboard"> %>
+    <%# <button id="dashboard_header" type="submit" class="btn btn-outline-primary">Dashboard</button> %>
+  <%# </form> %> 
+
+  <%# <% end %> 
+<%# </div> %>
+
+
+<div id="outer">
+  <div class="inner">
+    <form action="/">
+      <button id="dashboard_header" type="submit" class="btn btn-outline-primary">Home</button>
+    </form>
+  </div>
+
+  <div class="inner">
+    <form action="/recipes/search">
+      <button id="dashboard_header" type="submit" class="btn btn-outline-primary">Search Recipes</button>
+    </form>
+  </div>
+
+  <div class="inner">
+    <form action="/recipes/random">
+      <button id="dashboard_header" type="submit" class="btn btn-outline-primary">Random Recipe</button>
+    </form>
+  </div>
+
+  <div class="inner">
+    <% if current_user %>
+      <form action="/dashboard">
+        <button id="dashboard_header" type="submit" class="btn btn-outline-primary">Dashboard</button>
+      </form>
+    <% end %>
+  </div>
+
+  <div class="inner">
+    <div class="inner_right">
+      <% if current_user %>
+        <div class="btn btn-outline-danger" > 
+          <%= link_to 'Log Out', '/sessions', method: :delete %>
+      <% end %>
+        </div>
+  </div>
 </div>
