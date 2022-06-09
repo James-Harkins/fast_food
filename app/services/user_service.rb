@@ -1,6 +1,6 @@
 class UserService
   def self.conn
-    Faraday.new(url: ENV['BASE_URL']) do |f|
+    Faraday.new(url: ENV["BASE_URL"]) do |f|
       f.adapter Faraday.default_adapter
     end
   end
@@ -16,6 +16,11 @@ class UserService
     response = conn.get("/api/v1/user") do |c|
       c.params = {email: email}
     end
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def self.get_all_users
+    response = conn.get("/api/v1/users")
     JSON.parse(response.body, symbolize_names: true)
   end
 end

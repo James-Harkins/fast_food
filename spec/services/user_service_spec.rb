@@ -29,7 +29,7 @@ describe UserService do
     end
 
     describe "#get_all_users" do
-      it "returns data for all users from the back-end" do
+      it "returns data for all users from the back-end", :vcr do
         users = UserService.get_all_users
 
         expect(users).to be_a Hash
