@@ -1,8 +1,35 @@
-<h1>Enter the Site Password to Proceed to Admin Login:</h1>
+<center>
 
-<%= form_with url: "/admin/login", method: :get, local: true do |form| %>
-  <%= form.label :site_password %>
-  <%= form.password_field :site_password %>
+<div id="enter_password_text">
+  <text>Enter the Site Password to Proceed to Admin Login:</text>
+</div>
+<br>
+<br>
+<br>
+<div id="site_password_form">
+<form action="/admin/login" method="get">
+  <div class="form-group">
+    <label for="site_password" name="site_password">Site Password</label>
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 
-  <br><%= form.submit "Submit" %>
-<% end %>
+    <input type="password" class="site_password" id="site_password" placeholder="Site Password" name="site_password" value="site_password">
+    <small id="contact_admin" class="form-text text-muted">Please contact site owners<br> if you wish to become an admin</small>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+</div>
+
+
+
+
+
+</center>
+<%# <%= form_with url: "/admin/login", method: :get, local: true do |form| %>
+  <%# <%= form.label :site_password %> 
+  <%# <%= form.password_field :site_password %> 
+
+  <%# <br><%= form.submit "Submit" %> 
+<%# <% end %> 

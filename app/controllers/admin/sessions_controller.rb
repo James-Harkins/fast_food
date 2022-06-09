@@ -1,5 +1,6 @@
 class Admin::SessionsController < ApplicationController
   def new
+    # binding.pry
     if params[:site_password] && (params[:site_password] != ENV["SITE_PASSWORD"])
       redirect_to "/admin/security_check?bypassing=true"
     elsif !params[:site_password] && params[:bypassed] != "true"
