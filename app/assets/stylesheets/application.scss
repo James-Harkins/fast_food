@@ -166,15 +166,6 @@
 .btn-light:hover {
 background-color: rgb(191, 146, 112);
 }
-// .whole_page {
-//   position: relative;
-//   width: 500px;
-//   height: 500px;
-//   display: block;
-//   margin-left: auto;
-//   margin-right: auto;
- 
-// }
 
 // recipe search index (search for recipe)
 
@@ -189,6 +180,7 @@ background-color: rgb(191, 146, 112);
   cursor: pointer;
   border: 1px solid black;
   border-radius: 3px;
+  font-family: 'Tai Hertiage Pro';
 }
 
 select {
@@ -212,9 +204,9 @@ select {
 
 li a {
   text-decoration: none;
-  font-variant: small-caps;
+  font-family: 'Tai Hertiage Pro';
   color: #2d2f31;
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 
@@ -228,8 +220,8 @@ span {
   padding: 15px;
   background: rgb(184, 92, 56);
   color: white;
-  font-size: 1.2em;
-  font-variant: small-caps;
+  font-size: 1.4em;
+  font-family: 'Tai Hertiage Pro';
   cursor: pointer;
   display: block;
 }
