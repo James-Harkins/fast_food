@@ -17,9 +17,17 @@ describe "landing page" do
 
         expect(current_path).to eq("/recipes/search")
       end
+
+      it "i see a button to login as an admin, which redirects me to the admin security_check page" do
+        visit "/"
+
+        click_button "Admin Login"
+
+        expect(current_path).to eq("/admin/security_check")
+      end
     end
   end
-  
+
   describe "as a logged-in user" do
     describe "when i visit the root path" do
       it "i see a button to login, which redirects me to the google oauth2 page and then to my dashboard", :vcr do
