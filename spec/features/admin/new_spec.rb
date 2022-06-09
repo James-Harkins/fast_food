@@ -11,7 +11,7 @@ describe "admin/new page" do
         click_button "Register As Admin"
       end
 
-      it "i see a form to register, including name, email, and two password fields" do
+      it "i see a form to register, including name, email, and two password fields", :vcr do
         fill_in :name, with: "Lester Freamon"
         fill_in :email, with: "13_years_and_4_months@bawlmur_po-lice.com"
         fill_in :password, with: "test123"

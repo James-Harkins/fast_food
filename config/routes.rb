@@ -13,10 +13,14 @@ Rails.application.routes.draw do
 
   delete "/sessions", to: "sessions#destroy"
 
-  get "/admin/security_check", to: "admin/security#new"
-  get "/admin/login", to: "admin/sessions#new"
-  post "/admin/login", to: "admin/sessions#create"
   get "/admin/dashboard", to: "admin#index"
   get "/admin/new", to: "admin#new"
   post "/admin", to: "admin#create"
+
+  get "/admin/security_check", to: "admin/security#new"
+
+  get "/admin/login", to: "admin/sessions#new"
+  post "/admin/login", to: "admin/sessions#create"
+
+  delete "/admin/users", to: "admin/users#destroy"
 end

@@ -3,6 +3,8 @@ class AdminController < ApplicationController
     if !current_admin
       redirect_to "/admin/security_check"
       flash[:unathorized] = "You must input the site password in order to access the Admin Login page."
+    else
+      @users = UserFacade.get_all_users
     end
   end
 

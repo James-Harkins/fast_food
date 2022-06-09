@@ -24,35 +24,34 @@ describe "admin dashboard page" do
         visit "/admin/dashboard"
 
         expect(page).to have_content("Current Users:")
-        within "#current_users" do
-          within "#user-1" do
-            expect(page).to have_content("Frank")
-            expect(page).to have_content("frankhdafgfad@g.com")
-            expect(page).to have_button("Delete This User")
-          end
 
-          within "#user-3" do
-            expect(page).to have_content("nate")
-            expect(page).to have_content("nate@g.com")
-            expect(page).to have_button("Delete This User")
-          end
+        within "#user-1" do
+          expect(page).to have_content("Frank")
+          expect(page).to have_content("frankhdafgfad@g.com")
+          expect(page).to have_button("Delete This User")
+        end
 
-          within "#user-7" do
-            expect(page).to have_content("Example User")
-            expect(page).to have_content("example@example.com")
-            expect(page).to have_button("Delete This User")
-          end
+        within "#user-3" do
+          expect(page).to have_content("nate")
+          expect(page).to have_content("nate@g.com")
+          expect(page).to have_button("Delete This User")
+        end
 
-          within "#user-9" do
-            expect(page).to have_content("deletion test")
-            expect(page).to have_content("deletion@test.com")
-            click_button("Delete This User")
-          end
+        within "#user-7" do
+          expect(page).to have_content("Example User")
+          expect(page).to have_content("example@example.com")
+          expect(page).to have_button("Delete This User")
+        end
+
+        within "#user-9" do
+          expect(page).to have_content("deletion test2")
+          expect(page).to have_content("deletion2@test.com")
+          click_button("Delete This User")
         end
 
         expect(current_path).to eq("/admin/dashboard")
-        expect(page).not_to have_content("deletion test")
-        expect(page).not_to have_content("deletion@test.com")
+        expect(page).not_to have_content("deletion test2")
+        expect(page).not_to have_content("deletion2@test.com")
       end
     end
   end

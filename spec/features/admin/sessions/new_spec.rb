@@ -10,7 +10,7 @@ describe "/admin/sessions/new page" do
         click_button "Submit"
       end
 
-      it "i see a form to login, which redirects me to my admin dashboard" do
+      it "i see a form to login, which redirects me to my admin dashboard", :vcr do
         fill_in :email, with: "just_a_humble_muthafucka@bawlmur_po-lice.com"
         fill_in :password, with: "password123"
         click_button "Login As Admin"
