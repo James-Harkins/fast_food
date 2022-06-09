@@ -15,4 +15,6 @@ Rails.application.routes.draw do
 
   get "/admin/security_check", to: "admin/security#new"
   get "/admin/login", to: "admin/sessions#new"
+  post "/admin/login", to: "admin/sessions#create"
+  get "/admin/dashboard", to: "admin#show"
 end
