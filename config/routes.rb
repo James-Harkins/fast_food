@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   post "/saved_recipes", to: "saved_recipes#create"
 
-  delete "/sessions", to: "sessions#destroy"
+  get "/logout", to: "sessions#destroy"
 
   get "/admin/dashboard", to: "admin#index"
   get "/admin/new", to: "admin#new"
