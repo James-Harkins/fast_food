@@ -43,5 +43,29 @@ describe UserService do
         expect(users[:data][0][:attributes][:email]).to eq("frankhdafgfad@g.com")
       end
     end
+
+    describe "#delete_user" do
+      it "sends a delete request to the back-end to destroy a user", :vcr do
+        user_data = {
+          name: "deletion test1",
+          email: "deletion1@test.com"
+        }
+
+        UserService.create_user(user_data)
+
+        first_response = UserService.find_by_email(user_data[:email])
+        expect(first_response).to be_a Hash
+        expect(first_response[:data]).to be_a Hash
+        expect(first_response[:data][:id]).to be_a String
+        expect(first_response[:data][:attributes][:name]).to eq(user_data[:name])
+        expect(first_response[:data][:attributes][:email]).to eq(user_data[:email])
+
+        UserService.delete_user("deletion1@test.com")
+
+        second_response = UserService.find_by_email(user_data[:email])
+
+        expect(second_response[:data]).to eq(nil)
+      end
+    end
   end
 end

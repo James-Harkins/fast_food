@@ -14,6 +14,15 @@ describe "admin dashboard page" do
       end
 
       it "i see a list of all the users saved in the back-end with their emails and with buttons to delete them", :vcr do
+        user_data = {
+          name: "deletion test2",
+          email: "deletion2@test.com"
+        }
+
+        UserService.create_user(user_data)
+
+        visit "/admin/dashboard"
+
         expect(page).to have_content("Current Users:")
         within "#current_users" do
           within "#user-1" do
@@ -34,14 +43,16 @@ describe "admin dashboard page" do
             expect(page).to have_button("Delete This User")
           end
 
-          within "#user-3" do
+          within "#user-9" do
+            expect(page).to have_content("deletion test")
+            expect(page).to have_content("deletion@test.com")
             click_button("Delete This User")
           end
         end
 
         expect(current_path).to eq("/admin/dashboard")
-        expect(page).not_to have_content("nate")
-        expect(page).not_to have_content("nate@g.com")
+        expect(page).not_to have_content("deletion test")
+        expect(page).not_to have_content("deletion@test.com")
       end
     end
   end
