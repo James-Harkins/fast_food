@@ -41,11 +41,11 @@ background-color: rgb(191, 146, 112) !important;
 
 </style>
 
-
+<div id="logged_in_header">
 <% if current_user %>
   <%= render "layouts/header" %>
 <% end %>
-
+</div>
 <div class="container text-center">
   <div id="outer">
     <div id="inner">
@@ -56,7 +56,7 @@ background-color: rgb(191, 146, 112) !important;
       <h2 class="animate__animated animate__lightSpeedInRight">FOOD</h2>
     </div>
   </div>
-
+<br>
 <% if current_user.present? == false %>
 
    <form action="/auth/google_oauth2">

@@ -35,7 +35,7 @@ describe "as a logged-in user" do
     end
 
     it "when I click one of the saved recipe links, I am redirected to that recipe's show page", :vcr do
-      save_and_open_page
+      
       within "#saved_recipes_container" do
         click_link("Beef Wellington")
 

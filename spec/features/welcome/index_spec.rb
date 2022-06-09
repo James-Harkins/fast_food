@@ -6,13 +6,14 @@ describe "landing page" do
       it "i see the name of the app" do
         visit "/"
 
-        expect(page).to have_content("FAST FOOD")
+        expect(page).to have_content("FAST")
+        expect(page).to have_content("FOOD")
       end
 
       it "i see a button to browse recipes, which redirects me to the recipes::search page" do
         visit "/"
 
-        click_button "Browse Recipes"
+        click_button "Search Recipes"
 
         expect(current_path).to eq("/recipes/search")
       end
@@ -35,13 +36,14 @@ describe "landing page" do
         Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:google_oauth2]
 
         visit "/"
-
+        
         click_button "Log In With Google"
 
         visit "/"
-
-        expect(page).to have_button("Log Out")
-        expect(page).not_to have_button("Log In With Google")
+        within "#logged_in_header" do
+          expect(page).to have_content("Log Out")
+        end 
+          expect(page).not_to have_button("Log In With Google")
       end
     end
   end
