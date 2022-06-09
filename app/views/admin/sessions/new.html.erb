@@ -1,0 +1,11 @@
+<%= form_with url: "/admin/login", method: :post, local: true do |form| %>
+  <%= form.label :email %>
+  <%= form.text_field :email %><br>
+
+  <%= form.label :password %>
+  <%= form.password_field :password %><br>
+
+  <%= form.submit "Login As Admin" %>
+<% end %>
+
+<%= button_to "Register As Admin", "/admin/new", params: {bypassed: true}, method: :get %>

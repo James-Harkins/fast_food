@@ -6,7 +6,7 @@ h1 {
 </style>
 
 <div class="container text-center">
- 
+
 
   <% if current_user %>
   <%= button_to "Log Out", "/sessions", method: :delete %>
@@ -21,5 +21,6 @@ h1 {
 <h1 class="animate__animated animate__lightSpeedInLeft">FAST FOOD</h1>
 
   <br><%= button_to "Random Recipe", "/recipes/random", method: :get %>
+  <br><%= button_to "Admin Login", "/admin/security_check", method: :get %>
 
 </div>
