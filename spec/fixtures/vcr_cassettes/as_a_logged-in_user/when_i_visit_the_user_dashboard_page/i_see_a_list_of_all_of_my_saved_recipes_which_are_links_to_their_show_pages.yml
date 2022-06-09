@@ -39,15 +39,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 435fc52e-53d3-4bdf-a20d-fced13d8e311
+      - aee56177-4d0b-4a9a-ad26-e496b2e207fe
       X-Runtime:
-      - '0.006921'
+      - '0.009484'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Thu, 09 Jun 2022 19:09:28 GMT
+  recorded_at: Thu, 09 Jun 2022 19:20:33 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user?email=example@example.com
@@ -85,15 +85,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e6d87f13-8fba-4e65-b41d-5b2e06923636
+      - e2bb69ff-5b31-4609-bda1-57920d35be53
       X-Runtime:
-      - '0.011074'
+      - '0.007391'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Thu, 09 Jun 2022 19:09:28 GMT
+  recorded_at: Thu, 09 Jun 2022 19:20:33 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/saved_recipes?user_id=6
@@ -131,16 +131,16 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1ea4bbfc-b482-478c-aa7f-6a368c5dfb4c
+      - 892ed946-9421-4fc8-92b3-c21cc99c83a2
       X-Runtime:
-      - '0.007544'
+      - '0.005538'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"12","type":"saved_recipes","attributes":{"user_id":6,"recipe_name":"Beef
         Wellington","recipe_id":"52803"}}]}'
-  recorded_at: Thu, 09 Jun 2022 19:09:28 GMT
+  recorded_at: Thu, 09 Jun 2022 19:20:33 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user?email=example@example.com
@@ -178,15 +178,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a2cf6df0-26ec-43d0-acee-f3d082ba161e
+      - 5d0d87f3-574a-407f-a119-fcb6bfbfcaba
       X-Runtime:
-      - '0.004785'
+      - '0.004177'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Thu, 09 Jun 2022 19:09:28 GMT
+  recorded_at: Thu, 09 Jun 2022 19:20:33 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user?email=example@example.com
@@ -224,15 +224,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e9949561-8b14-4662-83bf-48702ab7abff
+      - 2c413c55-354a-43ac-882f-ba50d42bfdf2
       X-Runtime:
-      - '0.009595'
+      - '0.003551'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Thu, 09 Jun 2022 19:09:28 GMT
+  recorded_at: Thu, 09 Jun 2022 19:20:33 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user?email=example@example.com
@@ -270,15 +270,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f52722ed-040e-4296-97d0-5860f77711e5
+      - 96e781fe-e75a-42c0-8191-e93fa1d6be50
       X-Runtime:
-      - '0.008518'
+      - '0.005936'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Thu, 09 Jun 2022 19:09:28 GMT
+  recorded_at: Thu, 09 Jun 2022 19:20:33 GMT
 - request:
     method: get
     uri: http://localhost:5000/api/v1/user?email=example@example.com
@@ -316,13 +316,13 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 44610393-74d9-40fd-af15-a87e59406ba2
+      - c3384517-c645-4763-81a4-fe3dae4db106
       X-Runtime:
-      - '0.007277'
+      - '0.003910'
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"6","type":"user","attributes":{"name":"Example User","email":"example@example.com"}}}'
-  recorded_at: Thu, 09 Jun 2022 19:09:28 GMT
+  recorded_at: Thu, 09 Jun 2022 19:20:33 GMT
 recorded_with: VCR 6.1.0

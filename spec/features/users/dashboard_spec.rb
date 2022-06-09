@@ -15,30 +15,31 @@ describe "as a logged-in user" do
     end
 
     it "i see a button to browse recipes, which redirects me to the /recipes/search page", :vcr do
-      click_link "Search Recipes"
+      
+      click_button "Search Recipes"
 
       expect(current_path).to eq("/recipes/search")
     end
 
     it "i see a button for a random recipe, which redirects me to the /recipes/search page", :vcr do
-      click_link "Random Recipe"
+      click_button "Random Recipe"
 
       expect(current_path).to eq("/recipes/random")
     end
 
     it "i see a list of all of my saved recipes, which are links to their show pages", :vcr do
-      within "#saved_recipes" do
-        expect(page).to have_link("Garides Saganaki")
-        expect(page).to have_link("Apple & Blackberry Crumble")
-        expect(page).to have_link("Beef Lo Mein")
+     
+      within "#saved_recipes_container" do
+        expect(page).to have_link("Beef Wellington")
       end
     end
 
     it "when I click one of the saved recipe links, I am redirected to that recipe's show page", :vcr do
-      within "#saved_recipes" do
-        click_link("Apple & Blackberry Crumble")
+      save_and_open_page
+      within "#saved_recipes_container" do
+        click_link("Beef Wellington")
 
-        expect(current_path).to eq("/recipes/52893")
+        expect(current_path).to eq("/recipes/52803")
       end
     end
   end
