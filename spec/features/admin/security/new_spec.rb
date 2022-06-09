@@ -23,6 +23,7 @@ describe "admin/security_check page" do
         click_button "Submit"
 
         expect(current_path).to eq("/admin/security_check")
+        expect(page).to have_content("Incorrect Password.")
       end
     end
   end
