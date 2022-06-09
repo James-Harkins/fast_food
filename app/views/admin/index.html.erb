@@ -1,3 +1,6 @@
+<%= render "layouts/header" %>
+<br>
+<br>
 <h1>Pat yourself on the back for completing the gauntlet that is Admin Authentication! Great job!</h1>
 
 <h1>Current Users:</h1>
@@ -5,6 +8,6 @@
   <div id="user-<%= user.id %>">
     <h3><%= user.name %></h3>
     <h3><%= user.email %></h3>
-    <%= button_to "Delete This User", "/admin/users", params: {email: user.email}, method: :delete %>
+    <%= button_to "Delete This User", "/admin/users", params: {email: user.email}, method: :delete %><br><br>
   </div>
   <% end %>
