@@ -1,5 +1,6 @@
 <%= render "layouts/header" %>
 
+
 <br>
 <br>
 <div id="page-container">
@@ -15,7 +16,7 @@
         <input type="hidden"
               name="recipe_name"
               value="<%= @recipe.name %>">
-        <input type="hidden" name="authenticity_token" value="ViECdS4KxrTfhazHRcx/6uUp+VXYUUUrqIMNX7jCz24cpeIEcY41IGDAHU1KLOYp2RuwNidxyIKHRlZubUU61SLA==">       
+        <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">      
         <button id="save_recipe" type="submit" class="btn btn-light">Save This Recipe</button>
       </form>
     <% end %>
@@ -85,4 +86,5 @@
   </center>
   <br>
   <%= render "layouts/footer" %>
+
 </div>

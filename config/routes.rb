@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   post "/saved_recipes", to: "saved_recipes#create"
 
-  delete "/sessions", to: "sessions#destroy"
+  get "/logout", to: "sessions#destroy"
 
   get "/admin/dashboard", to: "admin#index"
   get "/admin/new", to: "admin#new"
@@ -21,6 +21,7 @@ Rails.application.routes.draw do
 
   get "/admin/login", to: "admin/sessions#new"
   post "/admin/login", to: "admin/sessions#create"
+  delete "/admin/logout", to: "admin/sessions#destroy"
 
   delete "/admin/users", to: "admin/users#destroy"
 end

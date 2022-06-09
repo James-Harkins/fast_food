@@ -54,6 +54,17 @@ describe "admin dashboard page" do
         expect(page).not_to have_content("deletion test2")
         expect(page).not_to have_content("deletion2@test.com")
       end
+
+      it "i see a button to logout, which redirects me to the welcome page and i can no longer access the dashboard", :vcr do
+        click_button "Admin Logout"
+
+        expect(current_path).to eq("/")
+
+        visit "/admin/dashboard"
+
+        expect(current_path).to eq("/admin/security_check")
+        expect(page).to have_content("You must input the site password in order to access the Admin Login page.")
+      end
     end
   end
 

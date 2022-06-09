@@ -6,7 +6,7 @@
     /* line-height: 48px; */
 }
 .inner{
-      
+
       display: inline-block;
 }
 .btn-outline-primary{
@@ -80,8 +80,8 @@ background-color: rgb(191, 146, 112) !important;
   <div class="inner">
     <div class="inner_right">
       <% if current_user %>
-        <div class="btn btn-outline-danger" > 
-          <%= link_to 'Log Out', '/sessions', method: :delete, class: "a-primary" %>
+        <div class="btn btn-outline-danger" >
+          <%= link_to 'Log Out', '/logout', class: "a-primary" %>
       <% end %>
         </div>
   </div>
