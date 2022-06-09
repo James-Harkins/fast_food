@@ -1,13 +1,41 @@
 <style>
 h1 {
   font-size: 10em;
+  font-family: 'Tai Hertiage Pro';
+  color: rgb(45, 36, 36);
+  display: inline-block;
+  padding-top: 400px;
+  padding-bottom: 1px;
+  width: 100%;
+
+
 }
+h2 {
+  font-size: 10em;
+  font-family: 'Tai Hertiage Pro';
+  color: rgb(45, 36, 36);
+  display: inline-block;
+  padding-top: 0px;
+  width: 100%;
+
+}
+
+/* .inner{
+  display: inline-block;
+} */
+
 
 </style>
 
 <div class="container text-center">
- 
-
+  <div id="outer">
+    <div id="inner">
+      <h1 class="animate__animated animate__lightSpeedInLeft">FAST </h1>
+    </div>
+    <div id="inner">
+      <h2 class="animate__animated animate__lightSpeedInRight">FOOD</h2>
+    </div>
+  </div>
   <% if current_user %>
   <%= button_to "Log Out", "/sessions", method: :delete %>
   <% else %>
@@ -18,7 +46,6 @@ h1 {
   <%= button_to "Browse Recipes", "/recipes/search", method: :get %>
 
 
-<h1 class="animate__animated animate__lightSpeedInLeft">FAST FOOD</h1>
 
   <br><%= button_to "Random Recipe", "/recipes/random", method: :get %>
 
