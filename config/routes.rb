@@ -24,4 +24,6 @@ Rails.application.routes.draw do
   delete "/admin/logout", to: "admin/sessions#destroy"
 
   delete "/admin/users", to: "admin/users#destroy"
+
+  get "/about_the_team", to: "team#index"
 end

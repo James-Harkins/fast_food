@@ -1,0 +1,96 @@
+  <%= render "layouts/header" %>
+<style>
+
+
+.rotate {
+  animation: rotation 3s infinite linear;
+}
+
+@keyframes rotation {
+  0.0%{
+    transform: translate(0px);
+  }
+  50%{
+    transform: translate(800px);
+  }
+  100%{
+    transform: translate(0px);
+  }
+}
+</style>
+
+
+
+<div id="page-container">
+  <div id="content-wrap">
+
+  <center>
+  <div id="about_the_team">
+    <center>
+      <text>About the Team</text>
+    </center>
+  </div>
+  <br>
+
+  <div id="general_info">
+    <text>Phast Phood is the Constultancy Project for the Mod 3 Back End program at the Turing School of Software and Design </text>
+    <br>
+    <a id="team_link" href="https://github.com/James-Harkins/fast_food">Front End Repositoy</a> || 
+    <a id="team_link" href="https://github.com/mcharrod/fast_food_backend">Back End Repositoy</a>
+  </div>
+  <br>
+  <div id="team_header">
+    <center>
+      <text>The Team</text>
+    </center>
+  </div>
+  <br>
+  <div id="the_team">
+
+    <div id="alex">
+      <text>Alex Randolph: </text>
+      <a id="team_link" href="https://github.com/alexGrandolph">GitHub</a> | 
+      <a id="team_link" href="https://www.linkedin.com/in/alexgrandolph/">LinkedIn</a>
+    </div>
+
+    <div id="james">
+      <text>James Harkins: </text>
+      <a id="team_link" href="https://github.com/James-Harkins">GitHub</a> | 
+      <a id="team_link" href="https://www.linkedin.com/in/james-harkins-co/">LinkedIn</a>
+
+    </div>
+
+    <div id="katy">
+      <text>Katy Harrod: </text>
+      <a id="team_link" href="https://github.com/mcharrod">GitHub</a> | 
+      <a id="team_link" href="https://www.linkedin.com/in/katyharrod/">LinkedIn</a>
+
+    </div>
+
+    <div id="luke">
+      <text>Luke Pascale: </text>
+      <a id="team_link" href="https://github.com/enalihai">GitHub</a> | 
+      <a id="team_link" href="https://www.linkedin.com/in/luke-pascale/">LinkedIn</a>
+
+    </div>
+
+    <div id="reuben">
+      <text>Reuben Davidson: </text>
+      <a id="team_link" href="https://github.com/Reuben-Davison">GitHub</a> |
+      <a id="team_link" href="https://www.linkedin.com/in/reuben-davison-3b9ab7227/">LinkedIn</a>
+    </div>
+  </div>
+
+    </center>
+    <div id="hambur">
+      <img style="margin:0px; padding:0px;" src="<%= image_path('burger.png') %>" class="rotate" width="500" height="500" />
+    </div>
+
+ </div>
+
+
+
+
+  <%= render "layouts/footer" %>
+
+</div>
