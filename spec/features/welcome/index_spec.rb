@@ -6,8 +6,8 @@ describe "landing page" do
       it "i see the name of the app" do
         visit "/"
 
-        expect(page).to have_content("FAST")
-        expect(page).to have_content("FOOD")
+        expect(page).to have_content("PHAST")
+        expect(page).to have_content("PHOOD")
       end
 
       it "i see a button to browse recipes, which redirects me to the recipes::search page" do

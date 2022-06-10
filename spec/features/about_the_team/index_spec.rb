@@ -6,7 +6,7 @@ RSpec.describe "About The Team Page" do
     it 'Has information about the team' do
 
       visit '/about_the_team'
-      save_and_open_page
+    
       expect(page).to have_content("About the Team")
       expect(page).to have_link("Front End Repositoy")
       expect(page).to have_link("Back End Repositoy")
@@ -41,15 +41,16 @@ RSpec.describe "About The Team Page" do
         expect(page).to have_link("GitHub")
         expect(page).to have_link("LinkedIn")
       end
+    end 
 
+    it 'Footer link for about the team takes to about the team page' do
+      visit '/'
+      click_link "About the Team"
 
-
-
+      expect(current_path).to eq("/about_the_team")
 
 
     end 
-
-
 
 
 
