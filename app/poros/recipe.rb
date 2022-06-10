@@ -17,5 +17,12 @@ class Recipe
     end
   end
 
-
+  def clean_ingredients
+    @ingredients.each do |key, value|
+      if value.blank? == true
+        @ingredients.delete(key)
+      end 
+    end 
+    @ingredients
+  end 
 end

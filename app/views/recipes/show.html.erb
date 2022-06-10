@@ -46,7 +46,7 @@
 
 
     <div id="ingredients">
-      <% @recipe.ingredients.each do |name, qty| %>
+      <% @recipe.clean_ingredients.each do |name, qty| %>
         <div id="ingredient_row">
           <div id="ingredient_name"><%= name %>:</div><div id="ingredient_amount"><%= qty %></div>
         </div>
