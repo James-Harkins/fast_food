@@ -1,14 +1,10 @@
 # Welcome to Fast Food!
+
+![PhastPhood](./pictures/phast_phood.png)  
+
 Our app is designed to get you to the recipes you want, without making you scroll through a novel first. Don’t care what you eat, as long as it has bacon in it? Try out our search by ingredient function to get some recipe ideas. If you have a particular dish in mind, go ahead and just search for that recipe.
 
-[Phast Phood](phastphood.herokuapp.com)
-
-___Contributors___  
-James Harkins - https://github.com/James-Harkins  
-Alex Randolph - https://github.com/AlexGrandolph  
-Reuben Davison - https://github.com/Reuben-Davison  
-Katy Harrod - https://github.com/mcharrod  
-Luke Pascale - https://github.com/enalihai
+[Phast Phood](phastphood.herokuapp.com) -- take a look!
 
 ___Languages and Technologies___  
 -- Ruby -- Ruby on Rails -- Bootstrap -- Google Oauth -- HTML -- REST --  
@@ -30,15 +26,24 @@ Google which gives users the ability to register using their existing
 Gmail account. Our front end app is responsible for displaying the data
 given back to us from our API and is stylized using Bootstrap.
 ```
-The APIS
+___Project Endpoints___
 
-Ideas in workshop
+___APIs Used___  
+[The Cocktail DB](https://www.thecocktaildb.com/api.php)  
+[The Meal DB](https://www.themealdb.com/api.php)
 
-Collaborators of this project:
+___Contributors___  
+James Harkins - https://github.com/James-Harkins  
+![JamesH](./pictures/james.png)  
 
-(link to github profiles for each)
-Alex randolph,
-Reuben,
-LUke,
-James,
-Katy
+Alex Randolph - https://github.com/AlexGrandolph  
+![AlexR](./pictures/alex.png)  
+
+Katy Harrod - https://github.com/mcharrod  
+![KatyH](./pictures/katy.png)  
+
+Reuben Davison - https://github.com/Reuben-Davison  
+![ReubenD](./pictures/reuben.png)  
+
+Luke Pascale - https://github.com/enalihai  
+![LukeP](./pictures/luke.png)
