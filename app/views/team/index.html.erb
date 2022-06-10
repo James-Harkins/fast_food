@@ -1,4 +1,31 @@
-<%= render "layouts/header" %>
+  <%= render "layouts/header" %>
+<style>
+
+
+.rotate {
+  animation: rotation 3s infinite linear;
+}
+
+@keyframes rotation {
+  0.0%{
+    transform: translate(0px);
+  }
+  /* 25%{
+    transform: translate(25px);
+  }
+  50%{
+    transform: translate(50px);
+  }
+  75%{
+    transform: translate(75px);
+  } */
+  100%{
+    transform: translate(1000px);
+  }
+}
+</style>
+
+
 
 <div id="page-container">
   <div id="content-wrap">
@@ -27,40 +54,48 @@
   <div id="the_team">
 
     <div id="alex">
-      <text>Alex Randolph</text>
-      <a id="team_link" href="https://github.com/alexGrandolph">GitHub</a>
+      <text>Alex Randolph: </text>
+      <a id="team_link" href="https://github.com/alexGrandolph">GitHub</a> | 
       <a id="team_link" href="https://www.linkedin.com/in/alexgrandolph/">LinkedIn</a>
     </div>
 
     <div id="james">
-      <text>James Harkins</text>
-      <a id="team_link" href="https://github.com/James-Harkins">GitHub</a>
+      <text>James Harkins: </text>
+      <a id="team_link" href="https://github.com/James-Harkins">GitHub</a> | 
       <a id="team_link" href="https://www.linkedin.com/in/james-harkins-co/">LinkedIn</a>
 
     </div>
 
     <div id="katy">
-      <text>Katy Harrod</text>
-      <a id="team_link" href="https://github.com/mcharrod">GitHub</a>
+      <text>Katy Harrod: </text>
+      <a id="team_link" href="https://github.com/mcharrod">GitHub</a> | 
       <a id="team_link" href="https://www.linkedin.com/in/katyharrod/">LinkedIn</a>
 
     </div>
 
     <div id="luke">
-      <text>Luke Pascale</text>
-      <a id="team_link" href="https://github.com/enalihai">GitHub</a>
+      <text>Luke Pascale: </text>
+      <a id="team_link" href="https://github.com/enalihai">GitHub</a> | 
       <a id="team_link" href="https://www.linkedin.com/in/luke-pascale/">LinkedIn</a>
 
     </div>
 
     <div id="reuben">
-      <text>Reuben Davidson</text>
-      <a id="team_link" href="https://github.com/Reuben-Davison">GitHub</a>
+      <text>Reuben Davidson: </text>
+      <a id="team_link" href="https://github.com/Reuben-Davison">GitHub</a> |
       <a id="team_link" href="https://www.linkedin.com/in/reuben-davison-3b9ab7227/">LinkedIn</a>
     </div>
-    </center>
   </div>
+
+    </center>
+    <div id="hambur">
+      <img style="margin:0px; padding:0px;" src="<%= image_path('burger.png') %>" class="rotate" width="500" height="500" />
+    </div>
+
  </div>
+
+
+
 
   <%= render "layouts/footer" %>
 
