@@ -36,17 +36,22 @@ ___APIs Used___
 [The Meal DB](https://www.themealdb.com/api.php)
 
 ___Contributors___  
-James Harkins - https://github.com/James-Harkins  
+James Harkins  
+https://github.com/James-Harkins  
 ![JamesH](./pictures/james.png)  
 
-Alex Randolph - https://github.com/AlexGrandolph  
+Alex Randolph  
+https://github.com/AlexGrandolph  
 ![AlexR](./pictures/alex.png)  
 
-Katy Harrod - https://github.com/mcharrod  
+Katy Harrod  
+https://github.com/mcharrod  
 ![KatyH](./pictures/katy.png)  
 
-Reuben Davison - https://github.com/Reuben-Davison  
+Reuben Davison  
+https://github.com/Reuben-Davison  
 ![ReubenD](./pictures/reuben.png)  
 
-Luke Pascale - https://github.com/enalihai  
+Luke Pascale  
+https://github.com/enalihai  
 ![LukeP](./pictures/luke.png)
