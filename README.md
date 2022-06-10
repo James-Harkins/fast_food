@@ -1,8 +1,12 @@
-# Welcome to Fast Food!
+# Welcome to Phast Phood!
 
-![PhastPhood](./pictures/phast_phood.png)  
+![PhastPhood](./pictures/burg.png)  
 
 Our app is designed to get you to the recipes you want, without making you scroll through a novel first. Don’t care what you eat, as long as it has bacon in it? Try out our search by ingredient function to get some recipe ideas. If you have a particular dish in mind, go ahead and just search for that recipe.
+
+front end - https://github.com/James-Harkins/fast_food  
+back end - https://github.com/mcharrod/fast_food_backend  
+
 
 [Phast Phood](phastphood.herokuapp.com) -- take a look!
 
@@ -26,7 +30,6 @@ Google which gives users the ability to register using their existing
 Gmail account. Our front end app is responsible for displaying the data
 given back to us from our API and is stylized using Bootstrap.
 ```
-___Project Endpoints___
 
 ___APIs Used___  
 [The Cocktail DB](https://www.thecocktaildb.com/api.php)  
