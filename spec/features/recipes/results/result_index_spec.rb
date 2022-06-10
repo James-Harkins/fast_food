@@ -2,38 +2,39 @@ require "rails_helper"
 
 RSpec.describe "Recipe Results Index Page" do
   describe "As a Visitor - Sad Path" do
-    # sad path
     it "If I visit /recipes without having searched for a recipe first, I am redirected to /recipes/search", :vcr do
       visit "/recipes"
 
       expect(page).to have_content("Please Enter a Search Parameter")
     end
 
-    # it 'Returns a notice that no recipes were found for bad search by name', :vcr do
-    #   visit '/recipes/search'
+    it "Returns a notice that no recipes were found for bad search by name", :vcr do
+      visit "/recipes/search"
 
-    #   within "#recipes_search_name" do
-    #     fill_in "Search for Recipe by Name", with: 'chili dogs'
-    #       within "#click_button" do
-    #       click_button
-    #     end
-    #   end
-    #   # save_and_open_page
-    #   expect(page).to have_content("No Match Was Found For: chili dogs")
-    # end
+      within "#recipes_search_name" do
+        fill_in "Search for Recipe by Name", with: "chili dogs"
+        within "#click_button" do
+          click_button
+        end
+      end
 
-    # it 'Returns a notice that no recipes were found for bad search by ingredient', :vcr do
-    #   visit '/recipes/search'
+      expect(current_path).to eq("/recipes/search")
+      expect(page).to have_content("No search results were found.")
+    end
 
-    #   within("#recipes_search_ingredient") do
-    #     fill_in "Search for Recipe by Single Ingredient", with: 'meteorite'
-    #       within("#click_button") do
-    #       click_button
-    #     end
-    #   end
+    it "Returns a notice that no recipes were found for bad search by ingredient", :vcr do
+      visit "/recipes/search"
 
-    #   expect(page).to have_content("No Match Was Found For: meteorite")
-    # end
+      within("#recipes_search_ingredient") do
+        fill_in "Search for Recipe by Single Ingredient", with: "meteorite"
+        within("#click_button") do
+          click_button
+        end
+      end
+
+      expect(current_path).to eq("/recipes/search")
+      expect(page).to have_content("No search results were found.")
+    end
   end
 
   describe "As a Visitor - Happy Path" do
@@ -101,7 +102,7 @@ RSpec.describe "Recipe Results Index Page" do
 
     it "Has results for selecting a recipe category", :vcr do
       visit "/recipes/search"
-      
+
       click_on "Beef"
 
       within "#recipe_id-52874" do
@@ -123,9 +124,9 @@ RSpec.describe "Recipe Results Index Page" do
 
     it "Has results for selecting an area", :vcr do
       visit "/recipes/search"
-      
+
       click_on "Canadian"
-    
+
       within "#recipe_id-52928" do
         expect(page).to have_content("BeaverTails")
       end
@@ -141,26 +142,25 @@ RSpec.describe "Recipe Results Index Page" do
       within "#recipe_id-52929" do
         expect(page).to have_content("Timbits")
       end
-    end 
+    end
 
-    it 'Each result is a link to that recipes show page', :vcr do
-    
-      visit '/recipes/search'
+    it "Each result is a link to that recipes show page", :vcr do
+      visit "/recipes/search"
 
       within "#recipes_search_name" do
-        fill_in "Search for Recipe by Name", with: 'steak'
+        fill_in "Search for Recipe by Name", with: "steak"
         within "#click_button" do
           click_button
-        end 
-      end 
+        end
+      end
       within "#recipe_id-52935" do
         expect(page).to have_link("Steak Diane")
       end
-      
+
       within "#recipe_id-52881" do
         click_link "Steak and Kidney Pie"
       end
       expect(current_path).to eq("/recipes/52881")
-    end 
-  end 
-end 
+    end
+  end
+end
