@@ -408,3 +408,55 @@ span::after {
   box-shadow: none !important;
   border: none !important;
 }
+
+
+/// ABOUT THE TEAM PAGE
+
+#about_the_team{
+  font-family: 'Tai Hertiage Pro';
+  font-size: 5em;
+  justify-content: center;
+  color: rgb(92, 61, 46);
+}
+
+#general_info{
+  font-family: 'Tai Hertiage Pro';
+  font-size: 2em;
+  color: rgb(92, 61, 46);
+  justify-content: center;
+  border: 4px solid rgb(184, 92, 56);
+  border-radius: 10px;
+  height: 100%;
+  width: 50%;
+  padding: 10px;
+}
+#team_header{
+  font-family: 'Tai Hertiage Pro';
+  font-size: 3.2em;
+  color: rgb(92, 61, 46);
+  justify-content: center;
+  border: 4px solid rgb(184, 92, 56);
+  border-radius: 10px;
+  height: 100%;
+  width: 50%;
+  padding: 10px;
+}
+
+#the_team{
+  font-family: 'Tai Hertiage Pro';
+  font-size: 2.5em;
+  color: rgb(92, 61, 46);
+  justify-content: left;
+  border: 4px solid rgb(184, 92, 56);
+  border-radius: 10px;
+  height: 100%;
+  width: 50%;
+  padding: 10px;
+  
+}
+
+#team_link {
+  font-family: 'Tai Hertiage Pro';
+  font-size: 1em;
+  color: rgb(223, 144, 34);
+}
