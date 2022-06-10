@@ -37,7 +37,7 @@ RSpec.describe "About The Team Page" do
       end
 
       within '#reuben' do
-        expect(page).to have_content("Reuben Davidson")
+        expect(page).to have_content("Reuben Davison")
         expect(page).to have_link("GitHub")
         expect(page).to have_link("LinkedIn")
       end
