@@ -80,8 +80,22 @@
             <div id="ingredient_name"><%= name %>:</div><div id="ingredient_amount"><%= qty %></div>
           </div>
         <% end  %>
+        <div id="instructions_header">
+          <text>Instructions:</text>
+        </div>
+    
+        <div id="instructions">
+            <div div id="instruction_row">
+              <div id="instruction_step">
+          <%= @cocktail.instructions  %>
+              </div>
+            </div>
       <% end %>
+
     </div>
+    
+    
+  
   </div>
   </center>
   <br>

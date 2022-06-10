@@ -16,4 +16,6 @@ class Recipe
       instruction.gsub("\r\n", " ")
     end
   end
+
+
 end
